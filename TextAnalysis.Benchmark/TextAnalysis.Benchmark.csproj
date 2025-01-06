@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <Nullable>enable</Nullable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Neco.BenchmarkLibrary" Version="0.2.1" />
+        <PackageReference Include="SentencePieceTokenizer" Version="0.1.2" />
+        <PackageReference Include="SimpleSIMD" Version="4.6.0" />
+        <PackageReference Include="System.Numerics.Tensors" Version="9.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TextAnalysis.Test\TextAnalysis.Test.csproj" />
+      <ProjectReference Include="..\TextAnalysis\TextAnalysis.csproj" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <Using Include="System"/>
+        <Using Include="System.Collections.Generic"/>
+        <Using Include="System.IO"/>
+        <Using Include="System.Linq"/>
+        <Using Include="BenchmarkDotNet.Attributes"/>
+        <Using Include="BenchmarkDotNet.Configs"/>
+    </ItemGroup>
+
+</Project>
