@@ -12,7 +12,7 @@
 
     <ItemGroup>
         <PackageReference Include="Neco.BenchmarkLibrary" Version="0.2.1" />
-        <PackageReference Include="SentencePieceTokenizer" Version="0.1.2" />
+        <PackageReference Include="SentencePieceTokenizer" Version="0.1.3" />
         <PackageReference Include="SimpleSIMD" Version="4.6.0" />
         <PackageReference Include="System.Numerics.Tensors" Version="9.0.0" />
     </ItemGroup>
