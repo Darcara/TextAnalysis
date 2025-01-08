@@ -27,6 +27,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\GeoInfo\GeoInfo.csproj" />
         <ProjectReference Include="..\TextAnalysis\TextAnalysis.csproj" />
     </ItemGroup>
 
