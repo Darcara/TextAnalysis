@@ -8,6 +8,11 @@
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <Nullable>enable</Nullable>
         <IsPackable>false</IsPackable>
+        <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+
+        <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
+        <RetainVMGarbageCollection>false</RetainVMGarbageCollection>
+        <ServerGarbageCollection>true</ServerGarbageCollection>
     </PropertyGroup>
 
     <ItemGroup>
@@ -27,8 +32,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\GeoInfo\GeoInfo.csproj" />
-        <ProjectReference Include="..\TextAnalysis\TextAnalysis.csproj" />
+        <ProjectReference Include="..\GeoInfo\GeoInfo.csproj"/>
+        <ProjectReference Include="..\TextAnalysis\TextAnalysis.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
