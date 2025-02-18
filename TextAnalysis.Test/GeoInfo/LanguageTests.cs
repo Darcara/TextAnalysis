@@ -1,6 +1,6 @@
-﻿namespace TextAnalysis.Test;
+﻿namespace TextAnalysis.Test.GeoInfo;
 
-using GeoInfo.Iso639;
+using global::GeoInfo.Iso639;
 using Neco.Common.Helper;
 
 [TestFixture]
@@ -51,17 +51,37 @@ public class LanguageTests {
 	[TestCase("HYE", Language.Armenian)]
 	[TestCase("X", Language.Undetermined)]
 	[TestCase("XXXX", Language.Undetermined)]
+	[TestCase("", Language.Undetermined)]
 	[TestCase(LanguageHelper.Unavailable2, Language.Undetermined)]
 	[TestCase(LanguageHelper.Unavailable3, Language.Undetermined)]
 	public void CanGetByCode(String code, Language language) {
 		LanguageHelper.GetLanguageByCode(code).Should().Be(language);
 	}
+	
+	[TestCase("hy", Language.Armenian)]
+	[TestCase("HY", Language.Armenian)]
+	[TestCase("hy-whatever", Language.Armenian)]
+	[TestCase("HY-whatever", Language.Armenian)]
+	[TestCase("hye", Language.Armenian)]
+	[TestCase("HYE", Language.Armenian)]
+	[TestCase("X", Language.Undetermined)]
+	[TestCase("XXXX", Language.Undetermined)]
+	[TestCase("", Language.Undetermined)]
+	[TestCase(LanguageHelper.Unavailable2, Language.Undetermined)]
+	[TestCase(LanguageHelper.Unavailable3, Language.Undetermined)]
+	public void CanGetByCodeBytes(String code, Language language) {
+		Byte[] bytes = new Byte[code.Length];
+		for (var i = 0; i < code.Length; i++) {
+			bytes[i] = (Byte)code[i];
+		}
+		LanguageHelper.GetLanguageByCode(bytes).Should().Be(language);
+	}
 
 	[Category("Benchmark")]
 	[Test]
 	public void CanCreateFastLookups() {
-		PerformanceHelper.EstimateObjectSize("2CodeLookup",5, 10, Console.Out,0, _ => LanguageHelper.CreateFast2CodeLookup());
-		PerformanceHelper.EstimateObjectSize("3CodeLookup", 5, 10, Console.Out, 0, _ => LanguageHelper.CreateFast3CodeLookup());
+		PerformanceHelper.EstimateObjectSize("2CodeLookup",0, _ => LanguageHelper.CreateFast2CodeLookup());
+		PerformanceHelper.EstimateObjectSize("3CodeLookup", 0, _ => LanguageHelper.CreateFast3CodeLookup());
 	}
 
 	[Test]
