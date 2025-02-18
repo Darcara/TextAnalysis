@@ -5,2524 +5,3268 @@
 namespace GeoInfo.Iso3166;
 #region Designer generated code
 public enum Country {
-///<summary>Not a country, but instead an uninitialized variable</summary>
+///<summary>Not a country.</summary>
+NotACountry=-1,
+///<summary>Not a country, but instead an uninitialized variable.</summary>
 Uninitialized=0,
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:AD">Andorra</a></para>
-/// <para>Capital: Andorra la Vella<br/>
+/// <para>
+/// Located in: Southern Europe<br/>
+/// Capital: Andorra la Vella<br/>
 /// Languages: <see cref="Iso639.Language.Catalan"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .ad</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .ad
+/// </para>
 /// </summary>
 /// <value>id=AND, 2code=AD, numeric=020</value>
 Andorra=12_655_425,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:AE">United Arab Emirates</a></para>
-/// <para>Capital: Abu Dhabi<br/>
+/// <para>
+/// Located in: Western Asia<br/>
+/// Capital: Abu Dhabi<br/>
 /// Languages: <see cref="Iso639.Language.Arabic"/>,<see cref="Iso639.Language.Persian"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Hindi"/>,<see cref="Iso639.Language.Urdu"/><br/>
-/// Currency: Dirham (AED)<br/>
-/// TopLevelDomain: .ae</para>
+/// Currency: <see cref="Iso4217.Currency.UAEDirham" >UAEDirham (AED)</see><br/>
+/// TopLevelDomain: .ae
+/// </para>
 /// </summary>
 /// <value>id=ARE, 2code=AE, numeric=784</value>
 UnitedArabEmirates=16_852_033,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:AF">Afghanistan</a></para>
-/// <para>Capital: Kabul<br/>
+/// <para>
+/// Located in: Southern Asia<br/>
+/// Capital: Kabul<br/>
 /// Languages: <see cref="Iso639.Language.Persian"/>,<see cref="Iso639.Language.Pushto"/>,<see cref="Iso639.Language.Uzbek"/>,<see cref="Iso639.Language.Turkmen"/><br/>
-/// Currency: Afghani (AFN)<br/>
-/// TopLevelDomain: .af</para>
+/// Currency: <see cref="Iso4217.Currency.Afghani" >Afghani (AFN)</see><br/>
+/// TopLevelDomain: .af
+/// </para>
 /// </summary>
 /// <value>id=AFG, 2code=AF, numeric=004</value>
 Afghanistan=21_049_665,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:AG">Antigua and Barbuda</a></para>
-/// <para>Capital: St. John's<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: St. John's<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (XCD)<br/>
-/// TopLevelDomain: .ag</para>
+/// Currency: <see cref="Iso4217.Currency.EastCaribbeanDollar" >EastCaribbeanDollar (XCD)</see><br/>
+/// TopLevelDomain: .ag
+/// </para>
 /// </summary>
 /// <value>id=ATG, 2code=AG, numeric=028</value>
 AntiguaandBarbuda=25_244_865,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:AI">Anguilla</a></para>
-/// <para>Capital: The Valley<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: The Valley<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (XCD)<br/>
-/// TopLevelDomain: .ai</para>
+/// Currency: <see cref="Iso4217.Currency.EastCaribbeanDollar" >EastCaribbeanDollar (XCD)</see><br/>
+/// TopLevelDomain: .ai
+/// </para>
 /// </summary>
 /// <value>id=AIA, 2code=AI, numeric=660</value>
 Anguilla=33_620_481,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:AL">Albania</a></para>
-/// <para>Capital: Tirana<br/>
+/// <para>
+/// Located in: Southern Europe<br/>
+/// Capital: Tirana<br/>
 /// Languages: <see cref="Iso639.Language.Albanian"/>,<see cref="Iso639.Language.Greek_Modern"/><br/>
-/// Currency: Lek (ALL)<br/>
-/// TopLevelDomain: .al</para>
+/// Currency: <see cref="Iso4217.Currency.Lek" >Lek (ALL)</see><br/>
+/// TopLevelDomain: .al
+/// </para>
 /// </summary>
 /// <value>id=ALB, 2code=AL, numeric=008</value>
 Albania=46_205_633,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:AM">Armenia</a></para>
-/// <para>Capital: Yerevan<br/>
+/// <para>
+/// Located in: Western Asia<br/>
+/// Capital: Yerevan<br/>
 /// Languages: <see cref="Iso639.Language.Armenian"/><br/>
-/// Currency: Dram (AMD)<br/>
-/// TopLevelDomain: .am</para>
+/// Currency: <see cref="Iso4217.Currency.ArmenianDram" >ArmenianDram (AMD)</see><br/>
+/// TopLevelDomain: .am
+/// </para>
 /// </summary>
 /// <value>id=ARM, 2code=AM, numeric=051</value>
 Armenia=50_422_849,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:AO">Angola</a></para>
-/// <para>Capital: Luanda<br/>
+/// <para>
+/// Located in: Middle Africa<br/>
+/// Capital: Luanda<br/>
 /// Languages: <see cref="Iso639.Language.Portuguese"/><br/>
-/// Currency: Kwanza (AOA)<br/>
-/// TopLevelDomain: .ao</para>
+/// Currency: <see cref="Iso4217.Currency.Kwanza" >Kwanza (AOA)</see><br/>
+/// TopLevelDomain: .ao
+/// </para>
 /// </summary>
 /// <value>id=AGO, 2code=AO, numeric=024</value>
 Angola=58_814_849,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:AQ">Antarctica</a></para>
-/// <para>Capital: <br/>
-/// Languages: <br/>
-/// Currency:  ()<br/>
-/// TopLevelDomain: .aq</para>
+/// <para>
+/// TopLevelDomain: .aq
+/// </para>
 /// </summary>
 /// <value>id=ATA, 2code=AQ, numeric=010</value>
 Antarctica=67_175_617,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:AR">Argentina</a></para>
-/// <para>Capital: Buenos Aires<br/>
+/// <para>
+/// Located in: South America<br/>
+/// Capital: Buenos Aires<br/>
 /// Languages: <see cref="Iso639.Language.Spanish"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Italian"/>,<see cref="Iso639.Language.German"/>,<see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Guarani"/><br/>
-/// Currency: Peso (ARS)<br/>
-/// TopLevelDomain: .ar</para>
+/// Currency: <see cref="Iso4217.Currency.ArgentinePeso" >ArgentinePeso (ARS)</see><br/>
+/// TopLevelDomain: .ar
+/// </para>
 /// </summary>
 /// <value>id=ARG, 2code=AR, numeric=032</value>
 Argentina=71_382_081,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:AS">American Samoa</a></para>
-/// <para>Capital: Pago Pago<br/>
+/// <para>
+/// Located in: Polynesia<br/>
+/// Capital: Pago Pago<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Samoan"/>,<see cref="Iso639.Language.Tonga_Tonga_Islands"/><br/>
-/// Currency: Dollar (USD)<br/>
-/// TopLevelDomain: .as</para>
+/// Currency: <see cref="Iso4217.Currency.USDollar" >USDollar (USD)</see><br/>
+/// TopLevelDomain: .as
+/// </para>
 /// </summary>
 /// <value>id=ASM, 2code=AS, numeric=016</value>
 AmericanSamoa=75_588_737,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:AT">Austria</a></para>
-/// <para>Capital: Vienna<br/>
+/// <para>
+/// Located in: Western Europe<br/>
+/// Capital: Vienna<br/>
 /// Languages: <see cref="Iso639.Language.German"/>,<see cref="Iso639.Language.Croatian"/>,<see cref="Iso639.Language.Hungarian"/>,<see cref="Iso639.Language.Slovenian"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .at</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .at
+/// </para>
 /// </summary>
 /// <value>id=AUT, 2code=AT, numeric=040</value>
 Austria=79_797_505,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:AU">Australia</a></para>
-/// <para>Capital: Canberra<br/>
+/// <para>
+/// Located in: Australia and New Zealand<br/>
+/// Capital: Canberra<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (AUD)<br/>
-/// TopLevelDomain: .au</para>
+/// Currency: <see cref="Iso4217.Currency.AustralianDollar" >AustralianDollar (AUD)</see><br/>
+/// TopLevelDomain: .au
+/// </para>
 /// </summary>
 /// <value>id=AUS, 2code=AU, numeric=036</value>
 Australia=83_989_761,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:AW">Aruba</a></para>
-/// <para>Capital: Oranjestad<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: Oranjestad<br/>
 /// Languages: <see cref="Iso639.Language.Dutch"/>,<see cref="Iso639.Language.Papiamento"/>,<see cref="Iso639.Language.Spanish"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Guilder (AWG)<br/>
-/// TopLevelDomain: .aw</para>
+/// Currency: <see cref="Iso4217.Currency.ArubanFlorin" >ArubanFlorin (AWG)</see><br/>
+/// TopLevelDomain: .aw
+/// </para>
 /// </summary>
 /// <value>id=ABW, 2code=AW, numeric=533</value>
 Aruba=92_385_345,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:AX">Aland Islands</a></para>
-/// <para>Capital: Mariehamn<br/>
+/// <para>
+/// Located in: Northern Europe<br/>
+/// Capital: Mariehamn<br/>
 /// Languages: <see cref="Iso639.Language.Swedish"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .ax</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .ax
+/// </para>
 /// </summary>
 /// <value>id=ALA, 2code=AX, numeric=248</value>
 AlandIslands=96_535_233,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:AZ">Azerbaijan</a></para>
-/// <para>Capital: Baku<br/>
+/// <para>
+/// Located in: Western Asia<br/>
+/// Capital: Baku<br/>
 /// Languages: <see cref="Iso639.Language.Azerbaijani"/>,<see cref="Iso639.Language.Russian"/>,<see cref="Iso639.Language.Armenian"/><br/>
-/// Currency: Manat (AZN)<br/>
-/// TopLevelDomain: .az</para>
+/// Currency: <see cref="Iso4217.Currency.AzerbaijanManat" >AzerbaijanManat (AZN)</see><br/>
+/// TopLevelDomain: .az
+/// </para>
 /// </summary>
 /// <value>id=AZE, 2code=AZ, numeric=031</value>
 Azerbaijan=104_932_929,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:BA">Bosnia and Herzegovina</a></para>
-/// <para>Capital: Sarajevo<br/>
+/// <para>
+/// Located in: Southern Europe<br/>
+/// Capital: Sarajevo<br/>
 /// Languages: <see cref="Iso639.Language.Bosnian"/>,<see cref="Iso639.Language.Croatian"/>,<see cref="Iso639.Language.Serbian"/><br/>
-/// Currency: Marka (BAM)<br/>
-/// TopLevelDomain: .ba</para>
+/// Currency: <see cref="Iso4217.Currency.ConvertibleMark" >ConvertibleMark (BAM)</see><br/>
+/// TopLevelDomain: .ba
+/// </para>
 /// </summary>
 /// <value>id=BIH, 2code=BA, numeric=070</value>
 BosniaandHerzegovina=211_459,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:BB">Barbados</a></para>
-/// <para>Capital: Bridgetown<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: Bridgetown<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (BBD)<br/>
-/// TopLevelDomain: .bb</para>
+/// Currency: <see cref="Iso4217.Currency.BarbadosDollar" >BarbadosDollar (BBD)</see><br/>
+/// TopLevelDomain: .bb
+/// </para>
 /// </summary>
 /// <value>id=BRB, 2code=BB, numeric=052</value>
 Barbados=4_394_051,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:BD">Bangladesh</a></para>
-/// <para>Capital: Dhaka<br/>
+/// <para>
+/// Located in: Southern Asia<br/>
+/// Capital: Dhaka<br/>
 /// Languages: <see cref="Iso639.Language.Bengali"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Taka (BDT)<br/>
-/// TopLevelDomain: .bd</para>
+/// Currency: <see cref="Iso4217.Currency.Taka" >Taka (BDT)</see><br/>
+/// TopLevelDomain: .bd
+/// </para>
 /// </summary>
 /// <value>id=BGD, 2code=BD, numeric=050</value>
 Bangladesh=12_786_051,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:BE">Belgium</a></para>
-/// <para>Capital: Brussels<br/>
+/// <para>
+/// Located in: Western Europe<br/>
+/// Capital: Brussels<br/>
 /// Languages: <see cref="Iso639.Language.Dutch"/>,<see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.German"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .be</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .be
+/// </para>
 /// </summary>
 /// <value>id=BEL, 2code=BE, numeric=056</value>
 Belgium=16_996_611,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:BF">Burkina Faso</a></para>
-/// <para>Capital: Ouagadougou<br/>
+/// <para>
+/// Located in: Western Africa<br/>
+/// Capital: Ouagadougou<br/>
 /// Languages: <see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Mossi"/><br/>
-/// Currency: Franc (XOF)<br/>
-/// TopLevelDomain: .bf</para>
+/// Currency: <see cref="Iso4217.Currency.CFAFrancBCEAO" >CFAFrancBCEAO (XOF)</see><br/>
+/// TopLevelDomain: .bf
+/// </para>
 /// </summary>
 /// <value>id=BFA, 2code=BF, numeric=854</value>
 BurkinaFaso=21_168_451,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:BG">Bulgaria</a></para>
-/// <para>Capital: Sofia<br/>
+/// <para>
+/// Located in: Eastern Europe<br/>
+/// Capital: Sofia<br/>
 /// Languages: <see cref="Iso639.Language.Bulgarian"/>,<see cref="Iso639.Language.Turkish"/>,<see cref="Iso639.Language.Romany"/><br/>
-/// Currency: Lev (BGN)<br/>
-/// TopLevelDomain: .bg</para>
+/// Currency: <see cref="Iso4217.Currency.BulgarianLev" >BulgarianLev (BGN)</see><br/>
+/// TopLevelDomain: .bg
+/// </para>
 /// </summary>
 /// <value>id=BGR, 2code=BG, numeric=100</value>
 Bulgaria=25_397_635,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:BH">Bahrain</a></para>
-/// <para>Capital: Manama<br/>
+/// <para>
+/// Located in: Western Asia<br/>
+/// Capital: Manama<br/>
 /// Languages: <see cref="Iso639.Language.Arabic"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Persian"/>,<see cref="Iso639.Language.Urdu"/><br/>
-/// Currency: Dinar (BHD)<br/>
-/// TopLevelDomain: .bh</para>
+/// Currency: <see cref="Iso4217.Currency.BahrainiDinar" >BahrainiDinar (BHD)</see><br/>
+/// TopLevelDomain: .bh
+/// </para>
 /// </summary>
 /// <value>id=BHR, 2code=BH, numeric=048</value>
 Bahrain=29_592_003,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:BI">Burundi</a></para>
-/// <para>Capital: Gitega<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Gitega<br/>
 /// Languages: <see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Rundi"/><br/>
-/// Currency: Franc (BIF)<br/>
-/// TopLevelDomain: .bi</para>
+/// Currency: <see cref="Iso4217.Currency.BurundiFranc" >BurundiFranc (BIF)</see><br/>
+/// TopLevelDomain: .bi
+/// </para>
 /// </summary>
 /// <value>id=BDI, 2code=BI, numeric=108</value>
 Burundi=33_767_619,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:BJ">Benin</a></para>
-/// <para>Capital: Porto-Novo<br/>
+/// <para>
+/// Located in: Western Africa<br/>
+/// Capital: Porto-Novo<br/>
 /// Languages: <see cref="Iso639.Language.French"/><br/>
-/// Currency: Franc (XOF)<br/>
-/// TopLevelDomain: .bj</para>
+/// Currency: <see cref="Iso4217.Currency.CFAFrancBCEAO" >CFAFrancBCEAO (XOF)</see><br/>
+/// TopLevelDomain: .bj
+/// </para>
 /// </summary>
 /// <value>id=BEN, 2code=BJ, numeric=204</value>
 Benin=37_972_227,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:BL">Saint Barthelemy</a></para>
-/// <para>Capital: Gustavia<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: Gustavia<br/>
 /// Languages: <see cref="Iso639.Language.French"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .gp</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .gp
+/// </para>
 /// </summary>
 /// <value>id=BLM, 2code=BL, numeric=652</value>
 SaintBarthelemy=46_359_235,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:BM">Bermuda</a></para>
-/// <para>Capital: Hamilton<br/>
+/// <para>
+/// Located in: Northern America<br/>
+/// Capital: Hamilton<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Portuguese"/><br/>
-/// Currency: Dollar (BMD)<br/>
-/// TopLevelDomain: .bm</para>
+/// Currency: <see cref="Iso4217.Currency.BermudianDollar" >BermudianDollar (BMD)</see><br/>
+/// TopLevelDomain: .bm
+/// </para>
 /// </summary>
 /// <value>id=BMU, 2code=BM, numeric=060</value>
 Bermuda=50_569_987,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:BN">Brunei</a></para>
-/// <para>Capital: Bandar Seri Begawan<br/>
+/// <para>
+/// Located in: South-eastern Asia<br/>
+/// Capital: Bandar Seri Begawan<br/>
 /// Languages: <see cref="Iso639.Language.Malay_macrolanguage"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (BND)<br/>
-/// TopLevelDomain: .bn</para>
+/// Currency: <see cref="Iso4217.Currency.BruneiDollar" >BruneiDollar (BND)</see><br/>
+/// TopLevelDomain: .bn
+/// </para>
 /// </summary>
 /// <value>id=BRN, 2code=BN, numeric=096</value>
 Brunei=54_750_275,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:BO">Bolivia</a></para>
-/// <para>Capital: Sucre<br/>
+/// <para>
+/// Located in: South America<br/>
+/// Capital: Sucre<br/>
 /// Languages: <see cref="Iso639.Language.Spanish"/>,<see cref="Iso639.Language.Quechua"/>,<see cref="Iso639.Language.Aymara"/><br/>
-/// Currency: Boliviano (BOB)<br/>
-/// TopLevelDomain: .bo</para>
+/// Currency: <see cref="Iso4217.Currency.Boliviano" >Boliviano (BOB)</see><br/>
+/// TopLevelDomain: .bo
+/// </para>
 /// </summary>
 /// <value>id=BOL, 2code=BO, numeric=068</value>
 Bolivia=58_940_291,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:BQ">Bonaire, Saint Eustatius and Saba </a></para>
-/// <para>Capital: <br/>
+/// <para>
+/// Located in: Caribbean<br/>
 /// Languages: <see cref="Iso639.Language.Dutch"/>,<see cref="Iso639.Language.Papiamento"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (USD)<br/>
-/// TopLevelDomain: .bq</para>
+/// Currency: <see cref="Iso4217.Currency.USDollar" >USDollar (USD)</see><br/>
+/// TopLevelDomain: .bq
+/// </para>
 /// </summary>
 /// <value>id=BES, 2code=BQ, numeric=535</value>
-Bonaire,SaintEustatiusandSaba=67_342_595,
+BonaireSaintEustatiusandSaba=67_342_595,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:BR">Brazil</a></para>
-/// <para>Capital: Brasilia<br/>
+/// <para>
+/// Located in: South America<br/>
+/// Capital: Brasilia<br/>
 /// Languages: <see cref="Iso639.Language.Portuguese"/>,<see cref="Iso639.Language.Spanish"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.French"/><br/>
-/// Currency: Real (BRL)<br/>
-/// TopLevelDomain: .br</para>
+/// Currency: <see cref="Iso4217.Currency.BrazilianReal" >BrazilianReal (BRL)</see><br/>
+/// TopLevelDomain: .br
+/// </para>
 /// </summary>
 /// <value>id=BRA, 2code=BR, numeric=076</value>
 Brazil=71_500_867,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:BS">Bahamas</a></para>
-/// <para>Capital: Nassau<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: Nassau<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (BSD)<br/>
-/// TopLevelDomain: .bs</para>
+/// Currency: <see cref="Iso4217.Currency.BahamianDollar" >BahamianDollar (BSD)</see><br/>
+/// TopLevelDomain: .bs
+/// </para>
 /// </summary>
 /// <value>id=BHS, 2code=BS, numeric=044</value>
 Bahamas=75_731_395,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:BT">Bhutan</a></para>
-/// <para>Capital: Thimphu<br/>
+/// <para>
+/// Located in: Southern Asia<br/>
+/// Capital: Thimphu<br/>
 /// Languages: <see cref="Iso639.Language.Dzongkha"/><br/>
-/// Currency: Ngultrum (BTN)<br/>
-/// TopLevelDomain: .bt</para>
+/// Currency: <see cref="Iso4217.Currency.Ngultrum" >Ngultrum (BTN)</see><br/>
+/// TopLevelDomain: .bt
+/// </para>
 /// </summary>
 /// <value>id=BTN, 2code=BT, numeric=064</value>
 Bhutan=79_916_227,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:BV">Bouvet Island</a></para>
-/// <para>Capital: <br/>
-/// Languages: <br/>
-/// Currency: Krone (NOK)<br/>
-/// TopLevelDomain: .bv</para>
+/// <para>
+/// Located in: South America<br/>
+/// Currency: <see cref="Iso4217.Currency.NorwegianKrone" >NorwegianKrone (NOK)</see><br/>
+/// TopLevelDomain: .bv
+/// </para>
 /// </summary>
 /// <value>id=BVT, 2code=BV, numeric=074</value>
 BouvetIsland=88_317_251,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:BW">Botswana</a></para>
-/// <para>Capital: Gaborone<br/>
+/// <para>
+/// Located in: Southern Africa<br/>
+/// Capital: Gaborone<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Tswana"/><br/>
-/// Currency: Pula (BWP)<br/>
-/// TopLevelDomain: .bw</para>
+/// Currency: <see cref="Iso4217.Currency.Pula" >Pula (BWP)</see><br/>
+/// TopLevelDomain: .bw
+/// </para>
 /// </summary>
 /// <value>id=BWA, 2code=BW, numeric=072</value>
 Botswana=92_472_707,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:BY">Belarus</a></para>
-/// <para>Capital: Minsk<br/>
+/// <para>
+/// Located in: Eastern Europe<br/>
+/// Capital: Minsk<br/>
 /// Languages: <see cref="Iso639.Language.Belarusian"/>,<see cref="Iso639.Language.Russian"/><br/>
-/// Currency: Belarusian ruble (BYN)<br/>
-/// TopLevelDomain: .by</para>
+/// Currency: <see cref="Iso4217.Currency.BelarusianRuble" >BelarusianRuble (BYN)</see><br/>
+/// TopLevelDomain: .by
+/// </para>
 /// </summary>
 /// <value>id=BLR, 2code=BY, numeric=112</value>
 Belarus=100_895_427,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:BZ">Belize</a></para>
-/// <para>Capital: Belmopan<br/>
+/// <para>
+/// Located in: Central America<br/>
+/// Capital: Belmopan<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Spanish"/><br/>
-/// Currency: Dollar (BZD)<br/>
-/// TopLevelDomain: .bz</para>
+/// Currency: <see cref="Iso4217.Currency.BelizeDollar" >BelizeDollar (BZD)</see><br/>
+/// TopLevelDomain: .bz
+/// </para>
 /// </summary>
 /// <value>id=BLZ, 2code=BZ, numeric=084</value>
 Belize=105_106_115,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:CA">Canada</a></para>
-/// <para>Capital: Ottawa<br/>
+/// <para>
+/// Located in: Northern America<br/>
+/// Capital: Ottawa<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Inuktitut"/><br/>
-/// Currency: Dollar (CAD)<br/>
-/// TopLevelDomain: .ca</para>
+/// Currency: <see cref="Iso4217.Currency.CanadianDollar" >CanadianDollar (CAD)</see><br/>
+/// TopLevelDomain: .ca
+/// </para>
 /// </summary>
 /// <value>id=CAN, 2code=CA, numeric=124</value>
 Canada=354_309,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:CC">Cocos Islands</a></para>
-/// <para>Capital: West Island<br/>
+/// <para>
+/// Located in: Australia and New Zealand<br/>
+/// Capital: West Island<br/>
 /// Languages: <see cref="Iso639.Language.Malay_macrolanguage"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (AUD)<br/>
-/// TopLevelDomain: .cc</para>
+/// Currency: <see cref="Iso4217.Currency.AustralianDollar" >AustralianDollar (AUD)</see><br/>
+/// TopLevelDomain: .cc
+/// </para>
 /// </summary>
 /// <value>id=CCK, 2code=CC, numeric=166</value>
 CocosIslands=8_736_901,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:CD">Democratic Republic of the Congo</a></para>
-/// <para>Capital: Kinshasa<br/>
+/// <para>
+/// Located in: Middle Africa<br/>
+/// Capital: Kinshasa<br/>
 /// Languages: <see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Lingala"/>,<see cref="Iso639.Language.Kituba_Democratic_Republic_of_Congo"/>,<see cref="Iso639.Language.Kongo"/>,<see cref="Iso639.Language.Swahili_macrolanguage"/>,<see cref="Iso639.Language.Luba_Lulua"/><br/>
-/// Currency: Franc (CDF)<br/>
-/// TopLevelDomain: .cd</para>
+/// Currency: <see cref="Iso4217.Currency.CongoleseFranc" >CongoleseFranc (CDF)</see><br/>
+/// TopLevelDomain: .cd
+/// </para>
 /// </summary>
 /// <value>id=COD, 2code=CD, numeric=180</value>
 DemocraticRepublicoftheCongo=12_917_637,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:CF">Central African Republic</a></para>
-/// <para>Capital: Bangui<br/>
+/// <para>
+/// Located in: Middle Africa<br/>
+/// Capital: Bangui<br/>
 /// Languages: <see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Sango"/>,<see cref="Iso639.Language.Lingala"/>,<see cref="Iso639.Language.Kongo"/><br/>
-/// Currency: Franc (XAF)<br/>
-/// TopLevelDomain: .cf</para>
+/// Currency: <see cref="Iso4217.Currency.CFAFrancBEAC" >CFAFrancBEAC (XAF)</see><br/>
+/// TopLevelDomain: .cf
+/// </para>
 /// </summary>
 /// <value>id=CAF, 2code=CF, numeric=140</value>
 CentralAfricanRepublic=21_309_445,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:CG">Republic of the Congo</a></para>
-/// <para>Capital: Brazzaville<br/>
+/// <para>
+/// Located in: Middle Africa<br/>
+/// Capital: Brazzaville<br/>
 /// Languages: <see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Kongo"/>,<see cref="Iso639.Language.Lingala"/><br/>
-/// Currency: Franc (XAF)<br/>
-/// TopLevelDomain: .cg</para>
+/// Currency: <see cref="Iso4217.Currency.CFAFrancBEAC" >CFAFrancBEAC (XAF)</see><br/>
+/// TopLevelDomain: .cg
+/// </para>
 /// </summary>
 /// <value>id=COG, 2code=CG, numeric=178</value>
 RepublicoftheCongo=25_506_693,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:CH">Switzerland</a></para>
-/// <para>Capital: Bern<br/>
+/// <para>
+/// Located in: Western Europe<br/>
+/// Capital: Bern<br/>
 /// Languages: <see cref="Iso639.Language.German"/>,<see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Italian"/>,<see cref="Iso639.Language.Romansh"/><br/>
-/// Currency: Franc (CHF)<br/>
-/// TopLevelDomain: .ch</para>
+/// Currency: <see cref="Iso4217.Currency.SwissFranc" >SwissFranc (CHF)</see><br/>
+/// TopLevelDomain: .ch
+/// </para>
 /// </summary>
 /// <value>id=CHE, 2code=CH, numeric=756</value>
 Switzerland=29_696_453,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:CI">Ivory Coast</a></para>
-/// <para>Capital: Yamoussoukro<br/>
+/// <para>
+/// Located in: Western Africa<br/>
+/// Capital: Yamoussoukro<br/>
 /// Languages: <see cref="Iso639.Language.French"/><br/>
-/// Currency: Franc (XOF)<br/>
-/// TopLevelDomain: .ci</para>
+/// Currency: <see cref="Iso4217.Currency.CFAFrancBCEAO" >CFAFrancBCEAO (XOF)</see><br/>
+/// TopLevelDomain: .ci
+/// </para>
 /// </summary>
 /// <value>id=CIV, 2code=CI, numeric=384</value>
 IvoryCoast=33_925_637,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:CK">Cook Islands</a></para>
-/// <para>Capital: Avarua<br/>
+/// <para>
+/// Located in: Polynesia<br/>
+/// Capital: Avarua<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Maori"/><br/>
-/// Currency: Dollar (NZD)<br/>
-/// TopLevelDomain: .ck</para>
+/// Currency: <see cref="Iso4217.Currency.NewZealandDollar" >NewZealandDollar (NZD)</see><br/>
+/// TopLevelDomain: .ck
+/// </para>
 /// </summary>
 /// <value>id=COK, 2code=CK, numeric=184</value>
 CookIslands=42_292_101,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:CL">Chile</a></para>
-/// <para>Capital: Santiago<br/>
+/// <para>
+/// Located in: South America<br/>
+/// Capital: Santiago<br/>
 /// Languages: <see cref="Iso639.Language.Spanish"/><br/>
-/// Currency: Peso (CLP)<br/>
-/// TopLevelDomain: .cl</para>
+/// Currency: <see cref="Iso4217.Currency.ChileanPeso" >ChileanPeso (CLP)</see><br/>
+/// TopLevelDomain: .cl
+/// </para>
 /// </summary>
 /// <value>id=CHL, 2code=CL, numeric=152</value>
 Chile=46_488_005,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:CM">Cameroon</a></para>
-/// <para>Capital: Yaounde<br/>
+/// <para>
+/// Located in: Middle Africa<br/>
+/// Capital: Yaounde<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.French"/><br/>
-/// Currency: Franc (XAF)<br/>
-/// TopLevelDomain: .cm</para>
+/// Currency: <see cref="Iso4217.Currency.CFAFrancBEAC" >CFAFrancBEAC (XAF)</see><br/>
+/// TopLevelDomain: .cm
+/// </para>
 /// </summary>
 /// <value>id=CMR, 2code=CM, numeric=120</value>
 Cameroon=50_694_917,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:CN">China</a></para>
-/// <para>Capital: Beijing<br/>
+/// <para>
+/// Located in: Eastern Asia<br/>
+/// Capital: Beijing<br/>
 /// Languages: <see cref="Iso639.Language.Chinese"/>,<see cref="Iso639.Language.Chinese_Yue"/>,<see cref="Iso639.Language.Chinese_Wu"/>,<see cref="Iso639.Language.Daur"/>,<see cref="Iso639.Language.Uighur"/>,<see cref="Iso639.Language.Zhuang"/><br/>
-/// Currency: Yuan Renminbi (CNY)<br/>
-/// TopLevelDomain: .cn</para>
+/// Currency: <see cref="Iso4217.Currency.YuanRenminbi" >YuanRenminbi (CNY)</see><br/>
+/// TopLevelDomain: .cn
+/// </para>
 /// </summary>
 /// <value>id=CHN, 2code=CN, numeric=156</value>
 China=54_880_709,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:CO">Colombia</a></para>
-/// <para>Capital: Bogota<br/>
+/// <para>
+/// Located in: South America<br/>
+/// Capital: Bogota<br/>
 /// Languages: <see cref="Iso639.Language.Spanish"/><br/>
-/// Currency: Peso (COP)<br/>
-/// TopLevelDomain: .co</para>
+/// Currency: <see cref="Iso4217.Currency.ColombianPeso" >ColombianPeso (COP)</see><br/>
+/// TopLevelDomain: .co
+/// </para>
 /// </summary>
 /// <value>id=COL, 2code=CO, numeric=170</value>
 Colombia=59_071_365,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:CR">Costa Rica</a></para>
-/// <para>Capital: San Jose<br/>
+/// <para>
+/// Located in: Central America<br/>
+/// Capital: San Jose<br/>
 /// Languages: <see cref="Iso639.Language.Spanish"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Colon (CRC)<br/>
-/// TopLevelDomain: .cr</para>
+/// Currency: <see cref="Iso4217.Currency.CostaRicanColon" >CostaRicanColon (CRC)</see><br/>
+/// TopLevelDomain: .cr
+/// </para>
 /// </summary>
 /// <value>id=CRI, 2code=CR, numeric=188</value>
 CostaRica=71_648_325,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:CU">Cuba</a></para>
-/// <para>Capital: Havana<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: Havana<br/>
 /// Languages: <see cref="Iso639.Language.Spanish"/>,<see cref="Iso639.Language.Papiamento"/><br/>
-/// Currency: Peso (CUP)<br/>
-/// TopLevelDomain: .cu</para>
+/// Currency: <see cref="Iso4217.Currency.CubanPeso" >CubanPeso (CUP)</see><br/>
+/// TopLevelDomain: .cu
+/// </para>
 /// </summary>
 /// <value>id=CUB, 2code=CU, numeric=192</value>
 Cuba=84_217_093,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:CV">Cabo Verde</a></para>
-/// <para>Capital: Praia<br/>
+/// <para>
+/// Located in: Western Africa<br/>
+/// Capital: Praia<br/>
 /// Languages: <see cref="Iso639.Language.Portuguese"/><br/>
-/// Currency: Escudo (CVE)<br/>
-/// TopLevelDomain: .cv</para>
+/// Currency: <see cref="Iso4217.Currency.CaboVerdeEscudo" >CaboVerdeEscudo (CVE)</see><br/>
+/// TopLevelDomain: .cv
+/// </para>
 /// </summary>
 /// <value>id=CPV, 2code=CV, numeric=132</value>
 CaboVerde=88_452_037,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:CW">Curacao</a></para>
-/// <para>Capital:  Willemstad<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital:  Willemstad<br/>
 /// Languages: <see cref="Iso639.Language.Dutch"/>,<see cref="Iso639.Language.Papiamento"/><br/>
-/// Currency: Guilder (ANG)<br/>
-/// TopLevelDomain: .cw</para>
+/// Currency: <see cref="Iso4217.Currency.NetherlandsAntilleanGuilder" >NetherlandsAntilleanGuilder (ANG)</see><br/>
+/// TopLevelDomain: .cw
+/// </para>
 /// </summary>
 /// <value>id=CUW, 2code=CW, numeric=531</value>
 Curacao=92_648_709,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:CX">Christmas Island</a></para>
-/// <para>Capital: Flying Fish Cove<br/>
+/// <para>
+/// Located in: Australia and New Zealand<br/>
+/// Capital: Flying Fish Cove<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Chinese"/>,<see cref="Iso639.Language.Malay_macrolanguage"/><br/>
-/// Currency: Dollar (AUD)<br/>
-/// TopLevelDomain: .cx</para>
+/// Currency: <see cref="Iso4217.Currency.AustralianDollar" >AustralianDollar (AUD)</see><br/>
+/// TopLevelDomain: .cx
+/// </para>
 /// </summary>
 /// <value>id=CXR, 2code=CX, numeric=162</value>
 ChristmasIsland=96_832_965,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:CY">Cyprus</a></para>
-/// <para>Capital: Nicosia<br/>
+/// <para>
+/// Located in: Western Asia<br/>
+/// Capital: Nicosia<br/>
 /// Languages: <see cref="Iso639.Language.Greek_Modern"/>,<see cref="Iso639.Language.Turkish"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .cy</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .cy
+/// </para>
 /// </summary>
 /// <value>id=CYP, 2code=CY, numeric=196</value>
 Cyprus=101_023_237,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:CZ">Czechia</a></para>
-/// <para>Capital: Prague<br/>
+/// <para>
+/// Located in: Eastern Europe<br/>
+/// Capital: Prague<br/>
 /// Languages: <see cref="Iso639.Language.Czech"/>,<see cref="Iso639.Language.Slovak"/><br/>
-/// Currency: Koruna (CZK)<br/>
-/// TopLevelDomain: .cz</para>
+/// Currency: <see cref="Iso4217.Currency.CzechKoruna" >CzechKoruna (CZK)</see><br/>
+/// TopLevelDomain: .cz
+/// </para>
 /// </summary>
 /// <value>id=CZE, 2code=CZ, numeric=203</value>
 Czechia=105_195_077,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:DE">Germany</a></para>
-/// <para>Capital: Berlin<br/>
+/// <para>
+/// Located in: Western Europe<br/>
+/// Capital: Berlin<br/>
 /// Languages: <see cref="Iso639.Language.German"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .de</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .de
+/// </para>
 /// </summary>
 /// <value>id=DEU, 2code=DE, numeric=276</value>
 Germany=17_277_191,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:DJ">Djibouti</a></para>
-/// <para>Capital: Djibouti<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Djibouti<br/>
 /// Languages: <see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Arabic"/>,<see cref="Iso639.Language.Somali"/>,<see cref="Iso639.Language.Afar"/><br/>
-/// Currency: Franc (DJF)<br/>
-/// TopLevelDomain: .dj</para>
+/// Currency: <see cref="Iso4217.Currency.DjiboutiFranc" >DjiboutiFranc (DJF)</see><br/>
+/// TopLevelDomain: .dj
+/// </para>
 /// </summary>
 /// <value>id=DJI, 2code=DJ, numeric=262</value>
 Djibouti=38_224_455,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:DK">Denmark</a></para>
-/// <para>Capital: Copenhagen<br/>
+/// <para>
+/// Located in: Northern Europe<br/>
+/// Capital: Copenhagen<br/>
 /// Languages: <see cref="Iso639.Language.Danish"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Faroese"/>,<see cref="Iso639.Language.German"/><br/>
-/// Currency: Krone (DKK)<br/>
-/// TopLevelDomain: .dk</para>
+/// Currency: <see cref="Iso4217.Currency.DanishKrone" >DanishKrone (DKK)</see><br/>
+/// TopLevelDomain: .dk
+/// </para>
 /// </summary>
 /// <value>id=DNK, 2code=DK, numeric=208</value>
 Denmark=42_423_111,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:DM">Dominica</a></para>
-/// <para>Capital: Roseau<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: Roseau<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (XCD)<br/>
-/// TopLevelDomain: .dm</para>
+/// Currency: <see cref="Iso4217.Currency.EastCaribbeanDollar" >EastCaribbeanDollar (XCD)</see><br/>
+/// TopLevelDomain: .dm
+/// </para>
 /// </summary>
 /// <value>id=DMA, 2code=DM, numeric=212</value>
 Dominica=50_791_175,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:DO">Dominican Republic</a></para>
-/// <para>Capital: Santo Domingo<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: Santo Domingo<br/>
 /// Languages: <see cref="Iso639.Language.Spanish"/><br/>
-/// Currency: Peso (DOP)<br/>
-/// TopLevelDomain: .do</para>
+/// Currency: <see cref="Iso4217.Currency.DominicanPeso" >DominicanPeso (DOP)</see><br/>
+/// TopLevelDomain: .do
+/// </para>
 /// </summary>
 /// <value>id=DOM, 2code=DO, numeric=214</value>
 DominicanRepublic=59_204_487,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:DZ">Algeria</a></para>
-/// <para>Capital: Algiers<br/>
+/// <para>
+/// Located in: Northern Africa<br/>
+/// Capital: Algiers<br/>
 /// Languages: <see cref="Iso639.Language.Arabic"/><br/>
-/// Currency: Dinar (DZD)<br/>
-/// TopLevelDomain: .dz</para>
+/// Currency: <see cref="Iso4217.Currency.AlgerianDinar" >AlgerianDinar (DZD)</see><br/>
+/// TopLevelDomain: .dz
+/// </para>
 /// </summary>
 /// <value>id=DZA, 2code=DZ, numeric=012</value>
 Algeria=105_317_959,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:EC">Ecuador</a></para>
-/// <para>Capital: Quito<br/>
+/// <para>
+/// Located in: South America<br/>
+/// Capital: Quito<br/>
 /// Languages: <see cref="Iso639.Language.Spanish"/><br/>
-/// Currency: Dollar (USD)<br/>
-/// TopLevelDomain: .ec</para>
+/// Currency: <see cref="Iso4217.Currency.USDollar" >USDollar (USD)</see><br/>
+/// TopLevelDomain: .ec
+/// </para>
 /// </summary>
 /// <value>id=ECU, 2code=EC, numeric=218</value>
 Ecuador=9_019_529,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:EE">Estonia</a></para>
-/// <para>Capital: Tallinn<br/>
+/// <para>
+/// Located in: Northern Europe<br/>
+/// Capital: Tallinn<br/>
 /// Languages: <see cref="Iso639.Language.Estonian"/>,<see cref="Iso639.Language.Russian"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .ee</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .ee
+/// </para>
 /// </summary>
 /// <value>id=EST, 2code=EE, numeric=233</value>
 Estonia=17_407_113,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:EG">Egypt</a></para>
-/// <para>Capital: Cairo<br/>
+/// <para>
+/// Located in: Northern Africa<br/>
+/// Capital: Cairo<br/>
 /// Languages: <see cref="Iso639.Language.Arabic"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.French"/><br/>
-/// Currency: Pound (EGP)<br/>
-/// TopLevelDomain: .eg</para>
+/// Currency: <see cref="Iso4217.Currency.EgyptianPound" >EgyptianPound (EGP)</see><br/>
+/// TopLevelDomain: .eg
+/// </para>
 /// </summary>
 /// <value>id=EGY, 2code=EG, numeric=818</value>
 Egypt=25_805_193,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:EH">Western Sahara</a></para>
-/// <para>Capital: El-Aaiun<br/>
+/// <para>
+/// Located in: Northern Africa<br/>
+/// Capital: El-Aaiun<br/>
 /// Languages: <see cref="Iso639.Language.Arabic"/>,<see cref="Iso639.Language.Hassaniyya"/><br/>
-/// Currency: Dirham (MAD)<br/>
-/// TopLevelDomain: .eh</para>
+/// Currency: <see cref="Iso4217.Currency.MoroccanDirham" >MoroccanDirham (MAD)</see><br/>
+/// TopLevelDomain: .eh
+/// </para>
 /// </summary>
 /// <value>id=ESH, 2code=EH, numeric=732</value>
 WesternSahara=29_965_449,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:ER">Eritrea</a></para>
-/// <para>Capital: Asmara<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Asmara<br/>
 /// Languages: <see cref="Iso639.Language.Afar"/>,<see cref="Iso639.Language.Arabic"/>,<see cref="Iso639.Language.Tigre"/>,<see cref="Iso639.Language.Kunama"/>,<see cref="Iso639.Language.Tigrinya"/><br/>
-/// Currency: Nakfa (ERN)<br/>
-/// TopLevelDomain: .er</para>
+/// Currency: <see cref="Iso4217.Currency.Nakfa" >Nakfa (ERN)</see><br/>
+/// TopLevelDomain: .er
+/// </para>
 /// </summary>
 /// <value>id=ERI, 2code=ER, numeric=232</value>
 Eritrea=71_910_473,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:ES">Spain</a></para>
-/// <para>Capital: Madrid<br/>
+/// <para>
+/// Located in: Southern Europe<br/>
+/// Capital: Madrid<br/>
 /// Languages: <see cref="Iso639.Language.Spanish"/>,<see cref="Iso639.Language.Catalan"/>,<see cref="Iso639.Language.Galician"/>,<see cref="Iso639.Language.Basque"/>,<see cref="Iso639.Language.Occitan_post"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .es</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .es
+/// </para>
 /// </summary>
 /// <value>id=ESP, 2code=ES, numeric=724</value>
 Spain=76_119_177,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:ET">Ethiopia</a></para>
-/// <para>Capital: Addis Ababa<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Addis Ababa<br/>
 /// Languages: <see cref="Iso639.Language.Amharic"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Oromo"/>,<see cref="Iso639.Language.Tigrinya"/>,<see cref="Iso639.Language.Somali"/>,<see cref="Iso639.Language.Sidamo"/><br/>
-/// Currency: Birr (ETB)<br/>
-/// TopLevelDomain: .et</para>
+/// Currency: <see cref="Iso4217.Currency.EthiopianBirr" >EthiopianBirr (ETB)</see><br/>
+/// TopLevelDomain: .et
+/// </para>
 /// </summary>
 /// <value>id=ETH, 2code=ET, numeric=231</value>
 Ethiopia=80_297_161,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:FI">Finland</a></para>
-/// <para>Capital: Helsinki<br/>
+/// <para>
+/// Located in: Northern Europe<br/>
+/// Capital: Helsinki<br/>
 /// Languages: <see cref="Iso639.Language.Finnish"/>,<see cref="Iso639.Language.Swedish"/>,<see cref="Iso639.Language.Sami_Inari"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .fi</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .fi
+/// </para>
 /// </summary>
 /// <value>id=FIN, 2code=FI, numeric=246</value>
 Finland=34_302_475,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:FJ">Fiji</a></para>
-/// <para>Capital: Suva<br/>
+/// <para>
+/// Located in: Melanesia<br/>
+/// Capital: Suva<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Fijian"/><br/>
-/// Currency: Dollar (FJD)<br/>
-/// TopLevelDomain: .fj</para>
+/// Currency: <see cref="Iso4217.Currency.FijiDollar" >FijiDollar (FJD)</see><br/>
+/// TopLevelDomain: .fj
+/// </para>
 /// </summary>
 /// <value>id=FJI, 2code=FJ, numeric=242</value>
 Fiji=38_486_603,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:FK">Falkland Islands</a></para>
-/// <para>Capital: Stanley<br/>
+/// <para>
+/// Located in: South America<br/>
+/// Capital: Stanley<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Pound (FKP)<br/>
-/// TopLevelDomain: .fk</para>
+/// Currency: <see cref="Iso4217.Currency.FalklandIslandsPound" >FalklandIslandsPound (FKP)</see><br/>
+/// TopLevelDomain: .fk
+/// </para>
 /// </summary>
 /// <value>id=FLK, 2code=FK, numeric=238</value>
 FalklandIslands=42_685_131,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:FM">Micronesia</a></para>
-/// <para>Capital: Palikir<br/>
+/// <para>
+/// Located in: Micronesia<br/>
+/// Capital: Palikir<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Chuukese"/>,<see cref="Iso639.Language.Pohnpeian"/>,<see cref="Iso639.Language.Yapese"/>,<see cref="Iso639.Language.Kosraean"/>,<see cref="Iso639.Language.Ulithian"/>,<see cref="Iso639.Language.Woleaian"/>,<see cref="Iso639.Language.Nukuoro"/>,<see cref="Iso639.Language.Kapingamarangi"/><br/>
-/// Currency: Dollar (USD)<br/>
-/// TopLevelDomain: .fm</para>
+/// Currency: <see cref="Iso4217.Currency.USDollar" >USDollar (USD)</see><br/>
+/// TopLevelDomain: .fm
+/// </para>
 /// </summary>
 /// <value>id=FSM, 2code=FM, numeric=583</value>
 Micronesia=51_078_283,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:FO">Faroe Islands</a></para>
-/// <para>Capital: Torshavn<br/>
+/// <para>
+/// Located in: Northern Europe<br/>
+/// Capital: Torshavn<br/>
 /// Languages: <see cref="Iso639.Language.Faroese"/>,<see cref="Iso639.Language.Danish"/><br/>
-/// Currency: Krone (DKK)<br/>
-/// TopLevelDomain: .fo</para>
+/// Currency: <see cref="Iso4217.Currency.DanishKrone" >DanishKrone (DKK)</see><br/>
+/// TopLevelDomain: .fo
+/// </para>
 /// </summary>
 /// <value>id=FRO, 2code=FO, numeric=234</value>
 FaroeIslands=59_470_923,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:FR">France</a></para>
-/// <para>Capital: Paris<br/>
+/// <para>
+/// Located in: Western Europe<br/>
+/// Capital: Paris<br/>
 /// Languages: <see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Arpitan"/>,<see cref="Iso639.Language.Breton"/>,<see cref="Iso639.Language.Corsican"/>,<see cref="Iso639.Language.Catalan"/>,<see cref="Iso639.Language.Basque"/>,<see cref="Iso639.Language.Occitan_post"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .fr</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .fr
+/// </para>
 /// </summary>
 /// <value>id=FRA, 2code=FR, numeric=250</value>
 France=72_025_163,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:GA">Gabon</a></para>
-/// <para>Capital: Libreville<br/>
+/// <para>
+/// Located in: Middle Africa<br/>
+/// Capital: Libreville<br/>
 /// Languages: <see cref="Iso639.Language.French"/><br/>
-/// Currency: Franc (XAF)<br/>
-/// TopLevelDomain: .ga</para>
+/// Currency: <see cref="Iso4217.Currency.CFAFrancBEAC" >CFAFrancBEAC (XAF)</see><br/>
+/// TopLevelDomain: .ga
+/// </para>
 /// </summary>
 /// <value>id=GAB, 2code=GA, numeric=266</value>
 Gabon=854_029,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:GB">United Kingdom</a></para>
-/// <para>Capital: London<br/>
+/// <para>
+/// Located in: Northern Europe<br/>
+/// Capital: London<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Welsh"/>,<see cref="Iso639.Language.Gaelic_Scottish"/><br/>
-/// Currency: Pound (GBP)<br/>
-/// TopLevelDomain: .uk</para>
+/// Currency: <see cref="Iso4217.Currency.PoundSterling" >PoundSterling (GBP)</see><br/>
+/// TopLevelDomain: .uk
+/// </para>
 /// </summary>
 /// <value>id=GBR, 2code=GB, numeric=826</value>
 UnitedKingdom=5_081_165,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:GD">Grenada</a></para>
-/// <para>Capital: St. George's<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: St. George's<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (XCD)<br/>
-/// TopLevelDomain: .gd</para>
+/// Currency: <see cref="Iso4217.Currency.EastCaribbeanDollar" >EastCaribbeanDollar (XCD)</see><br/>
+/// TopLevelDomain: .gd
+/// </para>
 /// </summary>
 /// <value>id=GRD, 2code=GD, numeric=308</value>
 Grenada=13_442_125,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:GE">Georgia</a></para>
-/// <para>Capital: Tbilisi<br/>
+/// <para>
+/// Located in: Western Asia<br/>
+/// Capital: Tbilisi<br/>
 /// Languages: <see cref="Iso639.Language.Georgian"/>,<see cref="Iso639.Language.Russian"/>,<see cref="Iso639.Language.Armenian"/>,<see cref="Iso639.Language.Azerbaijani"/><br/>
-/// Currency: Lari (GEL)<br/>
-/// TopLevelDomain: .ge</para>
+/// Currency: <see cref="Iso4217.Currency.Lari" >Lari (GEL)</see><br/>
+/// TopLevelDomain: .ge
+/// </para>
 /// </summary>
 /// <value>id=GEO, 2code=GE, numeric=268</value>
 Georgia=17_658_125,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:GF">French Guiana</a></para>
-/// <para>Capital: Cayenne<br/>
+/// <para>
+/// Located in: South America<br/>
+/// Capital: Cayenne<br/>
 /// Languages: <see cref="Iso639.Language.French"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .gf</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .gf
+/// </para>
 /// </summary>
 /// <value>id=GUF, 2code=GF, numeric=254</value>
 FrenchGuiana=21_835_021,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:GG">Guernsey</a></para>
-/// <para>Capital: St Peter Port<br/>
+/// <para>
+/// Located in: Northern Europe<br/>
+/// Capital: St Peter Port<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Jerriais"/><br/>
-/// Currency: Pound (GBP)<br/>
-/// TopLevelDomain: .gg</para>
+/// Currency: <see cref="Iso4217.Currency.PoundSterling" >PoundSterling (GBP)</see><br/>
+/// TopLevelDomain: .gg
+/// </para>
 /// </summary>
 /// <value>id=GGY, 2code=GG, numeric=831</value>
 Guernsey=26_067_341,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:GH">Ghana</a></para>
-/// <para>Capital: Accra<br/>
+/// <para>
+/// Located in: Western Africa<br/>
+/// Capital: Accra<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Akan"/>,<see cref="Iso639.Language.Ewe"/>,<see cref="Iso639.Language.Twi"/><br/>
-/// Currency: Cedi (GHS)<br/>
-/// TopLevelDomain: .gh</para>
+/// Currency: <see cref="Iso4217.Currency.GhanaCedi" >GhanaCedi (GHS)</see><br/>
+/// TopLevelDomain: .gh
+/// </para>
 /// </summary>
 /// <value>id=GHA, 2code=GH, numeric=288</value>
 Ghana=30_212_557,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:GI">Gibraltar</a></para>
-/// <para>Capital: Gibraltar<br/>
+/// <para>
+/// Located in: Southern Europe<br/>
+/// Capital: Gibraltar<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Spanish"/>,<see cref="Iso639.Language.Italian"/>,<see cref="Iso639.Language.Portuguese"/><br/>
-/// Currency: Pound (GIP)<br/>
-/// TopLevelDomain: .gi</para>
+/// Currency: <see cref="Iso4217.Currency.GibraltarPound" >GibraltarPound (GIP)</see><br/>
+/// TopLevelDomain: .gi
+/// </para>
 /// </summary>
 /// <value>id=GIB, 2code=GI, numeric=292</value>
 Gibraltar=34_408_973,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:GL">Greenland</a></para>
-/// <para>Capital: Nuuk<br/>
+/// <para>
+/// Located in: Northern America<br/>
+/// Capital: Nuuk<br/>
 /// Languages: <see cref="Iso639.Language.Kalaallisut"/>,<see cref="Iso639.Language.Danish"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Krone (DKK)<br/>
-/// TopLevelDomain: .gl</para>
+/// Currency: <see cref="Iso4217.Currency.DanishKrone" >DanishKrone (DKK)</see><br/>
+/// TopLevelDomain: .gl
+/// </para>
 /// </summary>
 /// <value>id=GRL, 2code=GL, numeric=304</value>
 Greenland=47_012_941,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:GM">Gambia</a></para>
-/// <para>Capital: Banjul<br/>
+/// <para>
+/// Located in: Western Africa<br/>
+/// Capital: Banjul<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Mandinka"/>,<see cref="Iso639.Language.Wolof_Gambian"/>,<see cref="Iso639.Language.Wolof"/>,<see cref="Iso639.Language.Fulah"/><br/>
-/// Currency: Dalasi (GMD)<br/>
-/// TopLevelDomain: .gm</para>
+/// Currency: <see cref="Iso4217.Currency.Dalasi" >Dalasi (GMD)</see><br/>
+/// TopLevelDomain: .gm
+/// </para>
 /// </summary>
 /// <value>id=GMB, 2code=GM, numeric=270</value>
 Gambia=51_186_445,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:GN">Guinea</a></para>
-/// <para>Capital: Conakry<br/>
+/// <para>
+/// Located in: Western Africa<br/>
+/// Capital: Conakry<br/>
 /// Languages: <see cref="Iso639.Language.French"/><br/>
-/// Currency: Franc (GNF)<br/>
-/// TopLevelDomain: .gn</para>
+/// Currency: <see cref="Iso4217.Currency.GuineanFranc" >GuineanFranc (GNF)</see><br/>
+/// TopLevelDomain: .gn
+/// </para>
 /// </summary>
 /// <value>id=GIN, 2code=GN, numeric=324</value>
 Guinea=55_405_069,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:GP">Guadeloupe</a></para>
-/// <para>Capital: Basse-Terre<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: Basse-Terre<br/>
 /// Languages: <see cref="Iso639.Language.French"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .gp</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .gp
+/// </para>
 /// </summary>
 /// <value>id=GLP, 2code=GP, numeric=312</value>
 Guadeloupe=63_797_965,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:GQ">Equatorial Guinea</a></para>
-/// <para>Capital: Malabo<br/>
+/// <para>
+/// Located in: Middle Africa<br/>
+/// Capital: Malabo<br/>
 /// Languages: <see cref="Iso639.Language.Spanish"/>,<see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Portuguese"/><br/>
-/// Currency: Franc (XAF)<br/>
-/// TopLevelDomain: .gq</para>
+/// Currency: <see cref="Iso4217.Currency.CFAFrancBEAC" >CFAFrancBEAC (XAF)</see><br/>
+/// TopLevelDomain: .gq
+/// </para>
 /// </summary>
 /// <value>id=GNQ, 2code=GQ, numeric=226</value>
 EquatorialGuinea=67_994_445,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:GR">Greece</a></para>
-/// <para>Capital: Athens<br/>
+/// <para>
+/// Located in: Southern Europe<br/>
+/// Capital: Athens<br/>
 /// Languages: <see cref="Iso639.Language.Greek_Modern"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.French"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .gr</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .gr
+/// </para>
 /// </summary>
 /// <value>id=GRC, 2code=GR, numeric=300</value>
 Greece=72_160_333,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:GS">South Georgia and the South Sandwich Islands</a></para>
-/// <para>Capital: Grytviken<br/>
+/// <para>
+/// Located in: South America<br/>
+/// Capital: Grytviken<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Pound (GBP)<br/>
-/// TopLevelDomain: .gs</para>
+/// Currency: <see cref="Iso4217.Currency.PoundSterling" >PoundSterling (GBP)</see><br/>
+/// TopLevelDomain: .gs
+/// </para>
 /// </summary>
 /// <value>id=SGS, 2code=GS, numeric=239</value>
 SouthGeorgiaandtheSouthSandwichIslands=76_386_725,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:GT">Guatemala</a></para>
-/// <para>Capital: Guatemala City<br/>
+/// <para>
+/// Located in: Central America<br/>
+/// Capital: Guatemala City<br/>
 /// Languages: <see cref="Iso639.Language.Spanish"/><br/>
-/// Currency: Quetzal (GTQ)<br/>
-/// TopLevelDomain: .gt</para>
+/// Currency: <see cref="Iso4217.Currency.Quetzal" >Quetzal (GTQ)</see><br/>
+/// TopLevelDomain: .gt
+/// </para>
 /// </summary>
 /// <value>id=GTM, 2code=GT, numeric=320</value>
 Guatemala=80_569_549,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:GU">Guam</a></para>
-/// <para>Capital: Hagatna<br/>
+/// <para>
+/// Located in: Micronesia<br/>
+/// Capital: Hagatna<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Chamorro"/><br/>
-/// Currency: Dollar (USD)<br/>
-/// TopLevelDomain: .gu</para>
+/// Currency: <see cref="Iso4217.Currency.USDollar" >USDollar (USD)</see><br/>
+/// TopLevelDomain: .gu
+/// </para>
 /// </summary>
 /// <value>id=GUM, 2code=GU, numeric=316</value>
 Guam=84_763_917,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:GW">Guinea-Bissau</a></para>
-/// <para>Capital: Bissau<br/>
+/// <para>
+/// Located in: Western Africa<br/>
+/// Capital: Bissau<br/>
 /// Languages: <see cref="Iso639.Language.Portuguese"/>,<see cref="Iso639.Language.Crioulo_Upper_Guinea"/><br/>
-/// Currency: Franc (XOF)<br/>
-/// TopLevelDomain: .gw</para>
+/// Currency: <see cref="Iso4217.Currency.CFAFrancBCEAO" >CFAFrancBCEAO (XOF)</see><br/>
+/// TopLevelDomain: .gw
+/// </para>
 /// </summary>
 /// <value>id=GNB, 2code=GW, numeric=624</value>
 GuineaBissau=93_129_549,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:GY">Guyana</a></para>
-/// <para>Capital: Georgetown<br/>
+/// <para>
+/// Located in: South America<br/>
+/// Capital: Georgetown<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (GYD)<br/>
-/// TopLevelDomain: .gy</para>
+/// Currency: <see cref="Iso4217.Currency.GuyanaDollar" >GuyanaDollar (GYD)</see><br/>
+/// TopLevelDomain: .gy
+/// </para>
 /// </summary>
 /// <value>id=GUY, 2code=GY, numeric=328</value>
 Guyana=101_565_709,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:HK">Hong Kong</a></para>
-/// <para>Capital: Hong Kong<br/>
+/// <para>
+/// Located in: Eastern Asia<br/>
+/// Capital: Hong Kong<br/>
 /// Languages: <see cref="Iso639.Language.Chinese"/>,<see cref="Iso639.Language.Chinese_Yue"/>,<see cref="Iso639.Language.Chinese"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (HKD)<br/>
-/// TopLevelDomain: .hk</para>
+/// Currency: <see cref="Iso4217.Currency.HongKongDollar" >HongKongDollar (HKD)</see><br/>
+/// TopLevelDomain: .hk
+/// </para>
 /// </summary>
 /// <value>id=HKG, 2code=HK, numeric=344</value>
 HongKong=42_939_023,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:HM">Heard Island and McDonald Islands</a></para>
-/// <para>Capital: <br/>
-/// Languages: <br/>
-/// Currency: Dollar (AUD)<br/>
-/// TopLevelDomain: .hm</para>
+/// <para>
+/// Located in: Australia and New Zealand<br/>
+/// Currency: <see cref="Iso4217.Currency.AustralianDollar" >AustralianDollar (AUD)</see><br/>
+/// TopLevelDomain: .hm
+/// </para>
 /// </summary>
 /// <value>id=HMD, 2code=HM, numeric=334</value>
 HeardIslandandMcDonaldIslands=51_321_615,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:HN">Honduras</a></para>
-/// <para>Capital: Tegucigalpa<br/>
+/// <para>
+/// Located in: Central America<br/>
+/// Capital: Tegucigalpa<br/>
 /// Languages: <see cref="Iso639.Language.Spanish"/>,<see cref="Iso639.Language.Garifuna"/>,<see cref="Iso639.Language.Miskito"/><br/>
-/// Currency: Lempira (HNL)<br/>
-/// TopLevelDomain: .hn</para>
+/// Currency: <see cref="Iso4217.Currency.Lempira" >Lempira (HNL)</see><br/>
+/// TopLevelDomain: .hn
+/// </para>
 /// </summary>
 /// <value>id=HND, 2code=HN, numeric=340</value>
 Honduras=55_515_983,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:HR">Croatia</a></para>
-/// <para>Capital: Zagreb<br/>
+/// <para>
+/// Located in: Southern Europe<br/>
+/// Capital: Zagreb<br/>
 /// Languages: <see cref="Iso639.Language.Croatian"/>,<see cref="Iso639.Language.Serbian"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .hr</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .hr
+/// </para>
 /// </summary>
 /// <value>id=HRV, 2code=HR, numeric=191</value>
 Croatia=72_330_319,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:HT">Haiti</a></para>
-/// <para>Capital: Port-au-Prince<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: Port-au-Prince<br/>
 /// Languages: <see cref="Iso639.Language.Haitian"/>,<see cref="Iso639.Language.French"/><br/>
-/// Currency: Gourde (HTG)<br/>
-/// TopLevelDomain: .ht</para>
+/// Currency: <see cref="Iso4217.Currency.Gourde" >Gourde (HTG)</see><br/>
+/// TopLevelDomain: .ht
+/// </para>
 /// </summary>
 /// <value>id=HTI, 2code=HT, numeric=332</value>
 Haiti=80_692_431,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:HU">Hungary</a></para>
-/// <para>Capital: Budapest<br/>
+/// <para>
+/// Located in: Eastern Europe<br/>
+/// Capital: Budapest<br/>
 /// Languages: <see cref="Iso639.Language.Hungarian"/><br/>
-/// Currency: Forint (HUF)<br/>
-/// TopLevelDomain: .hu</para>
+/// Currency: <see cref="Iso4217.Currency.Forint" >Forint (HUF)</see><br/>
+/// TopLevelDomain: .hu
+/// </para>
 /// </summary>
 /// <value>id=HUN, 2code=HU, numeric=348</value>
 Hungary=84_897_039,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:ID">Indonesia</a></para>
-/// <para>Capital: Jakarta<br/>
+/// <para>
+/// Located in: South-eastern Asia<br/>
+/// Capital: Jakarta<br/>
 /// Languages: <see cref="Iso639.Language.Indonesian"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Dutch"/>,<see cref="Iso639.Language.Javanese"/><br/>
-/// Currency: Rupiah (IDR)<br/>
-/// TopLevelDomain: .id</para>
+/// Currency: <see cref="Iso4217.Currency.Rupiah" >Rupiah (IDR)</see><br/>
+/// TopLevelDomain: .id
+/// </para>
 /// </summary>
 /// <value>id=IDN, 2code=ID, numeric=360</value>
 Indonesia=13_723_857,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:IE">Ireland</a></para>
-/// <para>Capital: Dublin<br/>
+/// <para>
+/// Located in: Northern Europe<br/>
+/// Capital: Dublin<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Irish"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .ie</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .ie
+/// </para>
 /// </summary>
 /// <value>id=IRL, 2code=IE, numeric=372</value>
 Ireland=17_914_961,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:IL">Israel</a></para>
-/// <para>Capital: Jerusalem<br/>
+/// <para>
+/// Located in: Western Asia<br/>
+/// Capital: Jerusalem<br/>
 /// Languages: <see cref="Iso639.Language.Hebrew"/>,<see cref="Iso639.Language.Arabic"/>,<see cref="Iso639.Language.English"/>,<br/>
-/// Currency: Shekel (ILS)<br/>
-/// TopLevelDomain: .il</para>
+/// Currency: <see cref="Iso4217.Currency.NewIsraeliSheqel" >NewIsraeliSheqel (ILS)</see><br/>
+/// TopLevelDomain: .il
+/// </para>
 /// </summary>
 /// <value>id=ISR, 2code=IL, numeric=376</value>
 Israel=47_287_441,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:IM">Isle of Man</a></para>
-/// <para>Capital: Douglas<br/>
+/// <para>
+/// Located in: Northern Europe<br/>
+/// Capital: Douglas<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Manx"/><br/>
-/// Currency: Pound (GBP)<br/>
-/// TopLevelDomain: .im</para>
+/// Currency: <see cref="Iso4217.Currency.PoundSterling" >PoundSterling (GBP)</see><br/>
+/// TopLevelDomain: .im
+/// </para>
 /// </summary>
 /// <value>id=IMN, 2code=IM, numeric=833</value>
 IsleofMan=51_473_169,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:IN">India</a></para>
-/// <para>Capital: New Delhi<br/>
+/// <para>
+/// Located in: Southern Asia<br/>
+/// Capital: New Delhi<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Hindi"/>,<see cref="Iso639.Language.Bengali"/>,<see cref="Iso639.Language.Telugu"/>,<see cref="Iso639.Language.Marathi"/>,<see cref="Iso639.Language.Tamil"/>,<see cref="Iso639.Language.Urdu"/>,<see cref="Iso639.Language.Gujarati"/>,<see cref="Iso639.Language.Kannada"/>,<see cref="Iso639.Language.Malayalam"/>,<see cref="Iso639.Language.Oriya_macrolanguage"/>,<see cref="Iso639.Language.Panjabi"/>,<see cref="Iso639.Language.Assamese"/>,bh,<see cref="Iso639.Language.Santali"/>,<see cref="Iso639.Language.Kashmiri"/>,<see cref="Iso639.Language.Nepali_macrolanguage"/>,<see cref="Iso639.Language.Sindhi"/>,<see cref="Iso639.Language.Konkani_macrolanguage"/>,<see cref="Iso639.Language.Dogri_macrolanguage"/>,<see cref="Iso639.Language.Manipuri"/>,sit,<see cref="Iso639.Language.Sanskrit"/>,<see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Lushai"/>,inc<br/>
-/// Currency: Rupee (INR)<br/>
-/// TopLevelDomain: .in</para>
+/// Currency: <see cref="Iso4217.Currency.IndianRupee" >IndianRupee (INR)</see><br/>
+/// TopLevelDomain: .in
+/// </para>
 /// </summary>
 /// <value>id=IND, 2code=IN, numeric=356</value>
 India=55_647_057,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:IO">British Indian Ocean Territory</a></para>
-/// <para>Capital: Diego Garcia<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Diego Garcia<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (USD)<br/>
-/// TopLevelDomain: .io</para>
+/// Currency: <see cref="Iso4217.Currency.USDollar" >USDollar (USD)</see><br/>
+/// TopLevelDomain: .io
+/// </para>
 /// </summary>
 /// <value>id=IOT, 2code=IO, numeric=086</value>
 BritishIndianOceanTerritory=59_874_193,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:IQ">Iraq</a></para>
-/// <para>Capital: Baghdad<br/>
+/// <para>
+/// Located in: Western Asia<br/>
+/// Capital: Baghdad<br/>
 /// Languages: <see cref="Iso639.Language.Arabic"/>,<see cref="Iso639.Language.Kurdish"/>,<see cref="Iso639.Language.Armenian"/><br/>
-/// Currency: Dinar (IQD)<br/>
-/// TopLevelDomain: .iq</para>
+/// Currency: <see cref="Iso4217.Currency.IraqiDinar" >IraqiDinar (IQD)</see><br/>
+/// TopLevelDomain: .iq
+/// </para>
 /// </summary>
 /// <value>id=IRQ, 2code=IQ, numeric=368</value>
 Iraq=68_256_849,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:IR">Iran</a></para>
-/// <para>Capital: Tehran<br/>
+/// <para>
+/// Located in: Southern Asia<br/>
+/// Capital: Tehran<br/>
 /// Languages: <see cref="Iso639.Language.Persian"/>,<see cref="Iso639.Language.Kurdish"/><br/>
-/// Currency: Rial (IRR)<br/>
-/// TopLevelDomain: .ir</para>
+/// Currency: <see cref="Iso4217.Currency.IranianRial" >IranianRial (IRR)</see><br/>
+/// TopLevelDomain: .ir
+/// </para>
 /// </summary>
 /// <value>id=IRN, 2code=IR, numeric=364</value>
 Iran=72_445_009,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:IS">Iceland</a></para>
-/// <para>Capital: Reykjavik<br/>
+/// <para>
+/// Located in: Northern Europe<br/>
+/// Capital: Reykjavik<br/>
 /// Languages: <see cref="Iso639.Language.Icelandic"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.German"/>,<see cref="Iso639.Language.Danish"/>,<see cref="Iso639.Language.Swedish"/>,<see cref="Iso639.Language.Norwegian"/><br/>
-/// Currency: Krona (ISK)<br/>
-/// TopLevelDomain: .is</para>
+/// Currency: <see cref="Iso4217.Currency.IcelandKrona" >IcelandKrona (ISK)</see><br/>
+/// TopLevelDomain: .is
+/// </para>
 /// </summary>
 /// <value>id=ISL, 2code=IS, numeric=352</value>
 Iceland=76_635_281,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:IT">Italy</a></para>
-/// <para>Capital: Rome<br/>
+/// <para>
+/// Located in: Southern Europe<br/>
+/// Capital: Rome<br/>
 /// Languages: <see cref="Iso639.Language.Italian"/>,<see cref="Iso639.Language.German"/>,<see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Sardinian"/>,<see cref="Iso639.Language.Catalan"/>,<see cref="Iso639.Language.Corsican"/>,<see cref="Iso639.Language.Slovenian"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .it</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .it
+/// </para>
 /// </summary>
 /// <value>id=ITA, 2code=IT, numeric=380</value>
 Italy=80_807_121,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:JE">Jersey</a></para>
-/// <para>Capital: Saint Helier<br/>
+/// <para>
+/// Located in: Northern Europe<br/>
+/// Capital: Saint Helier<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Jerriais"/><br/>
-/// Currency: Pound (GBP)<br/>
-/// TopLevelDomain: .je</para>
+/// Currency: <see cref="Iso4217.Currency.PoundSterling" >PoundSterling (GBP)</see><br/>
+/// TopLevelDomain: .je
+/// </para>
 /// </summary>
 /// <value>id=JEY, 2code=JE, numeric=832</value>
 Jersey=18_071_827,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:JM">Jamaica</a></para>
-/// <para>Capital: Kingston<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: Kingston<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (JMD)<br/>
-/// TopLevelDomain: .jm</para>
+/// Currency: <see cref="Iso4217.Currency.JamaicanDollar" >JamaicanDollar (JMD)</see><br/>
+/// TopLevelDomain: .jm
+/// </para>
 /// </summary>
 /// <value>id=JAM, 2code=JM, numeric=388</value>
 Jamaica=51_601_427,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:JO">Jordan</a></para>
-/// <para>Capital: Amman<br/>
+/// <para>
+/// Located in: Western Asia<br/>
+/// Capital: Amman<br/>
 /// Languages: <see cref="Iso639.Language.Arabic"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Dinar (JOD)<br/>
-/// TopLevelDomain: .jo</para>
+/// Currency: <see cref="Iso4217.Currency.JordanianDinar" >JordanianDinar (JOD)</see><br/>
+/// TopLevelDomain: .jo
+/// </para>
 /// </summary>
 /// <value>id=JOR, 2code=JO, numeric=400</value>
 Jordan=60_001_171,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:JP">Japan</a></para>
-/// <para>Capital: Tokyo<br/>
+/// <para>
+/// Located in: Eastern Asia<br/>
+/// Capital: Tokyo<br/>
 /// Languages: <see cref="Iso639.Language.Japanese"/><br/>
-/// Currency: Yen (JPY)<br/>
-/// TopLevelDomain: .jp</para>
+/// Currency: <see cref="Iso4217.Currency.Yen" >Yen (JPY)</see><br/>
+/// TopLevelDomain: .jp
+/// </para>
 /// </summary>
 /// <value>id=JPN, 2code=JP, numeric=392</value>
 Japan=64_187_347,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:KE">Kenya</a></para>
-/// <para>Capital: Nairobi<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Nairobi<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Swahili_macrolanguage"/><br/>
-/// Currency: Shilling (KES)<br/>
-/// TopLevelDomain: .ke</para>
+/// Currency: <see cref="Iso4217.Currency.KenyanShilling" >KenyanShilling (KES)</see><br/>
+/// TopLevelDomain: .ke
+/// </para>
 /// </summary>
 /// <value>id=KEN, 2code=KE, numeric=404</value>
 Kenya=18_180_373,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:KG">Kyrgyzstan</a></para>
-/// <para>Capital: Bishkek<br/>
+/// <para>
+/// Located in: Central Asia<br/>
+/// Capital: Bishkek<br/>
 /// Languages: <see cref="Iso639.Language.Kirghiz"/>,<see cref="Iso639.Language.Uzbek"/>,<see cref="Iso639.Language.Russian"/><br/>
-/// Currency: Som (KGS)<br/>
-/// TopLevelDomain: .kg</para>
+/// Currency: <see cref="Iso4217.Currency.Som" >Som (KGS)</see><br/>
+/// TopLevelDomain: .kg
+/// </para>
 /// </summary>
 /// <value>id=KGZ, 2code=KG, numeric=417</value>
 Kyrgyzstan=26_593_685,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:KH">Cambodia</a></para>
-/// <para>Capital: Phnom Penh<br/>
+/// <para>
+/// Located in: South-eastern Asia<br/>
+/// Capital: Phnom Penh<br/>
 /// Languages: <see cref="Iso639.Language.Khmer"/>,<see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Riels (KHR)<br/>
-/// TopLevelDomain: .kh</para>
+/// Currency: <see cref="Iso4217.Currency.Riel" >Riel (KHR)</see><br/>
+/// TopLevelDomain: .kh
+/// </para>
 /// </summary>
 /// <value>id=KHM, 2code=KH, numeric=116</value>
 Cambodia=30_761_429,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:KI">Kiribati</a></para>
-/// <para>Capital: Tarawa<br/>
+/// <para>
+/// Located in: Micronesia<br/>
+/// Capital: Tarawa<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Gilbertese"/><br/>
-/// Currency: Dollar (AUD)<br/>
-/// TopLevelDomain: .ki</para>
+/// Currency: <see cref="Iso4217.Currency.AustralianDollar" >AustralianDollar (AUD)</see><br/>
+/// TopLevelDomain: .ki
+/// </para>
 /// </summary>
 /// <value>id=KIR, 2code=KI, numeric=296</value>
 Kiribati=34_966_037,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:KM">Comoros</a></para>
-/// <para>Capital: Moroni<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Moroni<br/>
 /// Languages: <see cref="Iso639.Language.Arabic"/>,<see cref="Iso639.Language.French"/><br/>
-/// Currency: Franc (KMF)<br/>
-/// TopLevelDomain: .km</para>
+/// Currency: <see cref="Iso4217.Currency.ComorianFranc" >ComorianFranc (KMF)</see><br/>
+/// TopLevelDomain: .km
+/// </para>
 /// </summary>
 /// <value>id=COM, 2code=KM, numeric=174</value>
 Comoros=51_733_381,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:KN">Saint Kitts and Nevis</a></para>
-/// <para>Capital: Basseterre<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: Basseterre<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (XCD)<br/>
-/// TopLevelDomain: .kn</para>
+/// Currency: <see cref="Iso4217.Currency.EastCaribbeanDollar" >EastCaribbeanDollar (XCD)</see><br/>
+/// TopLevelDomain: .kn
+/// </para>
 /// </summary>
 /// <value>id=KNA, 2code=KN, numeric=659</value>
 SaintKittsandNevis=55_903_061,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:KP">North Korea</a></para>
-/// <para>Capital: Pyongyang<br/>
+/// <para>
+/// Located in: Eastern Asia<br/>
+/// Capital: Pyongyang<br/>
 /// Languages: <see cref="Iso639.Language.Korean"/><br/>
-/// Currency: Won (KPW)<br/>
-/// TopLevelDomain: .kp</para>
+/// Currency: <see cref="Iso4217.Currency.NorthKoreanWon" >NorthKoreanWon (KPW)</see><br/>
+/// TopLevelDomain: .kp
+/// </para>
 /// </summary>
 /// <value>id=PRK, 2code=KP, numeric=408</value>
 NorthKorea=64_312_415,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:KR">South Korea</a></para>
-/// <para>Capital: Seoul<br/>
+/// <para>
+/// Located in: Eastern Asia<br/>
+/// Capital: Seoul<br/>
 /// Languages: <see cref="Iso639.Language.Korean"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Won (KRW)<br/>
-/// TopLevelDomain: .kr</para>
+/// Currency: <see cref="Iso4217.Currency.Won" >Won (KRW)</see><br/>
+/// TopLevelDomain: .kr
+/// </para>
 /// </summary>
 /// <value>id=KOR, 2code=KR, numeric=410</value>
 SouthKorea=72_715_157,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:XK">Kosovo</a></para>
-/// <para>Capital: Pristina<br/>
+/// <para>
+/// Capital: Pristina<br/>
 /// Languages: <see cref="Iso639.Language.Albanian"/>,<see cref="Iso639.Language.Serbian"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: </para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: 
+/// </para>
 /// </summary>
 /// <value>id=XKX, 2code=XK, numeric=0</value>
 Kosovo=45_071_023,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:KW">Kuwait</a></para>
-/// <para>Capital: Kuwait City<br/>
+/// <para>
+/// Located in: Western Asia<br/>
+/// Capital: Kuwait City<br/>
 /// Languages: <see cref="Iso639.Language.Arabic"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Dinar (KWD)<br/>
-/// TopLevelDomain: .kw</para>
+/// Currency: <see cref="Iso4217.Currency.KuwaitiDinar" >KuwaitiDinar (KWD)</see><br/>
+/// TopLevelDomain: .kw
+/// </para>
 /// </summary>
 /// <value>id=KWT, 2code=KW, numeric=414</value>
 Kuwait=93_691_285,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:KY">Cayman Islands</a></para>
-/// <para>Capital: George Town<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: George Town<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (KYD)<br/>
-/// TopLevelDomain: .ky</para>
+/// Currency: <see cref="Iso4217.Currency.CaymanIslandsDollar" >CaymanIslandsDollar (KYD)</see><br/>
+/// TopLevelDomain: .ky
+/// </para>
 /// </summary>
 /// <value>id=CYM, 2code=KY, numeric=136</value>
 CaymanIslands=102_065_669,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:KZ">Kazakhstan</a></para>
-/// <para>Capital: Nur-Sultan<br/>
+/// <para>
+/// Located in: Central Asia<br/>
+/// Capital: Nur-Sultan<br/>
 /// Languages: <see cref="Iso639.Language.Kazakh"/>,<see cref="Iso639.Language.Russian"/><br/>
-/// Currency: Tenge (KZT)<br/>
-/// TopLevelDomain: .kz</para>
+/// Currency: <see cref="Iso4217.Currency.Tenge" >Tenge (KZT)</see><br/>
+/// TopLevelDomain: .kz
+/// </para>
 /// </summary>
 /// <value>id=KAZ, 2code=KZ, numeric=398</value>
 Kazakhstan=106_285_077,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:LA">Laos</a></para>
-/// <para>Capital: Vientiane<br/>
+/// <para>
+/// Located in: South-eastern Asia<br/>
+/// Capital: Vientiane<br/>
 /// Languages: <see cref="Iso639.Language.Lao"/>,<see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Kip (LAK)<br/>
-/// TopLevelDomain: .la</para>
+/// Currency: <see cref="Iso4217.Currency.LaoKip" >LaoKip (LAK)</see><br/>
+/// TopLevelDomain: .la
+/// </para>
 /// </summary>
 /// <value>id=LAO, 2code=LA, numeric=418</value>
 Laos=1_536_023,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:LB">Lebanon</a></para>
-/// <para>Capital: Beirut<br/>
+/// <para>
+/// Located in: Western Asia<br/>
+/// Capital: Beirut<br/>
 /// Languages: <see cref="Iso639.Language.Arabic"/>,<see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Armenian"/><br/>
-/// Currency: Pound (LBP)<br/>
-/// TopLevelDomain: .lb</para>
+/// Currency: <see cref="Iso4217.Currency.LebanesePound" >LebanesePound (LBP)</see><br/>
+/// TopLevelDomain: .lb
+/// </para>
 /// </summary>
 /// <value>id=LBN, 2code=LB, numeric=422</value>
 Lebanon=5_728_343,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:LC">Saint Lucia</a></para>
-/// <para>Capital: Castries<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: Castries<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (XCD)<br/>
-/// TopLevelDomain: .lc</para>
+/// Currency: <see cref="Iso4217.Currency.EastCaribbeanDollar" >EastCaribbeanDollar (XCD)</see><br/>
+/// TopLevelDomain: .lc
+/// </para>
 /// </summary>
 /// <value>id=LCA, 2code=LC, numeric=662</value>
 SaintLucia=9_896_087,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:LI">Liechtenstein</a></para>
-/// <para>Capital: Vaduz<br/>
+/// <para>
+/// Located in: Western Europe<br/>
+/// Capital: Vaduz<br/>
 /// Languages: <see cref="Iso639.Language.German"/><br/>
-/// Currency: Franc (CHF)<br/>
-/// TopLevelDomain: .li</para>
+/// Currency: <see cref="Iso4217.Currency.SwissFranc" >SwissFranc (CHF)</see><br/>
+/// TopLevelDomain: .li
+/// </para>
 /// </summary>
 /// <value>id=LIE, 2code=LI, numeric=438</value>
 Liechtenstein=35_070_487,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:LK">Sri Lanka</a></para>
-/// <para>Capital: Colombo<br/>
+/// <para>
+/// Located in: Southern Asia<br/>
+/// Capital: Colombo<br/>
 /// Languages: <see cref="Iso639.Language.Sinhala"/>,<see cref="Iso639.Language.Tamil"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Rupee (LKR)<br/>
-/// TopLevelDomain: .lk</para>
+/// Currency: <see cref="Iso4217.Currency.SriLankaRupee" >SriLankaRupee (LKR)</see><br/>
+/// TopLevelDomain: .lk
+/// </para>
 /// </summary>
 /// <value>id=LKA, 2code=LK, numeric=144</value>
 SriLanka=43_451_031,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:LR">Liberia</a></para>
-/// <para>Capital: Monrovia<br/>
+/// <para>
+/// Located in: Western Africa<br/>
+/// Capital: Monrovia<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (LRD)<br/>
-/// TopLevelDomain: .lr</para>
+/// Currency: <see cref="Iso4217.Currency.LiberianDollar" >LiberianDollar (LRD)</see><br/>
+/// TopLevelDomain: .lr
+/// </para>
 /// </summary>
 /// <value>id=LBR, 2code=LR, numeric=430</value>
 Liberia=72_845_399,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:LS">Lesotho</a></para>
-/// <para>Capital: Maseru<br/>
+/// <para>
+/// Located in: Southern Africa<br/>
+/// Capital: Maseru<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Sotho_Southern"/>,<see cref="Iso639.Language.Zulu"/>,<see cref="Iso639.Language.Xhosa"/><br/>
-/// Currency: Loti (LSL)<br/>
-/// TopLevelDomain: .ls</para>
+/// Currency: <see cref="Iso4217.Currency.Loti" >Loti (LSL)</see><br/>
+/// TopLevelDomain: .ls
+/// </para>
 /// </summary>
 /// <value>id=LSO, 2code=LS, numeric=426</value>
 Lesotho=77_034_647,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:LT">Lithuania</a></para>
-/// <para>Capital: Vilnius<br/>
+/// <para>
+/// Located in: Northern Europe<br/>
+/// Capital: Vilnius<br/>
 /// Languages: <see cref="Iso639.Language.Lithuanian"/>,<see cref="Iso639.Language.Russian"/>,<see cref="Iso639.Language.Polish"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .lt</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .lt
+/// </para>
 /// </summary>
 /// <value>id=LTU, 2code=LT, numeric=440</value>
 Lithuania=81_241_303,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:LU">Luxembourg</a></para>
-/// <para>Capital: Luxembourg<br/>
+/// <para>
+/// Located in: Western Europe<br/>
+/// Capital: Luxembourg<br/>
 /// Languages: <see cref="Iso639.Language.Luxembourgish"/>,<see cref="Iso639.Language.German"/>,<see cref="Iso639.Language.French"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .lu</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .lu
+/// </para>
 /// </summary>
 /// <value>id=LUX, 2code=LU, numeric=442</value>
 Luxembourg=85_441_815,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:LV">Latvia</a></para>
-/// <para>Capital: Riga<br/>
+/// <para>
+/// Located in: Northern Europe<br/>
+/// Capital: Riga<br/>
 /// Languages: <see cref="Iso639.Language.Latvian"/>,<see cref="Iso639.Language.Russian"/>,<see cref="Iso639.Language.Lithuanian"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .lv</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .lv
+/// </para>
 /// </summary>
 /// <value>id=LVA, 2code=LV, numeric=428</value>
 Latvia=89_589_079,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:LY">Libya</a></para>
-/// <para>Capital: Tripoli<br/>
+/// <para>
+/// Located in: Northern Africa<br/>
+/// Capital: Tripoli<br/>
 /// Languages: <see cref="Iso639.Language.Arabic"/>,<see cref="Iso639.Language.Italian"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Dinar (LYD)<br/>
-/// TopLevelDomain: .ly</para>
+/// Currency: <see cref="Iso4217.Currency.LibyanDinar" >LibyanDinar (LYD)</see><br/>
+/// TopLevelDomain: .ly
+/// </para>
 /// </summary>
 /// <value>id=LBY, 2code=LY, numeric=434</value>
 Libya=102_219_863,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:MA">Morocco</a></para>
-/// <para>Capital: Rabat<br/>
+/// <para>
+/// Located in: Northern Africa<br/>
+/// Capital: Rabat<br/>
 /// Languages: <see cref="Iso639.Language.Arabic"/>,ber,<see cref="Iso639.Language.French"/><br/>
-/// Currency: Dirham (MAD)<br/>
-/// TopLevelDomain: .ma</para>
+/// Currency: <see cref="Iso4217.Currency.MoroccanDirham" >MoroccanDirham (MAD)</see><br/>
+/// TopLevelDomain: .ma
+/// </para>
 /// </summary>
 /// <value>id=MAR, 2code=MA, numeric=504</value>
 Morocco=1_673_241,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:MC">Monaco</a></para>
-/// <para>Capital: Monaco<br/>
+/// <para>
+/// Located in: Western Europe<br/>
+/// Capital: Monaco<br/>
 /// Languages: <see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Italian"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .mc</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .mc
+/// </para>
 /// </summary>
 /// <value>id=MCO, 2code=MC, numeric=492</value>
 Monaco=10_055_833,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:MD">Moldova</a></para>
-/// <para>Capital: Chisinau<br/>
+/// <para>
+/// Located in: Eastern Europe<br/>
+/// Capital: Chisinau<br/>
 /// Languages: <see cref="Iso639.Language.Romanian"/>,<see cref="Iso639.Language.Russian"/>,<see cref="Iso639.Language.Gagauz"/>,<see cref="Iso639.Language.Turkish"/><br/>
-/// Currency: Leu (MDL)<br/>
-/// TopLevelDomain: .md</para>
+/// Currency: <see cref="Iso4217.Currency.MoldovanLeu" >MoldovanLeu (MDL)</see><br/>
+/// TopLevelDomain: .md
+/// </para>
 /// </summary>
 /// <value>id=MDA, 2code=MD, numeric=498</value>
 Moldova=14_221_529,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:ME">Montenegro</a></para>
-/// <para>Capital: Podgorica<br/>
+/// <para>
+/// Located in: Southern Europe<br/>
+/// Capital: Podgorica<br/>
 /// Languages: <see cref="Iso639.Language.Serbian"/>,<see cref="Iso639.Language.Hungarian"/>,<see cref="Iso639.Language.Bosnian"/>,<see cref="Iso639.Language.Albanian"/>,<see cref="Iso639.Language.Croatian"/>,<see cref="Iso639.Language.Romany"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .me</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .me
+/// </para>
 /// </summary>
 /// <value>id=MNE, 2code=ME, numeric=499</value>
 Montenegro=18_424_665,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:MF">Saint Martin</a></para>
-/// <para>Capital: Marigot<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: Marigot<br/>
 /// Languages: <see cref="Iso639.Language.French"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .gp</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .gp
+/// </para>
 /// </summary>
 /// <value>id=MAF, 2code=MF, numeric=663</value>
 SaintMartin=22_620_185,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:MG">Madagascar</a></para>
-/// <para>Capital: Antananarivo<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Antananarivo<br/>
 /// Languages: <see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Malagasy"/><br/>
-/// Currency: Ariary (MGA)<br/>
-/// TopLevelDomain: .mg</para>
+/// Currency: <see cref="Iso4217.Currency.MalagasyAriary" >MalagasyAriary (MGA)</see><br/>
+/// TopLevelDomain: .mg
+/// </para>
 /// </summary>
 /// <value>id=MDG, 2code=MG, numeric=450</value>
 Madagascar=26_816_729,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:MH">Marshall Islands</a></para>
-/// <para>Capital: Majuro<br/>
+/// <para>
+/// Located in: Micronesia<br/>
+/// Capital: Majuro<br/>
 /// Languages: <see cref="Iso639.Language.Marshallese"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (USD)<br/>
-/// TopLevelDomain: .mh</para>
+/// Currency: <see cref="Iso4217.Currency.USDollar" >USDollar (USD)</see><br/>
+/// TopLevelDomain: .mh
+/// </para>
 /// </summary>
 /// <value>id=MHL, 2code=MH, numeric=584</value>
 MarshallIslands=31_021_529,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:MK">North Macedonia</a></para>
-/// <para>Capital: Skopje<br/>
+/// <para>
+/// Located in: Southern Europe<br/>
+/// Capital: Skopje<br/>
 /// Languages: <see cref="Iso639.Language.Macedonian"/>,<see cref="Iso639.Language.Albanian"/>,<see cref="Iso639.Language.Turkish"/>,<see cref="Iso639.Language.Roma"/>,<see cref="Iso639.Language.Serbian"/><br/>
-/// Currency: Denar (MKD)<br/>
-/// TopLevelDomain: .mk</para>
+/// Currency: <see cref="Iso4217.Currency.Denar" >Denar (MKD)</see><br/>
+/// TopLevelDomain: .mk
+/// </para>
 /// </summary>
 /// <value>id=MKD, 2code=MK, numeric=807</value>
 NorthMacedonia=43_588_249,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:ML">Mali</a></para>
-/// <para>Capital: Bamako<br/>
+/// <para>
+/// Located in: Western Africa<br/>
+/// Capital: Bamako<br/>
 /// Languages: <see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Bambara"/><br/>
-/// Currency: Franc (XOF)<br/>
-/// TopLevelDomain: .ml</para>
+/// Currency: <see cref="Iso4217.Currency.CFAFrancBCEAO" >CFAFrancBCEAO (XOF)</see><br/>
+/// TopLevelDomain: .ml
+/// </para>
 /// </summary>
 /// <value>id=MLI, 2code=ML, numeric=466</value>
 Mali=47_792_857,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:MM">Myanmar</a></para>
-/// <para>Capital: Nay Pyi Taw<br/>
+/// <para>
+/// Located in: South-eastern Asia<br/>
+/// Capital: Nay Pyi Taw<br/>
 /// Languages: <see cref="Iso639.Language.Burmese"/><br/>
-/// Currency: Kyat (MMK)<br/>
-/// TopLevelDomain: .mm</para>
+/// Currency: <see cref="Iso4217.Currency.Kyat" >Kyat (MMK)</see><br/>
+/// TopLevelDomain: .mm
+/// </para>
 /// </summary>
 /// <value>id=MMR, 2code=MM, numeric=104</value>
 Myanmar=52_005_657,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:MN">Mongolia</a></para>
-/// <para>Capital: Ulaanbaatar<br/>
+/// <para>
+/// Located in: Eastern Asia<br/>
+/// Capital: Ulaanbaatar<br/>
 /// Languages: <see cref="Iso639.Language.Mongolian"/>,<see cref="Iso639.Language.Russian"/><br/>
-/// Currency: Tugrik (MNT)<br/>
-/// TopLevelDomain: .mn</para>
+/// Currency: <see cref="Iso4217.Currency.Tugrik" >Tugrik (MNT)</see><br/>
+/// TopLevelDomain: .mn
+/// </para>
 /// </summary>
 /// <value>id=MNG, 2code=MN, numeric=496</value>
 Mongolia=56_177_497,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:MO">Macao</a></para>
-/// <para>Capital: Macao<br/>
+/// <para>
+/// Located in: Eastern Asia<br/>
+/// Capital: Macao<br/>
 /// Languages: <see cref="Iso639.Language.Chinese"/>,<see cref="Iso639.Language.Chinese"/>,<see cref="Iso639.Language.Portuguese"/><br/>
-/// Currency: Pataca (MOP)<br/>
-/// TopLevelDomain: .mo</para>
+/// Currency: <see cref="Iso4217.Currency.Pataca" >Pataca (MOP)</see><br/>
+/// TopLevelDomain: .mo
+/// </para>
 /// </summary>
 /// <value>id=MAC, 2code=MO, numeric=446</value>
 Macao=60_362_777,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:MP">Northern Mariana Islands</a></para>
-/// <para>Capital: Saipan<br/>
+/// <para>
+/// Located in: Micronesia<br/>
+/// Capital: Saipan<br/>
 /// Languages: <see cref="Iso639.Language.Filipino"/>,<see cref="Iso639.Language.Tagalog"/>,<see cref="Iso639.Language.Chinese"/>,<see cref="Iso639.Language.Chamorro"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (USD)<br/>
-/// TopLevelDomain: .mp</para>
+/// Currency: <see cref="Iso4217.Currency.USDollar" >USDollar (USD)</see><br/>
+/// TopLevelDomain: .mp
+/// </para>
 /// </summary>
 /// <value>id=MNP, 2code=MP, numeric=580</value>
 NorthernMarianaIslands=64_584_537,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:MQ">Martinique</a></para>
-/// <para>Capital: Fort-de-France<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: Fort-de-France<br/>
 /// Languages: <see cref="Iso639.Language.French"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .mq</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .mq
+/// </para>
 /// </summary>
 /// <value>id=MTQ, 2code=MQ, numeric=474</value>
 Martinique=68_781_273,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:MR">Mauritania</a></para>
-/// <para>Capital: Nouakchott<br/>
+/// <para>
+/// Located in: Western Africa<br/>
+/// Capital: Nouakchott<br/>
 /// Languages: <see cref="Iso639.Language.Arabic"/>,<see cref="Iso639.Language.Pulaar"/>,<see cref="Iso639.Language.Soninke"/>,<see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Hassaniyya"/>,<see cref="Iso639.Language.Wolof"/><br/>
-/// Currency: Ouguiya (MRU)<br/>
-/// TopLevelDomain: .mr</para>
+/// Currency: <see cref="Iso4217.Currency.Ouguiya" >Ouguiya (MRU)</see><br/>
+/// TopLevelDomain: .mr
+/// </para>
 /// </summary>
 /// <value>id=MRT, 2code=MR, numeric=478</value>
 Mauritania=72_981_593,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:MS">Montserrat</a></para>
-/// <para>Capital: Plymouth<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: Plymouth<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (XCD)<br/>
-/// TopLevelDomain: .ms</para>
+/// Currency: <see cref="Iso4217.Currency.EastCaribbeanDollar" >EastCaribbeanDollar (XCD)</see><br/>
+/// TopLevelDomain: .ms
+/// </para>
 /// </summary>
 /// <value>id=MSR, 2code=MS, numeric=500</value>
 Montserrat=77_171_865,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:MT">Malta</a></para>
-/// <para>Capital: Valletta<br/>
+/// <para>
+/// Located in: Southern Europe<br/>
+/// Capital: Valletta<br/>
 /// Languages: <see cref="Iso639.Language.Maltese"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .mt</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .mt
+/// </para>
 /// </summary>
 /// <value>id=MLT, 2code=MT, numeric=470</value>
 Malta=81_369_817,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:MU">Mauritius</a></para>
-/// <para>Capital: Port Louis<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Port Louis<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Bhojpuri"/>,<see cref="Iso639.Language.French"/><br/>
-/// Currency: Rupee (MUR)<br/>
-/// TopLevelDomain: .mu</para>
+/// Currency: <see cref="Iso4217.Currency.MauritiusRupee" >MauritiusRupee (MUR)</see><br/>
+/// TopLevelDomain: .mu
+/// </para>
 /// </summary>
 /// <value>id=MUS, 2code=MU, numeric=480</value>
 Mauritius=85_562_649,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:MV">Maldives</a></para>
-/// <para>Capital: Male<br/>
+/// <para>
+/// Located in: Southern Asia<br/>
+/// Capital: Male<br/>
 /// Languages: <see cref="Iso639.Language.Dhivehi"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Rufiyaa (MVR)<br/>
-/// TopLevelDomain: .mv</para>
+/// Currency: <see cref="Iso4217.Currency.Rufiyaa" >Rufiyaa (MVR)</see><br/>
+/// TopLevelDomain: .mv
+/// </para>
 /// </summary>
 /// <value>id=MDV, 2code=MV, numeric=462</value>
 Maldives=89_762_009,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:MW">Malawi</a></para>
-/// <para>Capital: Lilongwe<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Lilongwe<br/>
 /// Languages: <see cref="Iso639.Language.Nyanja"/>,<see cref="Iso639.Language.Yao"/>,<see cref="Iso639.Language.Tumbuka"/>,<see cref="Iso639.Language.Sena_Malawi"/><br/>
-/// Currency: Kwacha (MWK)<br/>
-/// TopLevelDomain: .mw</para>
+/// Currency: <see cref="Iso4217.Currency.MalawiKwacha" >MalawiKwacha (MWK)</see><br/>
+/// TopLevelDomain: .mw
+/// </para>
 /// </summary>
 /// <value>id=MWI, 2code=MW, numeric=454</value>
 Malawi=93_930_905,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:MX">Mexico</a></para>
-/// <para>Capital: Mexico City<br/>
+/// <para>
+/// Located in: Central America<br/>
+/// Capital: Mexico City<br/>
 /// Languages: <see cref="Iso639.Language.Spanish"/><br/>
-/// Currency: Peso (MXN)<br/>
-/// TopLevelDomain: .mx</para>
+/// Currency: <see cref="Iso4217.Currency.MexicanPeso" >MexicanPeso (MXN)</see><br/>
+/// TopLevelDomain: .mx
+/// </para>
 /// </summary>
 /// <value>id=MEX, 2code=MX, numeric=484</value>
 Mexico=98_154_777,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:MY">Malaysia</a></para>
-/// <para>Capital: Kuala Lumpur<br/>
+/// <para>
+/// Located in: South-eastern Asia<br/>
+/// Capital: Kuala Lumpur<br/>
 /// Languages: <see cref="Iso639.Language.Malay_macrolanguage"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Chinese"/>,<see cref="Iso639.Language.Tamil"/>,<see cref="Iso639.Language.Telugu"/>,<see cref="Iso639.Language.Malayalam"/>,<see cref="Iso639.Language.Panjabi"/>,<see cref="Iso639.Language.Thai"/><br/>
-/// Currency: Ringgit (MYR)<br/>
-/// TopLevelDomain: .my</para>
+/// Currency: <see cref="Iso4217.Currency.MalaysianRinggit" >MalaysianRinggit (MYR)</see><br/>
+/// TopLevelDomain: .my
+/// </para>
 /// </summary>
 /// <value>id=MYS, 2code=MY, numeric=458</value>
 Malaysia=102_340_121,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:MZ">Mozambique</a></para>
-/// <para>Capital: Maputo<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Maputo<br/>
 /// Languages: <see cref="Iso639.Language.Portuguese"/>,<see cref="Iso639.Language.Makhuwa"/><br/>
-/// Currency: Metical (MZN)<br/>
-/// TopLevelDomain: .mz</para>
+/// Currency: <see cref="Iso4217.Currency.MozambiqueMetical" >MozambiqueMetical (MZN)</see><br/>
+/// TopLevelDomain: .mz
+/// </para>
 /// </summary>
 /// <value>id=MOZ, 2code=MZ, numeric=508</value>
 Mozambique=106_548_121,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:NA">Namibia</a></para>
-/// <para>Capital: Windhoek<br/>
+/// <para>
+/// Located in: Southern Africa<br/>
+/// Capital: Windhoek<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Afrikaans"/>,<see cref="Iso639.Language.German"/>,<see cref="Iso639.Language.Herero"/>,<see cref="Iso639.Language.Khoekhoe"/><br/>
-/// Currency: Dollar (NAD)<br/>
-/// TopLevelDomain: .na</para>
+/// Currency: <see cref="Iso4217.Currency.NamibiaDollar" >NamibiaDollar (NAD)</see><br/>
+/// TopLevelDomain: .na
+/// </para>
 /// </summary>
 /// <value>id=NAM, 2code=NA, numeric=516</value>
 Namibia=1_794_075,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:NC">New Caledonia</a></para>
-/// <para>Capital: Noumea<br/>
+/// <para>
+/// Located in: Melanesia<br/>
+/// Capital: Noumea<br/>
 /// Languages: <see cref="Iso639.Language.French"/><br/>
-/// Currency: Franc (XPF)<br/>
-/// TopLevelDomain: .nc</para>
+/// Currency: <see cref="Iso4217.Currency.CFPFranc" >CFPFranc (XPF)</see><br/>
+/// TopLevelDomain: .nc
+/// </para>
 /// </summary>
 /// <value>id=NCL, 2code=NC, numeric=540</value>
 NewCaledonia=10_180_763,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:NE">Niger</a></para>
-/// <para>Capital: Niamey<br/>
+/// <para>
+/// Located in: Western Africa<br/>
+/// Capital: Niamey<br/>
 /// Languages: <see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Hausa"/>,<see cref="Iso639.Language.Kanuri"/>,<see cref="Iso639.Language.Zarma"/><br/>
-/// Currency: Franc (XOF)<br/>
-/// TopLevelDomain: .ne</para>
+/// Currency: <see cref="Iso4217.Currency.CFAFrancBCEAO" >CFAFrancBCEAO (XOF)</see><br/>
+/// TopLevelDomain: .ne
+/// </para>
 /// </summary>
 /// <value>id=NER, 2code=NE, numeric=562</value>
 Niger=18_581_787,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:NF">Norfolk Island</a></para>
-/// <para>Capital: Kingston<br/>
+/// <para>
+/// Located in: Australia and New Zealand<br/>
+/// Capital: Kingston<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (AUD)<br/>
-/// TopLevelDomain: .nf</para>
+/// Currency: <see cref="Iso4217.Currency.AustralianDollar" >AustralianDollar (AUD)</see><br/>
+/// TopLevelDomain: .nf
+/// </para>
 /// </summary>
 /// <value>id=NFK, 2code=NF, numeric=574</value>
 NorfolkIsland=22_761_819,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:NG">Nigeria</a></para>
-/// <para>Capital: Abuja<br/>
+/// <para>
+/// Located in: Western Africa<br/>
+/// Capital: Abuja<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Hausa"/>,<see cref="Iso639.Language.Yoruba"/>,<see cref="Iso639.Language.Igbo"/>,<see cref="Iso639.Language.Fulah"/><br/>
-/// Currency: Naira (NGN)<br/>
-/// TopLevelDomain: .ng</para>
+/// Currency: <see cref="Iso4217.Currency.Naira" >Naira (NGN)</see><br/>
+/// TopLevelDomain: .ng
+/// </para>
 /// </summary>
 /// <value>id=NGA, 2code=NG, numeric=566</value>
 Nigeria=26_935_707,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:NI">Nicaragua</a></para>
-/// <para>Capital: Managua<br/>
+/// <para>
+/// Located in: Central America<br/>
+/// Capital: Managua<br/>
 /// Languages: <see cref="Iso639.Language.Spanish"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Cordoba (NIO)<br/>
-/// TopLevelDomain: .ni</para>
+/// Currency: <see cref="Iso4217.Currency.CordobaOro" >CordobaOro (NIO)</see><br/>
+/// TopLevelDomain: .ni
+/// </para>
 /// </summary>
 /// <value>id=NIC, 2code=NI, numeric=558</value>
 Nicaragua=35_328_539,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:NL">The Netherlands</a></para>
-/// <para>Capital: Amsterdam<br/>
+/// <para>
+/// Located in: Western Europe<br/>
+/// Capital: Amsterdam<br/>
 /// Languages: <see cref="Iso639.Language.Dutch"/>,<see cref="Iso639.Language.Frisian_Western"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .nl</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .nl
+/// </para>
 /// </summary>
 /// <value>id=NLD, 2code=NL, numeric=528</value>
 TheNetherlands=47_913_691,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:NO">Norway</a></para>
-/// <para>Capital: Oslo<br/>
+/// <para>
+/// Located in: Northern Europe<br/>
+/// Capital: Oslo<br/>
 /// Languages: <see cref="Iso639.Language.Norwegian"/>,<see cref="Iso639.Language.Norwegian_Bokmal"/>,<see cref="Iso639.Language.Norwegian_Nynorsk"/>,<see cref="Iso639.Language.Sami_Northern"/>,<see cref="Iso639.Language.Finnish"/><br/>
-/// Currency: Krone (NOK)<br/>
-/// TopLevelDomain: .no</para>
+/// Currency: <see cref="Iso4217.Currency.NorwegianKrone" >NorwegianKrone (NOK)</see><br/>
+/// TopLevelDomain: .no
+/// </para>
 /// </summary>
 /// <value>id=NOR, 2code=NO, numeric=578</value>
 Norway=60_525_467,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:NP">Nepal</a></para>
-/// <para>Capital: Kathmandu<br/>
+/// <para>
+/// Located in: Southern Asia<br/>
+/// Capital: Kathmandu<br/>
 /// Languages: <see cref="Iso639.Language.Nepali_macrolanguage"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Rupee (NPR)<br/>
-/// TopLevelDomain: .np</para>
+/// Currency: <see cref="Iso4217.Currency.NepaleseRupee" >NepaleseRupee (NPR)</see><br/>
+/// TopLevelDomain: .np
+/// </para>
 /// </summary>
 /// <value>id=NPL, 2code=NP, numeric=524</value>
 Nepal=64_707_547,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:NR">Nauru</a></para>
-/// <para>Capital: Yaren<br/>
+/// <para>
+/// Located in: Micronesia<br/>
+/// Capital: Yaren<br/>
 /// Languages: <see cref="Iso639.Language.Nauru"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (AUD)<br/>
-/// TopLevelDomain: .nr</para>
+/// Currency: <see cref="Iso4217.Currency.AustralianDollar" >AustralianDollar (AUD)</see><br/>
+/// TopLevelDomain: .nr
+/// </para>
 /// </summary>
 /// <value>id=NRU, 2code=NR, numeric=520</value>
 Nauru=73_114_715,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:NU">Niue</a></para>
-/// <para>Capital: Alofi<br/>
+/// <para>
+/// Located in: Polynesia<br/>
+/// Capital: Alofi<br/>
 /// Languages: <see cref="Iso639.Language.Niuean"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (NZD)<br/>
-/// TopLevelDomain: .nu</para>
+/// Currency: <see cref="Iso4217.Currency.NewZealandDollar" >NewZealandDollar (NZD)</see><br/>
+/// TopLevelDomain: .nu
+/// </para>
 /// </summary>
 /// <value>id=NIU, 2code=NU, numeric=570</value>
 Niue=85_697_051,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:NZ">New Zealand</a></para>
-/// <para>Capital: Wellington<br/>
+/// <para>
+/// Located in: Australia and New Zealand<br/>
+/// Capital: Wellington<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Maori"/><br/>
-/// Currency: Dollar (NZD)<br/>
-/// TopLevelDomain: .nz</para>
+/// Currency: <see cref="Iso4217.Currency.NewZealandDollar" >NewZealandDollar (NZD)</see><br/>
+/// TopLevelDomain: .nz
+/// </para>
 /// </summary>
 /// <value>id=NZL, 2code=NZ, numeric=554</value>
 NewZealand=106_651_227,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:OM">Oman</a></para>
-/// <para>Capital: Muscat<br/>
+/// <para>
+/// Located in: Western Asia<br/>
+/// Capital: Muscat<br/>
 /// Languages: <see cref="Iso639.Language.Arabic"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Baluchi"/>,<see cref="Iso639.Language.Urdu"/><br/>
-/// Currency: Rial (OMR)<br/>
-/// TopLevelDomain: .om</para>
+/// Currency: <see cref="Iso4217.Currency.RialOmani" >RialOmani (OMR)</see><br/>
+/// TopLevelDomain: .om
+/// </para>
 /// </summary>
 /// <value>id=OMN, 2code=OM, numeric=512</value>
 Oman=52_259_613,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:PA">Panama</a></para>
-/// <para>Capital: Panama City<br/>
+/// <para>
+/// Located in: Central America<br/>
+/// Capital: Panama City<br/>
 /// Languages: <see cref="Iso639.Language.Spanish"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Balboa (PAB)<br/>
-/// TopLevelDomain: .pa</para>
+/// Currency: <see cref="Iso4217.Currency.Balboa" >Balboa (PAB)</see><br/>
+/// TopLevelDomain: .pa
+/// </para>
 /// </summary>
 /// <value>id=PAN, 2code=PA, numeric=591</value>
 Panama=2_058_271,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:PE">Peru</a></para>
-/// <para>Capital: Lima<br/>
+/// <para>
+/// Located in: South America<br/>
+/// Capital: Lima<br/>
 /// Languages: <see cref="Iso639.Language.Spanish"/>,<see cref="Iso639.Language.Quechua"/>,<see cref="Iso639.Language.Aymara"/><br/>
-/// Currency: Sol (PEN)<br/>
-/// TopLevelDomain: .pe</para>
+/// Currency: <see cref="Iso4217.Currency.Sol" >Sol (PEN)</see><br/>
+/// TopLevelDomain: .pe
+/// </para>
 /// </summary>
 /// <value>id=PER, 2code=PE, numeric=604</value>
 Peru=18_843_935,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:PF">French Polynesia</a></para>
-/// <para>Capital: Papeete<br/>
+/// <para>
+/// Located in: Polynesia<br/>
+/// Capital: Papeete<br/>
 /// Languages: <see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Tahitian"/><br/>
-/// Currency: Franc (XPF)<br/>
-/// TopLevelDomain: .pf</para>
+/// Currency: <see cref="Iso4217.Currency.CFPFranc" >CFPFranc (XPF)</see><br/>
+/// TopLevelDomain: .pf
+/// </para>
 /// </summary>
 /// <value>id=PYF, 2code=PF, numeric=258</value>
 FrenchPolynesia=23_014_943,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:PG">Papua New Guinea</a></para>
-/// <para>Capital: Port Moresby<br/>
+/// <para>
+/// Located in: Melanesia<br/>
+/// Capital: Port Moresby<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Hiri_Motu"/>,<see cref="Iso639.Language.Motu"/>,<see cref="Iso639.Language.Tok_Pisin"/><br/>
-/// Currency: Kina (PGK)<br/>
-/// TopLevelDomain: .pg</para>
+/// Currency: <see cref="Iso4217.Currency.Kina" >Kina (PGK)</see><br/>
+/// TopLevelDomain: .pg
+/// </para>
 /// </summary>
 /// <value>id=PNG, 2code=PG, numeric=598</value>
 PapuaNewGuinea=27_210_591,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:PH">Philippines</a></para>
-/// <para>Capital: Manila<br/>
+/// <para>
+/// Located in: South-eastern Asia<br/>
+/// Capital: Manila<br/>
 /// Languages: <see cref="Iso639.Language.Tagalog"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Filipino"/>,<see cref="Iso639.Language.Cebuano"/>,<see cref="Iso639.Language.Iloko"/>,<see cref="Iso639.Language.Hiligaynon"/>,<see cref="Iso639.Language.Waray_Philippines"/>,<see cref="Iso639.Language.Pampanga"/>,<see cref="Iso639.Language.Bikol"/>,<see cref="Iso639.Language.Bikol_Central"/>,<see cref="Iso639.Language.Pangasinan"/>,<see cref="Iso639.Language.Maranao"/>,<see cref="Iso639.Language.Tausug"/>,<see cref="Iso639.Language.Maguindanaon"/>,<see cref="Iso639.Language.Chavacano"/>,<see cref="Iso639.Language.Kinaray_A"/>,<see cref="Iso639.Language.Surigaonon"/>,<see cref="Iso639.Language.Masbatenyo"/>,<see cref="Iso639.Language.Aklanon"/>,<see cref="Iso639.Language.Ibanag"/>,<see cref="Iso639.Language.Yakan"/>,<see cref="Iso639.Language.Manobo_Cotabato"/>,<see cref="Iso639.Language.Inabaknon"/><br/>
-/// Currency: Peso (PHP)<br/>
-/// TopLevelDomain: .ph</para>
+/// Currency: <see cref="Iso4217.Currency.PhilippinePeso" >PhilippinePeso (PHP)</see><br/>
+/// TopLevelDomain: .ph
+/// </para>
 /// </summary>
 /// <value>id=PHL, 2code=PH, numeric=608</value>
 Philippines=31_414_751,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:PK">Pakistan</a></para>
-/// <para>Capital: Islamabad<br/>
+/// <para>
+/// Located in: Southern Asia<br/>
+/// Capital: Islamabad<br/>
 /// Languages: <see cref="Iso639.Language.Urdu"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Panjabi"/>,<see cref="Iso639.Language.Sindhi"/>,<see cref="Iso639.Language.Pushto"/>,<see cref="Iso639.Language.Brahui"/><br/>
-/// Currency: Rupee (PKR)<br/>
-/// TopLevelDomain: .pk</para>
+/// Currency: <see cref="Iso4217.Currency.PakistanRupee" >PakistanRupee (PKR)</see><br/>
+/// TopLevelDomain: .pk
+/// </para>
 /// </summary>
 /// <value>id=PAK, 2code=PK, numeric=586</value>
 Pakistan=43_995_167,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:PL">Poland</a></para>
-/// <para>Capital: Warsaw<br/>
+/// <para>
+/// Located in: Eastern Europe<br/>
+/// Capital: Warsaw<br/>
 /// Languages: <see cref="Iso639.Language.Polish"/><br/>
-/// Currency: Zloty (PLN)<br/>
-/// TopLevelDomain: .pl</para>
+/// Currency: <see cref="Iso4217.Currency.Zloty" >Zloty (PLN)</see><br/>
+/// TopLevelDomain: .pl
+/// </para>
 /// </summary>
 /// <value>id=POL, 2code=PL, numeric=616</value>
 Poland=48_192_415,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:PM">Saint Pierre and Miquelon</a></para>
-/// <para>Capital: Saint-Pierre<br/>
+/// <para>
+/// Located in: Northern America<br/>
+/// Capital: Saint-Pierre<br/>
 /// Languages: <see cref="Iso639.Language.French"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .pm</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .pm
+/// </para>
 /// </summary>
 /// <value>id=SPM, 2code=PM, numeric=666</value>
 SaintPierreandMiquelon=52_388_837,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:PN">Pitcairn</a></para>
-/// <para>Capital: Adamstown<br/>
+/// <para>
+/// Located in: Polynesia<br/>
+/// Capital: Adamstown<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (NZD)<br/>
-/// TopLevelDomain: .pn</para>
+/// Currency: <see cref="Iso4217.Currency.NewZealandDollar" >NewZealandDollar (NZD)</see><br/>
+/// TopLevelDomain: .pn
+/// </para>
 /// </summary>
 /// <value>id=PCN, 2code=PN, numeric=612</value>
 Pitcairn=56_584_351,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:PR">Puerto Rico</a></para>
-/// <para>Capital: San Juan<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: San Juan<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Spanish"/><br/>
-/// Currency: Dollar (USD)<br/>
-/// TopLevelDomain: .pr</para>
+/// Currency: <see cref="Iso4217.Currency.USDollar" >USDollar (USD)</see><br/>
+/// TopLevelDomain: .pr
+/// </para>
 /// </summary>
 /// <value>id=PRI, 2code=PR, numeric=630</value>
 PuertoRico=73_352_287,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:PS">Palestinian Territory</a></para>
-/// <para>Capital: East Jerusalem<br/>
+/// <para>
+/// Located in: Western Asia<br/>
+/// Capital: East Jerusalem<br/>
 /// Languages: <see cref="Iso639.Language.Arabic"/><br/>
-/// Currency: Shekel (ILS)<br/>
-/// TopLevelDomain: .ps</para>
+/// Currency: <see cref="Iso4217.Currency.NewIsraeliSheqel" >NewIsraeliSheqel (ILS)</see><br/>
+/// TopLevelDomain: .ps
+/// </para>
 /// </summary>
 /// <value>id=PSE, 2code=PS, numeric=275</value>
 PalestinianTerritory=77_538_463,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:PT">Portugal</a></para>
-/// <para>Capital: Lisbon<br/>
+/// <para>
+/// Located in: Southern Europe<br/>
+/// Capital: Lisbon<br/>
 /// Languages: <see cref="Iso639.Language.Portuguese"/>,<see cref="Iso639.Language.Mirandese"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .pt</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .pt
+/// </para>
 /// </summary>
 /// <value>id=PRT, 2code=PT, numeric=620</value>
 Portugal=81_763_423,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:PW">Palau</a></para>
-/// <para>Capital: Melekeok<br/>
+/// <para>
+/// Located in: Micronesia<br/>
+/// Capital: Melekeok<br/>
 /// Languages: <see cref="Iso639.Language.Palauan"/>,<see cref="Iso639.Language.Sonsorol"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Tobian"/>,<see cref="Iso639.Language.Japanese"/>,<see cref="Iso639.Language.Filipino"/>,<see cref="Iso639.Language.Chinese"/><br/>
-/// Currency: Dollar (USD)<br/>
-/// TopLevelDomain: .pw</para>
+/// Currency: <see cref="Iso4217.Currency.USDollar" >USDollar (USD)</see><br/>
+/// TopLevelDomain: .pw
+/// </para>
 /// </summary>
 /// <value>id=PLW, 2code=PW, numeric=585</value>
 Palau=94_352_095,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:PY">Paraguay</a></para>
-/// <para>Capital: Asuncion<br/>
+/// <para>
+/// Located in: South America<br/>
+/// Capital: Asuncion<br/>
 /// Languages: <see cref="Iso639.Language.Spanish"/>,<see cref="Iso639.Language.Guarani"/><br/>
-/// Currency: Guarani (PYG)<br/>
-/// TopLevelDomain: .py</para>
+/// Currency: <see cref="Iso4217.Currency.Guarani" >Guarani (PYG)</see><br/>
+/// TopLevelDomain: .py
+/// </para>
 /// </summary>
 /// <value>id=PRY, 2code=PY, numeric=600</value>
 Paraguay=102_745_183,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:QA">Qatar</a></para>
-/// <para>Capital: Doha<br/>
+/// <para>
+/// Located in: Western Asia<br/>
+/// Capital: Doha<br/>
 /// Languages: <see cref="Iso639.Language.Arabic"/>,<see cref="Iso639.Language.Spanish"/><br/>
-/// Currency: Rial (QAR)<br/>
-/// TopLevelDomain: .qa</para>
+/// Currency: <see cref="Iso4217.Currency.QatariRial" >QatariRial (QAR)</see><br/>
+/// TopLevelDomain: .qa
+/// </para>
 /// </summary>
 /// <value>id=QAT, 2code=QA, numeric=634</value>
 Qatar=2_201_633,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:RE">Reunion</a></para>
-/// <para>Capital: Saint-Denis<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Saint-Denis<br/>
 /// Languages: <see cref="Iso639.Language.French"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .re</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .re
+/// </para>
 /// </summary>
 /// <value>id=REU, 2code=RE, numeric=638</value>
 Reunion=19_112_227,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:RO">Romania</a></para>
-/// <para>Capital: Bucharest<br/>
+/// <para>
+/// Located in: Eastern Europe<br/>
+/// Capital: Bucharest<br/>
 /// Languages: <see cref="Iso639.Language.Romanian"/>,<see cref="Iso639.Language.Hungarian"/>,<see cref="Iso639.Language.Romany"/><br/>
-/// Currency: Leu (RON)<br/>
-/// TopLevelDomain: .ro</para>
+/// Currency: <see cref="Iso4217.Currency.RomanianLeu" >RomanianLeu (RON)</see><br/>
+/// TopLevelDomain: .ro
+/// </para>
 /// </summary>
 /// <value>id=ROU, 2code=RO, numeric=642</value>
 Romania=61_055_907,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:RS">Serbia</a></para>
-/// <para>Capital: Belgrade<br/>
+/// <para>
+/// Located in: Southern Europe<br/>
+/// Capital: Belgrade<br/>
 /// Languages: <see cref="Iso639.Language.Serbian"/>,<see cref="Iso639.Language.Hungarian"/>,<see cref="Iso639.Language.Bosnian"/>,<see cref="Iso639.Language.Romany"/><br/>
-/// Currency: Dinar (RSD)<br/>
-/// TopLevelDomain: .rs</para>
+/// Currency: <see cref="Iso4217.Currency.SerbianDinar" >SerbianDinar (RSD)</see><br/>
+/// TopLevelDomain: .rs
+/// </para>
 /// </summary>
 /// <value>id=SRB, 2code=RS, numeric=688</value>
 Serbia=77_794_405,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:RU">Russia</a></para>
-/// <para>Capital: Moscow<br/>
+/// <para>
+/// Located in: Eastern Europe<br/>
+/// Capital: Moscow<br/>
 /// Languages: <see cref="Iso639.Language.Russian"/>,<see cref="Iso639.Language.Tatar"/>,<see cref="Iso639.Language.Kalmyk"/>,cau,<see cref="Iso639.Language.Adyghe"/>,<see cref="Iso639.Language.Komi"/>,<see cref="Iso639.Language.Chechen"/>,<see cref="Iso639.Language.Tuvinian"/>,<see cref="Iso639.Language.Chuvash"/>,<see cref="Iso639.Language.Udmurt"/>,tut,<see cref="Iso639.Language.Mansi"/>,<see cref="Iso639.Language.Buriat"/>,<see cref="Iso639.Language.Erzya"/>,<see cref="Iso639.Language.Moksha"/>,<see cref="Iso639.Language.Mari_Russia"/>,<see cref="Iso639.Language.Bashkir"/>,<see cref="Iso639.Language.Ingush"/>,<see cref="Iso639.Language.Kabardian"/>,<see cref="Iso639.Language.Karachay_Balkar"/>,<see cref="Iso639.Language.Avaric"/>,<see cref="Iso639.Language.Yakut"/>,<see cref="Iso639.Language.Nogai"/><br/>
-/// Currency: Ruble (RUB)<br/>
-/// TopLevelDomain: .ru</para>
+/// Currency: <see cref="Iso4217.Currency.RussianRuble" >RussianRuble (RUB)</see><br/>
+/// TopLevelDomain: .ru
+/// </para>
 /// </summary>
 /// <value>id=RUS, 2code=RU, numeric=643</value>
 Russia=86_218_019,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:RW">Rwanda</a></para>
-/// <para>Capital: Kigali<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Kigali<br/>
 /// Languages: <see cref="Iso639.Language.Kinyarwanda"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Swahili_macrolanguage"/><br/>
-/// Currency: Franc (RWF)<br/>
-/// TopLevelDomain: .rw</para>
+/// Currency: <see cref="Iso4217.Currency.RwandaFranc" >RwandaFranc (RWF)</see><br/>
+/// TopLevelDomain: .rw
+/// </para>
 /// </summary>
 /// <value>id=RWA, 2code=RW, numeric=646</value>
 Rwanda=94_569_891,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:SA">Saudi Arabia</a></para>
-/// <para>Capital: Riyadh<br/>
+/// <para>
+/// Located in: Western Asia<br/>
+/// Capital: Riyadh<br/>
 /// Languages: <see cref="Iso639.Language.Arabic"/><br/>
-/// Currency: Rial (SAR)<br/>
-/// TopLevelDomain: .sa</para>
+/// Currency: <see cref="Iso4217.Currency.SaudiRiyal" >SaudiRiyal (SAR)</see><br/>
+/// TopLevelDomain: .sa
+/// </para>
 /// </summary>
 /// <value>id=SAU, 2code=SA, numeric=682</value>
 SaudiArabia=2_465_829,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:SB">Solomon Islands</a></para>
-/// <para>Capital: Honiara<br/>
+/// <para>
+/// Located in: Melanesia<br/>
+/// Capital: Honiara<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Tok_Pisin"/><br/>
-/// Currency: Dollar (SBD)<br/>
-/// TopLevelDomain: .sb</para>
+/// Currency: <see cref="Iso4217.Currency.SolomonIslandsDollar" >SolomonIslandsDollar (SBD)</see><br/>
+/// TopLevelDomain: .sb
+/// </para>
 /// </summary>
 /// <value>id=SLB, 2code=SB, numeric=090</value>
 SolomonIslands=6_621_925,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:SC">Seychelles</a></para>
-/// <para>Capital: Victoria<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Victoria<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.French"/><br/>
-/// Currency: Rupee (SCR)<br/>
-/// TopLevelDomain: .sc</para>
+/// Currency: <see cref="Iso4217.Currency.SeychellesRupee" >SeychellesRupee (SCR)</see><br/>
+/// TopLevelDomain: .sc
+/// </para>
 /// </summary>
 /// <value>id=SYC, 2code=SC, numeric=690</value>
 Seychelles=10_819_109,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:SD">Sudan</a></para>
-/// <para>Capital: Khartoum<br/>
+/// <para>
+/// Located in: Northern Africa<br/>
+/// Capital: Khartoum<br/>
 /// Languages: <see cref="Iso639.Language.Arabic"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Nobiin"/><br/>
-/// Currency: Pound (SDG)<br/>
-/// TopLevelDomain: .sd</para>
+/// Currency: <see cref="Iso4217.Currency.SudanesePound" >SudanesePound (SDG)</see><br/>
+/// TopLevelDomain: .sd
+/// </para>
 /// </summary>
 /// <value>id=SDN, 2code=SD, numeric=729</value>
 Sudan=15_034_597,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:SS">South Sudan</a></para>
-/// <para>Capital: Juba<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Juba<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Pound (SSP)<br/>
-/// TopLevelDomain: .ss</para>
+/// Currency: <see cref="Iso4217.Currency.SouthSudanesePound" >SouthSudanesePound (SSP)</see><br/>
+/// TopLevelDomain: .ss
+/// </para>
 /// </summary>
 /// <value>id=SSD, 2code=SS, numeric=728</value>
 SouthSudan=77_929_637,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:SE">Sweden</a></para>
-/// <para>Capital: Stockholm<br/>
+/// <para>
+/// Located in: Northern Europe<br/>
+/// Capital: Stockholm<br/>
 /// Languages: <see cref="Iso639.Language.Swedish"/>,<see cref="Iso639.Language.Sami_Northern"/>,<see cref="Iso639.Language.Sami_Southern"/>,<see cref="Iso639.Language.Finnish"/><br/>
-/// Currency: Krona (SEK)<br/>
-/// TopLevelDomain: .se</para>
+/// Currency: <see cref="Iso4217.Currency.SwedishKrona" >SwedishKrona (SEK)</see><br/>
+/// TopLevelDomain: .se
+/// </para>
 /// </summary>
 /// <value>id=SWE, 2code=SE, numeric=752</value>
 Sweden=19_211_685,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:SG">Singapore</a></para>
-/// <para>Capital: Singapore<br/>
+/// <para>
+/// Located in: South-eastern Asia<br/>
+/// Capital: Singapore<br/>
 /// Languages: <see cref="Iso639.Language.Chinese_Mandarin"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Malay_macrolanguage"/>,<see cref="Iso639.Language.Tamil"/>,<see cref="Iso639.Language.Chinese"/><br/>
-/// Currency: Dollar (SGD)<br/>
-/// TopLevelDomain: .sg</para>
+/// Currency: <see cref="Iso4217.Currency.SingaporeDollar" >SingaporeDollar (SGD)</see><br/>
+/// TopLevelDomain: .sg
+/// </para>
 /// </summary>
 /// <value>id=SGP, 2code=SG, numeric=702</value>
 Singapore=27_621_797,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:SH">Saint Helena</a></para>
-/// <para>Capital: Jamestown<br/>
+/// <para>
+/// Located in: Western Africa<br/>
+/// Capital: Jamestown<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Pound (SHP)<br/>
-/// TopLevelDomain: .sh</para>
+/// Currency: <see cref="Iso4217.Currency.SaintHelenaPound" >SaintHelenaPound (SHP)</see><br/>
+/// TopLevelDomain: .sh
+/// </para>
 /// </summary>
 /// <value>id=SHN, 2code=SH, numeric=654</value>
 SaintHelena=31_812_069,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:SI">Slovenia</a></para>
-/// <para>Capital: Ljubljana<br/>
+/// <para>
+/// Located in: Southern Europe<br/>
+/// Capital: Ljubljana<br/>
 /// Languages: <see cref="Iso639.Language.Slovenian"/>,<see cref="Iso639.Language.Serbo_Croatian"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .si</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .si
+/// </para>
 /// </summary>
 /// <value>id=SVN, 2code=SI, numeric=705</value>
 Slovenia=36_007_269,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:SJ">Svalbard and Jan Mayen</a></para>
-/// <para>Capital: Longyearbyen<br/>
+/// <para>
+/// Located in: Northern Europe<br/>
+/// Capital: Longyearbyen<br/>
 /// Languages: <see cref="Iso639.Language.Norwegian"/>,<see cref="Iso639.Language.Russian"/><br/>
-/// Currency: Krone (NOK)<br/>
-/// TopLevelDomain: .sj</para>
+/// Currency: <see cref="Iso4217.Currency.NorwegianKrone" >NorwegianKrone (NOK)</see><br/>
+/// TopLevelDomain: .sj
+/// </para>
 /// </summary>
 /// <value>id=SJM, 2code=SJ, numeric=744</value>
 SvalbardandJanMayen=40_198_757,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:SK">Slovakia</a></para>
-/// <para>Capital: Bratislava<br/>
+/// <para>
+/// Located in: Eastern Europe<br/>
+/// Capital: Bratislava<br/>
 /// Languages: <see cref="Iso639.Language.Slovak"/>,<see cref="Iso639.Language.Hungarian"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .sk</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .sk
+/// </para>
 /// </summary>
 /// <value>id=SVK, 2code=SK, numeric=703</value>
 Slovakia=44_389_733,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:SL">Sierra Leone</a></para>
-/// <para>Capital: Freetown<br/>
+/// <para>
+/// Located in: Western Africa<br/>
+/// Capital: Freetown<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Mende_Sierra_Leone"/>,<see cref="Iso639.Language.Timne"/><br/>
 /// Currency: Leone (SLL)<br/>
-/// TopLevelDomain: .sl</para>
+/// TopLevelDomain: .sl
+/// </para>
 /// </summary>
 /// <value>id=SLE, 2code=SL, numeric=694</value>
 SierraLeone=48_571_109,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:SM">San Marino</a></para>
-/// <para>Capital: San Marino<br/>
+/// <para>
+/// Located in: Southern Europe<br/>
+/// Capital: San Marino<br/>
 /// Languages: <see cref="Iso639.Language.Italian"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .sm</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .sm
+/// </para>
 /// </summary>
 /// <value>id=SMR, 2code=SM, numeric=674</value>
 SanMarino=52_792_101,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:SN">Senegal</a></para>
-/// <para>Capital: Dakar<br/>
+/// <para>
+/// Located in: Western Africa<br/>
+/// Capital: Dakar<br/>
 /// Languages: <see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Wolof"/>,<see cref="Iso639.Language.Pulaar"/>,<see cref="Iso639.Language.Mandinka"/><br/>
-/// Currency: Franc (XOF)<br/>
-/// TopLevelDomain: .sn</para>
+/// Currency: <see cref="Iso4217.Currency.CFAFrancBCEAO" >CFAFrancBCEAO (XOF)</see><br/>
+/// TopLevelDomain: .sn
+/// </para>
 /// </summary>
 /// <value>id=SEN, 2code=SN, numeric=686</value>
 Senegal=56_977_701,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:SO">Somalia</a></para>
-/// <para>Capital: Mogadishu<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Mogadishu<br/>
 /// Languages: <see cref="Iso639.Language.Somali"/>,<see cref="Iso639.Language.Arabic"/>,<see cref="Iso639.Language.Italian"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Shilling (SOS)<br/>
-/// TopLevelDomain: .so</para>
+/// Currency: <see cref="Iso4217.Currency.SomaliShilling" >SomaliShilling (SOS)</see><br/>
+/// TopLevelDomain: .so
+/// </para>
 /// </summary>
 /// <value>id=SOM, 2code=SO, numeric=706</value>
 Somalia=61_170_597,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:SR">Suriname</a></para>
-/// <para>Capital: Paramaribo<br/>
+/// <para>
+/// Located in: South America<br/>
+/// Capital: Paramaribo<br/>
 /// Languages: <see cref="Iso639.Language.Dutch"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Sranan_Tongo"/>,<see cref="Iso639.Language.Hindustani_Caribbean"/>,<see cref="Iso639.Language.Javanese"/><br/>
-/// Currency: Dollar (SRD)<br/>
-/// TopLevelDomain: .sr</para>
+/// Currency: <see cref="Iso4217.Currency.SurinamDollar" >SurinamDollar (SRD)</see><br/>
+/// TopLevelDomain: .sr
+/// </para>
 /// </summary>
 /// <value>id=SUR, 2code=SR, numeric=740</value>
 Suriname=73_764_133,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:ST">Sao Tome and Principe</a></para>
-/// <para>Capital: Sao Tome<br/>
+/// <para>
+/// Located in: Middle Africa<br/>
+/// Capital: Sao Tome<br/>
 /// Languages: <see cref="Iso639.Language.Portuguese"/><br/>
-/// Currency: Dobra (STN)<br/>
-/// TopLevelDomain: .st</para>
+/// Currency: <see cref="Iso4217.Currency.Dobra" >Dobra (STN)</see><br/>
+/// TopLevelDomain: .st
+/// </para>
 /// </summary>
 /// <value>id=STP, 2code=ST, numeric=678</value>
 SaoTomeandPrincipe=82_148_581,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:SV">El Salvador</a></para>
-/// <para>Capital: San Salvador<br/>
+/// <para>
+/// Located in: Central America<br/>
+/// Capital: San Salvador<br/>
 /// Languages: <see cref="Iso639.Language.Spanish"/><br/>
-/// Currency: Dollar (USD)<br/>
-/// TopLevelDomain: .sv</para>
+/// Currency: <see cref="Iso4217.Currency.USDollar" >USDollar (USD)</see><br/>
+/// TopLevelDomain: .sv
+/// </para>
 /// </summary>
 /// <value>id=SLV, 2code=SV, numeric=222</value>
 ElSalvador=90_548_965,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:SX">Sint Maarten</a></para>
-/// <para>Capital: Philipsburg<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: Philipsburg<br/>
 /// Languages: <see cref="Iso639.Language.Dutch"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Guilder (ANG)<br/>
-/// TopLevelDomain: .sx</para>
+/// Currency: <see cref="Iso4217.Currency.NetherlandsAntilleanGuilder" >NetherlandsAntilleanGuilder (ANG)</see><br/>
+/// TopLevelDomain: .sx
+/// </para>
 /// </summary>
 /// <value>id=SXM, 2code=SX, numeric=534</value>
 SintMaarten=98_919_909,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:SY">Syria</a></para>
-/// <para>Capital: Damascus<br/>
+/// <para>
+/// Located in: Western Asia<br/>
+/// Capital: Damascus<br/>
 /// Languages: <see cref="Iso639.Language.Arabic"/>,<see cref="Iso639.Language.Kurdish"/>,<see cref="Iso639.Language.Armenian"/>,<see cref="Iso639.Language.Aramaic_Official_BCE"/>,<see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Pound (SYP)<br/>
-/// TopLevelDomain: .sy</para>
+/// Currency: <see cref="Iso4217.Currency.SyrianPound" >SyrianPound (SYP)</see><br/>
+/// TopLevelDomain: .sy
+/// </para>
 /// </summary>
 /// <value>id=SYR, 2code=SY, numeric=760</value>
 Syria=103_124_517,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:SZ">Eswatini</a></para>
-/// <para>Capital: Mbabane<br/>
+/// <para>
+/// Located in: Southern Africa<br/>
+/// Capital: Mbabane<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Swati"/><br/>
-/// Currency: Lilangeni (SZL)<br/>
-/// TopLevelDomain: .sz</para>
+/// Currency: <see cref="Iso4217.Currency.Lilangeni" >Lilangeni (SZL)</see><br/>
+/// TopLevelDomain: .sz
+/// </para>
 /// </summary>
 /// <value>id=SWZ, 2code=SZ, numeric=748</value>
 Eswatini=107_335_077,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:TC">Turks and Caicos Islands</a></para>
-/// <para>Capital: Cockburn Town<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: Cockburn Town<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (USD)<br/>
-/// TopLevelDomain: .tc</para>
+/// Currency: <see cref="Iso4217.Currency.USDollar" >USDollar (USD)</see><br/>
+/// TopLevelDomain: .tc
+/// </para>
 /// </summary>
 /// <value>id=TCA, 2code=TC, numeric=796</value>
 TurksandCaicosIslands=10_944_679,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:TD">Chad</a></para>
-/// <para>Capital: N'Djamena<br/>
+/// <para>
+/// Located in: Middle Africa<br/>
+/// Capital: N'Djamena<br/>
 /// Languages: <see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Arabic"/>,<see cref="Iso639.Language.Sara"/><br/>
-/// Currency: Franc (XAF)<br/>
-/// TopLevelDomain: .td</para>
+/// Currency: <see cref="Iso4217.Currency.CFAFrancBEAC" >CFAFrancBEAC (XAF)</see><br/>
+/// TopLevelDomain: .td
+/// </para>
 /// </summary>
 /// <value>id=TCD, 2code=TD, numeric=148</value>
 Chad=15_145_127,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:TF">French Southern Territories</a></para>
-/// <para>Capital: Port-aux-Francais<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Port-aux-Francais<br/>
 /// Languages: <see cref="Iso639.Language.French"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .tf</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .tf
+/// </para>
 /// </summary>
 /// <value>id=ATF, 2code=TF, numeric=260</value>
 FrenchSouthernTerritories=23_538_881,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:TG">Togo</a></para>
-/// <para>Capital: Lome<br/>
+/// <para>
+/// Located in: Western Africa<br/>
+/// Capital: Lome<br/>
 /// Languages: <see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Ewe"/>,<see cref="Iso639.Language.Mina_Cameroon"/>,<see cref="Iso639.Language.Kabiye"/>,<see cref="Iso639.Language.Dagbani"/>,<see cref="Iso639.Language.Hausa"/><br/>
-/// Currency: Franc (XOF)<br/>
-/// TopLevelDomain: .tg</para>
+/// Currency: <see cref="Iso4217.Currency.CFAFrancBCEAO" >CFAFrancBCEAO (XOF)</see><br/>
+/// TopLevelDomain: .tg
+/// </para>
 /// </summary>
 /// <value>id=TGO, 2code=TG, numeric=768</value>
 Togo=27_750_823,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:TH">Thailand</a></para>
-/// <para>Capital: Bangkok<br/>
+/// <para>
+/// Located in: South-eastern Asia<br/>
+/// Capital: Bangkok<br/>
 /// Languages: <see cref="Iso639.Language.Thai"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Baht (THB)<br/>
-/// TopLevelDomain: .th</para>
+/// Currency: <see cref="Iso4217.Currency.Baht" >Baht (THB)</see><br/>
+/// TopLevelDomain: .th
+/// </para>
 /// </summary>
 /// <value>id=THA, 2code=TH, numeric=764</value>
 Thailand=31_916_519,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:TJ">Tajikistan</a></para>
-/// <para>Capital: Dushanbe<br/>
+/// <para>
+/// Located in: Central Asia<br/>
+/// Capital: Dushanbe<br/>
 /// Languages: <see cref="Iso639.Language.Tajik"/>,<see cref="Iso639.Language.Russian"/><br/>
-/// Currency: Somoni (TJS)<br/>
-/// TopLevelDomain: .tj</para>
+/// Currency: <see cref="Iso4217.Currency.Somoni" >Somoni (TJS)</see><br/>
+/// TopLevelDomain: .tj
+/// </para>
 /// </summary>
 /// <value>id=TJK, 2code=TJ, numeric=762</value>
 Tajikistan=40_325_735,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:TK">Tokelau</a></para>
-/// <para>Capital: <br/>
+/// <para>
+/// Located in: Polynesia<br/>
 /// Languages: <see cref="Iso639.Language.Tokelau"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (NZD)<br/>
-/// TopLevelDomain: .tk</para>
+/// Currency: <see cref="Iso4217.Currency.NewZealandDollar" >NewZealandDollar (NZD)</see><br/>
+/// TopLevelDomain: .tk
+/// </para>
 /// </summary>
 /// <value>id=TKL, 2code=TK, numeric=772</value>
 Tokelau=44_522_151,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:TL">Timor Leste</a></para>
-/// <para>Capital: Dili<br/>
+/// <para>
+/// Located in: South-eastern Asia<br/>
+/// Capital: Dili<br/>
 /// Languages: <see cref="Iso639.Language.Tetum"/>,<see cref="Iso639.Language.Portuguese"/>,<see cref="Iso639.Language.Indonesian"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (USD)<br/>
-/// TopLevelDomain: .tl</para>
+/// Currency: <see cref="Iso4217.Currency.USDollar" >USDollar (USD)</see><br/>
+/// TopLevelDomain: .tl
+/// </para>
 /// </summary>
 /// <value>id=TLS, 2code=TL, numeric=626</value>
 TimorLeste=48_730_855,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:TM">Turkmenistan</a></para>
-/// <para>Capital: Ashgabat<br/>
+/// <para>
+/// Located in: Central Asia<br/>
+/// Capital: Ashgabat<br/>
 /// Languages: <see cref="Iso639.Language.Turkmen"/>,<see cref="Iso639.Language.Russian"/>,<see cref="Iso639.Language.Uzbek"/><br/>
-/// Currency: Manat (TMT)<br/>
-/// TopLevelDomain: .tm</para>
+/// Currency: <see cref="Iso4217.Currency.TurkmenistanNewManat" >TurkmenistanNewManat (TMT)</see><br/>
+/// TopLevelDomain: .tm
+/// </para>
 /// </summary>
 /// <value>id=TKM, 2code=TM, numeric=795</value>
 Turkmenistan=52_912_807,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:TN">Tunisia</a></para>
-/// <para>Capital: Tunis<br/>
+/// <para>
+/// Located in: Northern Africa<br/>
+/// Capital: Tunis<br/>
 /// Languages: <see cref="Iso639.Language.Arabic"/>,<see cref="Iso639.Language.French"/><br/>
-/// Currency: Dinar (TND)<br/>
-/// TopLevelDomain: .tn</para>
+/// Currency: <see cref="Iso4217.Currency.TunisianDinar" >TunisianDinar (TND)</see><br/>
+/// TopLevelDomain: .tn
+/// </para>
 /// </summary>
 /// <value>id=TUN, 2code=TN, numeric=788</value>
 Tunisia=57_109_799,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:TO">Tonga</a></para>
-/// <para>Capital: Nuku'alofa<br/>
+/// <para>
+/// Located in: Polynesia<br/>
+/// Capital: Nuku'alofa<br/>
 /// Languages: <see cref="Iso639.Language.Tonga_Tonga_Islands"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Pa'anga (TOP)<br/>
-/// TopLevelDomain: .to</para>
+/// Currency: <see cref="Iso4217.Currency.Paanga" >Paanga (TOP)</see><br/>
+/// TopLevelDomain: .to
+/// </para>
 /// </summary>
 /// <value>id=TON, 2code=TO, numeric=776</value>
 Tonga=61_303_719,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:TR">Turkey</a></para>
-/// <para>Capital: Ankara<br/>
+/// <para>
+/// Located in: Western Asia<br/>
+/// Capital: Ankara<br/>
 /// Languages: <see cref="Iso639.Language.Turkish"/>,<see cref="Iso639.Language.Kurdish"/>,<see cref="Iso639.Language.Dimli_individual_language"/>,<see cref="Iso639.Language.Azerbaijani"/>,<see cref="Iso639.Language.Avaric"/><br/>
-/// Currency: Lira (TRY)<br/>
-/// TopLevelDomain: .tr</para>
+/// Currency: <see cref="Iso4217.Currency.TurkishLira" >TurkishLira (TRY)</see><br/>
+/// TopLevelDomain: .tr
+/// </para>
 /// </summary>
 /// <value>id=TUR, 2code=TR, numeric=792</value>
 Turkey=73_895_207,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:TT">Trinidad and Tobago</a></para>
-/// <para>Capital: Port of Spain<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: Port of Spain<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Hindustani_Caribbean"/>,<see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Spanish"/>,<see cref="Iso639.Language.Chinese"/><br/>
-/// Currency: Dollar (TTD)<br/>
-/// TopLevelDomain: .tt</para>
+/// Currency: <see cref="Iso4217.Currency.TrinidadandTobagoDollar" >TrinidadandTobagoDollar (TTD)</see><br/>
+/// TopLevelDomain: .tt
+/// </para>
 /// </summary>
 /// <value>id=TTO, 2code=TT, numeric=780</value>
 TrinidadandTobago=82_277_607,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:TV">Tuvalu</a></para>
-/// <para>Capital: Funafuti<br/>
+/// <para>
+/// Located in: Polynesia<br/>
+/// Capital: Funafuti<br/>
 /// Languages: <see cref="Iso639.Language.Tuvalu"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Samoan"/>,<see cref="Iso639.Language.Gilbertese"/><br/>
-/// Currency: Dollar (AUD)<br/>
-/// TopLevelDomain: .tv</para>
+/// Currency: <see cref="Iso4217.Currency.AustralianDollar" >AustralianDollar (AUD)</see><br/>
+/// TopLevelDomain: .tv
+/// </para>
 /// </summary>
 /// <value>id=TUV, 2code=TV, numeric=798</value>
 Tuvalu=90_680_615,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:TW">Taiwan</a></para>
-/// <para>Capital: Taipei<br/>
+/// <para>
+/// Located in: Eastern Asia<br/>
+/// Capital: Taipei<br/>
 /// Languages: <see cref="Iso639.Language.Chinese"/>,<see cref="Iso639.Language.Chinese"/>,<see cref="Iso639.Language.Chinese_Min_Nan"/>,<see cref="Iso639.Language.Chinese_Hakka"/><br/>
-/// Currency: Dollar (TWD)<br/>
-/// TopLevelDomain: .tw</para>
+/// Currency: <see cref="Iso4217.Currency.NewTaiwanDollar" >NewTaiwanDollar (TWD)</see><br/>
+/// TopLevelDomain: .tw
+/// </para>
 /// </summary>
 /// <value>id=TWN, 2code=TW, numeric=158</value>
 Taiwan=94_858_663,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:TZ">Tanzania</a></para>
-/// <para>Capital: Dodoma<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Dodoma<br/>
 /// Languages: <see cref="Iso639.Language.Swahili_macrolanguage"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Arabic"/><br/>
-/// Currency: Shilling (TZS)<br/>
-/// TopLevelDomain: .tz</para>
+/// Currency: <see cref="Iso4217.Currency.TanzanianShilling" >TanzanianShilling (TZS)</see><br/>
+/// TopLevelDomain: .tz
+/// </para>
 /// </summary>
 /// <value>id=TZA, 2code=TZ, numeric=834</value>
 Tanzania=107_415_143,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:UA">Ukraine</a></para>
-/// <para>Capital: Kyiv<br/>
+/// <para>
+/// Located in: Eastern Europe<br/>
+/// Capital: Kyiv<br/>
 /// Languages: <see cref="Iso639.Language.Ukrainian"/>,<see cref="Iso639.Language.Russian"/>,<see cref="Iso639.Language.Romany"/>,<see cref="Iso639.Language.Polish"/>,<see cref="Iso639.Language.Hungarian"/><br/>
-/// Currency: Hryvnia (UAH)<br/>
-/// TopLevelDomain: .ua</para>
+/// Currency: <see cref="Iso4217.Currency.Hryvnia" >Hryvnia (UAH)</see><br/>
+/// TopLevelDomain: .ua
+/// </para>
 /// </summary>
 /// <value>id=UKR, 2code=UA, numeric=804</value>
 Ukraine=2_722_473,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:UG">Uganda</a></para>
-/// <para>Capital: Kampala<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Kampala<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Ganda"/>,<see cref="Iso639.Language.Swahili_macrolanguage"/>,<see cref="Iso639.Language.Arabic"/><br/>
-/// Currency: Shilling (UGX)<br/>
-/// TopLevelDomain: .ug</para>
+/// Currency: <see cref="Iso4217.Currency.UgandaShilling" >UgandaShilling (UGX)</see><br/>
+/// TopLevelDomain: .ug
+/// </para>
 /// </summary>
 /// <value>id=UGA, 2code=UG, numeric=800</value>
 Uganda=27_853_225,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:UM">United States Minor Outlying Islands</a></para>
-/// <para>Capital: <br/>
+/// <para>
+/// Located in: Micronesia<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (USD)<br/>
-/// TopLevelDomain: .um</para>
+/// Currency: <see cref="Iso4217.Currency.USDollar" >USDollar (USD)</see><br/>
+/// TopLevelDomain: .um
+/// </para>
 /// </summary>
 /// <value>id=UMI, 2code=UM, numeric=581</value>
 UnitedStatesMinorOutlyingIslands=53_035_817,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:US">United States</a></para>
-/// <para>Capital: Washington<br/>
+/// <para>
+/// Located in: Northern America<br/>
+/// Capital: Washington<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Spanish"/>,<see cref="Iso639.Language.Hawaiian"/>,<see cref="Iso639.Language.French"/><br/>
-/// Currency: Dollar (USD)<br/>
-/// TopLevelDomain: .us</para>
+/// Currency: <see cref="Iso4217.Currency.USDollar" >USDollar (USD)</see><br/>
+/// TopLevelDomain: .us
+/// </para>
 /// </summary>
 /// <value>id=USA, 2code=US, numeric=840</value>
 UnitedStates=78_185_641,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:UY">Uruguay</a></para>
-/// <para>Capital: Montevideo<br/>
+/// <para>
+/// Located in: South America<br/>
+/// Capital: Montevideo<br/>
 /// Languages: <see cref="Iso639.Language.Spanish"/><br/>
-/// Currency: Peso (UYU)<br/>
-/// TopLevelDomain: .uy</para>
+/// Currency: <see cref="Iso4217.Currency.PesoUruguayo" >PesoUruguayo (UYU)</see><br/>
+/// TopLevelDomain: .uy
+/// </para>
 /// </summary>
 /// <value>id=URY, 2code=UY, numeric=858</value>
 Uruguay=103_400_553,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:UZ">Uzbekistan</a></para>
-/// <para>Capital: Tashkent<br/>
+/// <para>
+/// Located in: Central Asia<br/>
+/// Capital: Tashkent<br/>
 /// Languages: <see cref="Iso639.Language.Uzbek"/>,<see cref="Iso639.Language.Russian"/>,<see cref="Iso639.Language.Tajik"/><br/>
-/// Currency: Som (UZS)<br/>
-/// TopLevelDomain: .uz</para>
+/// Currency: <see cref="Iso4217.Currency.UzbekistanSum" >UzbekistanSum (UZS)</see><br/>
+/// TopLevelDomain: .uz
+/// </para>
 /// </summary>
 /// <value>id=UZB, 2code=UZ, numeric=860</value>
 Uzbekistan=107_548_265,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:VA">Vatican</a></para>
-/// <para>Capital: Vatican City<br/>
+/// <para>
+/// Located in: Southern Europe<br/>
+/// Capital: Vatican City<br/>
 /// Languages: <see cref="Iso639.Language.Latin"/>,<see cref="Iso639.Language.Italian"/>,<see cref="Iso639.Language.French"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .va</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .va
+/// </para>
 /// </summary>
 /// <value>id=VAT, 2code=VA, numeric=336</value>
 Vatican=2_857_003,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:VC">Saint Vincent and the Grenadines</a></para>
-/// <para>Capital: Kingstown<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: Kingstown<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.French"/><br/>
-/// Currency: Dollar (XCD)<br/>
-/// TopLevelDomain: .vc</para>
+/// Currency: <see cref="Iso4217.Currency.EastCaribbeanDollar" >EastCaribbeanDollar (XCD)</see><br/>
+/// TopLevelDomain: .vc
+/// </para>
 /// </summary>
 /// <value>id=VCT, 2code=VC, numeric=670</value>
 SaintVincentandtheGrenadines=11_245_739,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:VE">Venezuela</a></para>
-/// <para>Capital: Caracas<br/>
+/// <para>
+/// Located in: South America<br/>
+/// Capital: Caracas<br/>
 /// Languages: <see cref="Iso639.Language.Spanish"/><br/>
-/// Currency: Bolivar Soberano (VES)<br/>
-/// TopLevelDomain: .ve</para>
+/// Currency: <see cref="Iso4217.Currency.BolivarSoberano_VES" >BolivarSoberano_VES (VES)</see><br/>
+/// TopLevelDomain: .ve
+/// </para>
 /// </summary>
 /// <value>id=VEN, 2code=VE, numeric=862</value>
 Venezuela=19_622_187,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:VG">British Virgin Islands</a></para>
-/// <para>Capital: Road Town<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: Road Town<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (USD)<br/>
-/// TopLevelDomain: .vg</para>
+/// Currency: <see cref="Iso4217.Currency.USDollar" >USDollar (USD)</see><br/>
+/// TopLevelDomain: .vg
+/// </para>
 /// </summary>
 /// <value>id=VGB, 2code=VG, numeric=092</value>
 BritishVirginIslands=27_986_347,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:VI">U.S. Virgin Islands</a></para>
-/// <para>Capital: Charlotte Amalie<br/>
+/// <para>
+/// Located in: Caribbean<br/>
+/// Capital: Charlotte Amalie<br/>
 /// Languages: <see cref="Iso639.Language.English"/><br/>
-/// Currency: Dollar (USD)<br/>
-/// TopLevelDomain: .vi</para>
+/// Currency: <see cref="Iso4217.Currency.USDollar" >USDollar (USD)</see><br/>
+/// TopLevelDomain: .vi
+/// </para>
 /// </summary>
 /// <value>id=VIR, 2code=VI, numeric=850</value>
 USVirginIslands=36_407_851,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:VN">Vietnam</a></para>
-/// <para>Capital: Hanoi<br/>
+/// <para>
+/// Located in: South-eastern Asia<br/>
+/// Capital: Hanoi<br/>
 /// Languages: <see cref="Iso639.Language.Vietnamese"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.French"/>,<see cref="Iso639.Language.Chinese"/>,<see cref="Iso639.Language.Khmer"/><br/>
-/// Currency: Dong (VND)<br/>
-/// TopLevelDomain: .vn</para>
+/// Currency: <see cref="Iso4217.Currency.Dong" >Dong (VND)</see><br/>
+/// TopLevelDomain: .vn
+/// </para>
 /// </summary>
 /// <value>id=VNM, 2code=VN, numeric=704</value>
 Vietnam=57_369_451,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:VU">Vanuatu</a></para>
-/// <para>Capital: Port Vila<br/>
+/// <para>
+/// Located in: Melanesia<br/>
+/// Capital: Port Vila<br/>
 /// Languages: <see cref="Iso639.Language.Bislama"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.French"/><br/>
-/// Currency: Vatu (VUV)<br/>
-/// TopLevelDomain: .vu</para>
+/// Currency: <see cref="Iso4217.Currency.Vatu" >Vatu (VUV)</see><br/>
+/// TopLevelDomain: .vu
+/// </para>
 /// </summary>
 /// <value>id=VUT, 2code=VU, numeric=548</value>
 Vanuatu=86_744_363,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:WF">Wallis and Futuna</a></para>
-/// <para>Capital: Mata Utu<br/>
+/// <para>
+/// Located in: Polynesia<br/>
+/// Capital: Mata Utu<br/>
 /// Languages: <see cref="Iso639.Language.Wallisian"/>,<see cref="Iso639.Language.Futuna_East"/>,<see cref="Iso639.Language.French"/><br/>
-/// Currency: Franc (XPF)<br/>
-/// TopLevelDomain: .wf</para>
+/// Currency: <see cref="Iso4217.Currency.CFPFranc" >CFPFranc (XPF)</see><br/>
+/// TopLevelDomain: .wf
+/// </para>
 /// </summary>
 /// <value>id=WLF, 2code=WF, numeric=876</value>
 WallisandFutuna=23_931_629,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:WS">Samoa</a></para>
-/// <para>Capital: Apia<br/>
+/// <para>
+/// Located in: Polynesia<br/>
+/// Capital: Apia<br/>
 /// Languages: <see cref="Iso639.Language.Samoan"/>,<see cref="Iso639.Language.English"/><br/>
-/// Currency: Tala (WST)<br/>
-/// TopLevelDomain: .ws</para>
+/// Currency: <see cref="Iso4217.Currency.Tala" >Tala (WST)</see><br/>
+/// TopLevelDomain: .ws
+/// </para>
 /// </summary>
 /// <value>id=WSM, 2code=WS, numeric=882</value>
 Samoa=78_472_365,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:YE">Yemen</a></para>
-/// <para>Capital: Sanaa<br/>
+/// <para>
+/// Located in: Western Asia<br/>
+/// Capital: Sanaa<br/>
 /// Languages: <see cref="Iso639.Language.Arabic"/><br/>
-/// Currency: Rial (YER)<br/>
-/// TopLevelDomain: .ye</para>
+/// Currency: <see cref="Iso4217.Currency.YemeniRial" >YemeniRial (YER)</see><br/>
+/// TopLevelDomain: .ye
+/// </para>
 /// </summary>
 /// <value>id=YEM, 2code=YE, numeric=887</value>
 Yemen=20_013_361,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:YT">Mayotte</a></para>
-/// <para>Capital: Mamoudzou<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Mamoudzou<br/>
 /// Languages: <see cref="Iso639.Language.French"/><br/>
-/// Currency: Euro (EUR)<br/>
-/// TopLevelDomain: .yt</para>
+/// Currency: <see cref="Iso4217.Currency.Euro" >Euro (EUR)</see><br/>
+/// TopLevelDomain: .yt
+/// </para>
 /// </summary>
 /// <value>id=MYT, 2code=YT, numeric=175</value>
 Mayotte=82_943_513,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:ZA">South Africa</a></para>
-/// <para>Capital: Pretoria<br/>
+/// <para>
+/// Located in: Southern Africa<br/>
+/// Capital: Pretoria<br/>
 /// Languages: <see cref="Iso639.Language.Zulu"/>,<see cref="Iso639.Language.Xhosa"/>,<see cref="Iso639.Language.Afrikaans"/>,<see cref="Iso639.Language.Pedi"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Tswana"/>,<see cref="Iso639.Language.Sotho_Southern"/>,<see cref="Iso639.Language.Tsonga"/>,<see cref="Iso639.Language.Swati"/>,<see cref="Iso639.Language.Venda"/>,<see cref="Iso639.Language.Ndebele_South"/><br/>
-/// Currency: Rand (ZAR)<br/>
-/// TopLevelDomain: .za</para>
+/// Currency: <see cref="Iso4217.Currency.Rand" >Rand (ZAR)</see><br/>
+/// TopLevelDomain: .za
+/// </para>
 /// </summary>
 /// <value>id=ZAF, 2code=ZA, numeric=710</value>
 SouthAfrica=3_352_627,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:ZM">Zambia</a></para>
-/// <para>Capital: Lusaka<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Lusaka<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Bemba_Zambia"/>,<see cref="Iso639.Language.Lozi"/>,<see cref="Iso639.Language.Lunda"/>,<see cref="Iso639.Language.Luvale"/>,<see cref="Iso639.Language.Nyanja"/>,<see cref="Iso639.Language.Tonga_Zambia"/><br/>
-/// Currency: Kwacha (ZMW)<br/>
-/// TopLevelDomain: .zm</para>
+/// Currency: <see cref="Iso4217.Currency.ZambianKwacha" >ZambianKwacha (ZMW)</see><br/>
+/// TopLevelDomain: .zm
+/// </para>
 /// </summary>
 /// <value>id=ZMB, 2code=ZM, numeric=894</value>
 Zambia=53_676_851,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:ZW">Zimbabwe</a></para>
-/// <para>Capital: Harare<br/>
+/// <para>
+/// Located in: Eastern Africa<br/>
+/// Capital: Harare<br/>
 /// Languages: <see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Shona"/>,<see cref="Iso639.Language.Ndebele_South"/>,<see cref="Iso639.Language.Ndebele_North"/><br/>
 /// Currency: Dollar (ZWL)<br/>
-/// TopLevelDomain: .zw</para>
+/// TopLevelDomain: .zw
+/// </para>
 /// </summary>
 /// <value>id=ZWE, 2code=ZW, numeric=716</value>
 Zimbabwe=95_626_675,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:CS">Serbia and Montenegro</a></para>
-/// <para>Capital: Belgrade<br/>
+/// <para>
+/// Capital: Belgrade<br/>
 /// Languages: <see cref="Iso639.Language.Slavic_Church"/>,<see cref="Iso639.Language.Hungarian"/>,<see cref="Iso639.Language.Albanian"/>,<see cref="Iso639.Language.Serbian"/><br/>
-/// Currency: Dinar (RSD)<br/>
-/// TopLevelDomain: .cs</para>
+/// Currency: <see cref="Iso4217.Currency.SerbianDinar" >SerbianDinar (RSD)</see><br/>
+/// TopLevelDomain: .cs
+/// </para>
 /// </summary>
 /// <value>id=SCG, 2code=CS, numeric=891</value>
 SerbiaandMontenegro=75_837_605,
 
 /// <summary>
 /// <para><a href="https://en.wikipedia.org/wiki/ISO_3166-2:AN">Netherlands Antilles</a></para>
-/// <para>Capital: Willemstad<br/>
+/// <para>
+/// Capital: Willemstad<br/>
 /// Languages: <see cref="Iso639.Language.Dutch"/>,<see cref="Iso639.Language.English"/>,<see cref="Iso639.Language.Spanish"/><br/>
-/// Currency: Guilder (ANG)<br/>
-/// TopLevelDomain: .an</para>
+/// Currency: <see cref="Iso4217.Currency.NetherlandsAntilleanGuilder" >NetherlandsAntilleanGuilder (ANG)</see><br/>
+/// TopLevelDomain: .an
+/// </para>
 /// </summary>
 /// <value>id=ANT, 2code=AN, numeric=530</value>
 NetherlandsAntilles=54_631_233,
