@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <ProjectGuid>43909911-EB96-4A66-A525-9D25DA7736E7</ProjectGuid>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+        <OutputType>Library</OutputType>
+        <IsTrimmable>true</IsTrimmable>
+        <IsAotCompatible>true</IsAotCompatible>
+        <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
+        <EnableSingleFileAnalyzer>true</EnableSingleFileAnalyzer>
+        <EnableAotAnalyzer>true</EnableAotAnalyzer>
+        <AnalysisLevel>latest-all</AnalysisLevel>
+        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageVersion>0.1.0</PackageVersion>
+        <Title>GeoInfo</Title>
+        <PackageId>GeoInfo</PackageId>
+        <Authors>Darcara</Authors>
+        <Copyright>Copyright (c) Darcara</Copyright>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <Description>ISO639 Language, ISO3166 Country and ISO4217 Currency enums and conversion</Description>
+        <PackageProjectUrl>https://github.com/Darcara/TextAnalysis</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Darcara/TextAnalysis</RepositoryUrl>
+        <PackageTags>Language, ISO639, Country, ISO3166, Currency, ISO4217</PackageTags>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <EmbedAllSources>true</EmbedAllSources>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PublishDocumentationFile>true</PublishDocumentationFile>
+        <DebugType>portable</DebugType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Using Include="System"/>
+        <Using Include="System.Collections.Generic"/>
+        <Using Include="System.IO"/>
+        <Using Include="System.Linq"/>
+        <InternalsVisibleTo Include="TextAnalysis.Test"/>
+        <InternalsVisibleTo Include="$(AssemblyName).Test"/>
+        <None Include="..\LICENSE" Pack="true" PackagePath="."/>
+        <None Include="README.md" Pack="true" PackagePath="README.md"/>
+    </ItemGroup>
+
+</Project>
