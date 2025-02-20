@@ -62,6 +62,12 @@ public class LanguageTests {
 	[TestCase("HY", Language.Armenian)]
 	[TestCase("hy-whatever", Language.Armenian)]
 	[TestCase("HY-whatever", Language.Armenian)]
+	[TestCase("hy_whatever", Language.Armenian)]
+	[TestCase("HY_whatever", Language.Armenian)]
+	[TestCase("hye-whatever", Language.Armenian)]
+	[TestCase("HYE-whatever", Language.Armenian)]
+	[TestCase("hye_whatever", Language.Armenian)]
+	[TestCase("HYE_whatever", Language.Armenian)]
 	[TestCase("hye", Language.Armenian)]
 	[TestCase("HYE", Language.Armenian)]
 	[TestCase("X", Language.Undetermined)]
@@ -75,6 +81,7 @@ public class LanguageTests {
 			bytes[i] = (Byte)code[i];
 		}
 		LanguageHelper.GetLanguageByCode(bytes).Should().Be(language);
+		LanguageHelper.GetLanguageByCode(code).Should().Be(language);
 	}
 
 	[Category("Benchmark")]

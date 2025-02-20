@@ -2,7 +2,7 @@
 
 public static class CurrencyExtensions {
 	public static String Get3Code(this Currency currency) {
-		if (!Enum.IsDefined(currency) || currency == Currency.Uninitialized) return CurrencyHelper.Unavailable3;
+		if (!Enum.IsDefined(currency) || currency <= Currency.Uninitialized) return CurrencyHelper.Unavailable3;
 		Int32 value = (Int32)currency - 1;
 		Span<Char> chars = stackalloc Char[3];
 		chars[0] = (Char)((Byte)'a' + ((value >> 1) & 0b11111));
@@ -12,7 +12,7 @@ public static class CurrencyExtensions {
 	}
 
 	public static void Get3CodeBytes(this Currency currency, Span<Byte> bytes) {
-		if (!Enum.IsDefined(currency) || currency == Currency.Uninitialized) {
+		if (!Enum.IsDefined(currency) || currency <= Currency.Uninitialized) {
 			CurrencyHelper.Unavailable3Bytes.CopyTo(bytes);
 			return;
 		}

@@ -19,7 +19,7 @@ public static class LanguageExtensions {
 		return new String(chars);
 	}
 
-	internal static void Get2CodeBytes(this Language language, Span<Byte> bytes) {
+	public static void Get2CodeBytes(this Language language, Span<Byte> bytes) {
 		if (!Enum.IsDefined(language) || language == Language.Uninitialized) {
 			LanguageHelper.Unavailable2Bytes.CopyTo(bytes);
 			return;

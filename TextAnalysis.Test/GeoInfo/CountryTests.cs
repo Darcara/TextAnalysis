@@ -47,6 +47,12 @@ public class CountryTests {
 	[TestCase("CA", Country.Canada)]
 	[TestCase("ca-whatever", Country.Canada)]
 	[TestCase("CA-whatever", Country.Canada)]
+	[TestCase("ca_whatever", Country.Canada)]
+	[TestCase("CA_whatever", Country.Canada)]
+	[TestCase("can-whatever", Country.Canada)]
+	[TestCase("CAN-whatever", Country.Canada)]
+	[TestCase("can_whatever", Country.Canada)]
+	[TestCase("CAN_whatever", Country.Canada)]
 	[TestCase("can", Country.Canada)]
 	[TestCase("CAN", Country.Canada)]
 	[TestCase("X", Country.NotACountry)]
@@ -60,6 +66,7 @@ public class CountryTests {
 			bytes[i] = (Byte)code[i];
 		}
 		CountryHelper.GetCountryByCode(bytes).Should().Be(language);
+		CountryHelper.GetCountryByCode(code).Should().Be(language);
 	}
 
 	[Category("Benchmark")]

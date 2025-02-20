@@ -18,6 +18,7 @@ public static class CountryHelper {
 		if (countryCode.Length == 3) return GetCountryBy3Code(countryCode);
 
 		if (countryCode[2] == '-' || countryCode[2] == '_') return GetCountryBy2Code(countryCode.Slice(0, 2));
+		if (countryCode.Length > 3 && (countryCode[3] == '-' || countryCode[3] == '_')) return GetCountryBy3Code(countryCode.Slice(0, 3));
 		return Country.NotACountry;
 	}
 	
@@ -27,6 +28,7 @@ public static class CountryHelper {
 		if (countryCode.Length == 3) return GetCountryBy3Code(countryCode);
 
 		if (countryCode[2] == '-' || countryCode[2] == '_') return GetCountryBy2Code(countryCode.Slice(0, 2));
+		if (countryCode.Length > 3 && (countryCode[3] == '-' || countryCode[3] == '_')) return GetCountryBy3Code(countryCode.Slice(0, 3));
 		return Country.NotACountry;
 	}
 

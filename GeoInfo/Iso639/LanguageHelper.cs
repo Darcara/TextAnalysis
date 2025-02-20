@@ -17,6 +17,7 @@ public static class LanguageHelper {
 		if (languageCode.Length == 3) return GetLanguageBy3Code(languageCode);
 
 		if (languageCode[2] == '-' || languageCode[2] == '_') return GetLanguageBy2Code(languageCode.Slice(0, 2));
+		if (languageCode.Length > 3 && (languageCode[3] == '-' || languageCode[3] == '_')) return GetLanguageBy3Code(languageCode.Slice(0, 3));
 		return Language.Undetermined;
 	}
 	
@@ -26,6 +27,7 @@ public static class LanguageHelper {
 		if (languageCode.Length == 3) return GetLanguageBy3Code(languageCode);
 
 		if (languageCode[2] == '-' || languageCode[2] == '_') return GetLanguageBy2Code(languageCode.Slice(0, 2));
+		if (languageCode.Length > 3 && (languageCode[3] == '-' || languageCode[3] == '_')) return GetLanguageBy3Code(languageCode.Slice(0, 3));
 		return Language.Undetermined;
 	}
 
