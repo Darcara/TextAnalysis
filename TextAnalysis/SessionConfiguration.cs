@@ -5,7 +5,7 @@ using Microsoft.ML.OnnxRuntime;
 public sealed record BatchingConfiguration {
 	public static readonly BatchingConfiguration NoBatching = new();
 
-	public Int64 BatchSize { get; init; } = 1;
+	public Int32 BatchSize { get; init; } = 1;
 
 	public String? BatchingDimensionName { get; init; }
 }
