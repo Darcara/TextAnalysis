@@ -12,6 +12,13 @@ public static class Helper {
 			("https://huggingface.co/onnx-community/opus-mt-en-de/resolve/main/onnx/decoder_model.onnx?download=true", "data/en-de/decoder_model.onnx"),
 			("https://huggingface.co/onnx-community/opus-mt-en-de/resolve/main/onnx/decoder_with_past_model.onnx?download=true", "data/en-de/decoder_with_past_model.onnx"),
 			("https://huggingface.co/onnx-community/opus-mt-en-de/resolve/main/onnx/encoder_model.onnx?download=true", "data/en-de/encoder_model.onnx"),
+			
+			("https://huggingface.co/onnx-community/opus-mt-de-en/resolve/main/source.spm?download=true", "data/de-en/source.spm"),
+			("https://huggingface.co/onnx-community/opus-mt-de-en/resolve/main/vocab.json?download=true", "data/de-en/vocab.json"),
+			("https://huggingface.co/onnx-community/opus-mt-de-en/resolve/main/onnx/decoder_model.onnx?download=true", "data/de-en/decoder_model.onnx"),
+			("https://huggingface.co/onnx-community/opus-mt-de-en/resolve/main/onnx/decoder_with_past_model.onnx?download=true", "data/de-en/decoder_with_past_model.onnx"),
+			("https://huggingface.co/onnx-community/opus-mt-de-en/resolve/main/onnx/encoder_model.onnx?download=true", "data/de-en/encoder_model.onnx"),
+			
 			("https://huggingface.co/segment-any-text/sat-1l-sm/resolve/main/model.onnx?download=true", "data/sat1lsm.onnx"),
 			("https://huggingface.co/segment-any-text/sat-3l-sm/resolve/main/model.onnx?download=true", "data/sat3lsm.onnx"),
 			("https://huggingface.co/segment-any-text/sat-12l-sm/resolve/main/model.onnx?download=true", "data/sat12lsm.onnx"),

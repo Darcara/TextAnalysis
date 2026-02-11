@@ -5,6 +5,7 @@ using System.Numerics.Tensors;
 using Microsoft.Extensions.Logging;
 using Microsoft.ML.OnnxRuntime;
 using SentencePieceTokenizer;
+using TextAnalysis.SentenceSplitting;
 
 [TestFixture]
 public class SplitsText : ATest {
@@ -40,7 +41,7 @@ public class SplitsText : ATest {
 		Float16[] encodedAttention = new Float16[encodedIds.Length];
 		Array.Fill(encodedAttention, Float16.One);
 
-		using InferenceSession session = new(TestData.OnnxModels.Sat3Lsm);
+		using InferenceSession session = new(TestData.SentenceSplitModels.Sat3Lsm);
 		using OrtValue? inputOrtValue = OrtValue.CreateTensorValueFromMemory(encodedIds, [1, encodedIds.Length]);
 		using OrtValue? encodedAttentionOrtValue = OrtValue.CreateTensorValueFromMemory(encodedAttention, [1, encodedIds.Length]);
 
@@ -83,7 +84,7 @@ public class SplitsText : ATest {
 	[TestCase(TestData.ExampleText.ShortSentence, TestName = nameof(TestData.ExampleText.ShortSentence))]
 	[TestCase(TestData.ExampleText.Paragraph, TestName = nameof(TestData.ExampleText.Paragraph))]
 	public void SatSplitterExample(String text) {
-		using SatSplitter splitter = new(TestData.SentencePieceModels.XlmRobertaBase, TestData.OnnxModels.Sat3Lsm, SessionConfiguration.DefaultCpu, LogFactory.CreateLogger<SatSplitter>());
+		using SatSplitter splitter = new(TestData.SentencePieceModels.XlmRobertaBase, TestData.SentenceSplitModels.Sat3Lsm, SessionConfiguration.DefaultCpu, LogFactory.CreateLogger<SatSplitter>());
 		String[] sentences = splitter.Split(text);
 		Console.WriteLine(text);
 		Console.WriteLine();
@@ -94,9 +95,9 @@ public class SplitsText : ATest {
 	}
 
 	[Category("Benchmark")]
-	[TestCase(TestData.OnnxModels.Sat1Lsm, 4931)]
-	[TestCase(TestData.OnnxModels.Sat3Lsm, 4950)]
-	[TestCase(TestData.OnnxModels.Sat12Lsm, 4992)]
+	[TestCase(TestData.SentenceSplitModels.Sat1Lsm, 4931)]
+	[TestCase(TestData.SentenceSplitModels.Sat3Lsm, 4950)]
+	[TestCase(TestData.SentenceSplitModels.Sat12Lsm, 4992)]
 	public void SplitsEnglishTextWhenSplit(String model, Int32 expectedSentences) {
 		String text = TestData.ExampleText.TomSawyerText;
 		SessionConfiguration config = SessionConfiguration.DefaultCpu with {
@@ -105,7 +106,7 @@ public class SplitsText : ATest {
 			OptimizationLevel = GraphOptimizationLevel.ORT_ENABLE_ALL,
 			InterOpNumThreads = 2,
 			IntraOpNumThreads = 4,
-			// ExecutionProvider = ExecutionProvider.DirectML,
+			ExecutionProvider = ExecutionProvider.DirectML,
 		};
 		using SatSplitter splitter = new(TestData.SentencePieceModels.XlmRobertaBase, model, config, LogFactory.CreateLogger<SatSplitter>());
 		Stopwatch sw = Stopwatch.StartNew();
@@ -144,7 +145,7 @@ public class SplitsText : ATest {
 	[TestCase(8, 1, 1, true)]
 	[TestCase(16, 1, 1, true)]
 	public void Sat1LTimeEstimation(Int32 batchSize, Int32 interOpThreads, Int32 intraOpThreads, Boolean dml) {
-		EstimateModel(batchSize, interOpThreads, intraOpThreads, dml, TestData.OnnxModels.Sat1Lsm);
+		EstimateModel(batchSize, interOpThreads, intraOpThreads, dml, TestData.SentenceSplitModels.Sat1Lsm);
 	}
 
 	[Category("Benchmark")]
@@ -169,7 +170,22 @@ public class SplitsText : ATest {
 	[TestCase(8, 1, 1, true)]
 	[TestCase(16, 1, 1, true)]
 	public void Sat3LTimeEstimation(Int32 batchSize, Int32 interOpThreads, Int32 intraOpThreads, Boolean dml) {
-		EstimateModel(batchSize, interOpThreads, intraOpThreads, dml, TestData.OnnxModels.Sat3Lsm);
+		EstimateModel(batchSize, interOpThreads, intraOpThreads, dml, TestData.SentenceSplitModels.Sat3Lsm);
+	}
+	
+	[Category("Benchmark")]
+	[TestCase(1, 1, 1, true)]
+	[TestCase(1, 1, 4, true)]
+	[TestCase(2, 1, 1, true)]
+	[TestCase(4, 1, 1, true)]
+	[TestCase(4, 1, 4, true)]
+	[TestCase(4, 4, 1, true)]
+	[TestCase(4, 4, 4, true)]
+	[TestCase(6, 1, 1, true)]
+	[TestCase(8, 1, 1, true)]
+	[TestCase(16, 1, 1, true)]
+	public void Sat12LGpuEstimation(Int32 batchSize, Int32 interOpThreads, Int32 intraOpThreads, Boolean dml) {
+		EstimateModel(batchSize, interOpThreads, intraOpThreads, dml, TestData.SentenceSplitModels.Sat12Lsm);
 	}
 
 	private void EstimateModel(Int32 batchSize, Int32 interOpThreads, Int32 intraOpThreads, Boolean dml, String model) {

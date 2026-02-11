@@ -1,13 +1,14 @@
 ﻿namespace TextAnalysis.Test;
 
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Logging.Console;
 using Neco.Common.Extensions;
 
 [TestFixture]
 public abstract class ATest {
 	
-	public ILoggerFactory LogFactory;
+	public ILoggerFactory LogFactory = NullLoggerFactory.Instance;
 
 	public ILogger Logger => LogFactory.CreateLogger("Test");
 	
@@ -18,6 +19,7 @@ public abstract class ATest {
 			.AddSimpleConsole(conf => {
 				conf.ColorBehavior = LoggerColorBehavior.Enabled;
 				conf.SingleLine = false;
+				conf.TimestampFormat = "HH:mm:ss.fff > ";
 			}));
 	}
 
