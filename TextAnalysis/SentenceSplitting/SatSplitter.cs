@@ -1,16 +1,12 @@
-﻿namespace TextAnalysis;
+﻿namespace TextAnalysis.SentenceSplitting;
 
+using System.Buffers;
 using System.Numerics.Tensors;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.ML.OnnxRuntime;
 using Neco.Common;
 using SentencePieceTokenizer;
-
-public interface ISentenceSplitter : IDisposable {
-	public String[] Split(String text);
-	public Int32[] Split(ReadOnlySpan<Byte> utf8Bytes);
-}
 
 /// <summary>
 /// Splits text in any language, using the state of the art SaT-Model - Segment any Text
@@ -24,7 +20,16 @@ public sealed class SatSplitter : ISentenceSplitter {
 	private readonly Boolean _disposeTokenizer;
 	private readonly OnnxSession _sat;
 
-	public SatSplitter(String xlmRobertaTokenizerModelFile, String satModelFile, SessionConfiguration satConfig, ILogger<SatSplitter>? logger) {
+	public SatSplitter(SatSplitterConfiguration satConfig, ILogger<SatSplitter> logger) {
+		_logger = logger;
+		_tokenizer = new(satConfig.XlmRobertaTokenizerModelFile);
+		_disposeTokenizer = true;
+
+		OnnxModelLoader ml = new(_logger);
+		_sat = ml.Load(satConfig.SatModelFile, satConfig.OnnxSessionConfiguration);
+	}
+
+	public SatSplitter(String xlmRobertaTokenizerModelFile, String satModelFile, SessionConfiguration satConfig, ILogger<SatSplitter>? logger = null) {
 		_logger = logger ?? NullLogger<SatSplitter>.Instance;
 		_tokenizer = new(xlmRobertaTokenizerModelFile);
 		_disposeTokenizer = true;
@@ -46,8 +51,10 @@ public sealed class SatSplitter : ISentenceSplitter {
 	#region Implementation of ISentenceSplitter
 
 	/// <inheritdoc />
-	public String[] Split(String text) {
-		ReadOnlySpan<Byte> utf8Bytes = MagicNumbers.Utf8NoBom.GetBytes(text);
+	public String[] Split(ReadOnlySpan<Char> text) {
+		Byte[] utf8BytesBuffer = ArrayPool<Byte>.Shared.Rent(MagicNumbers.Utf8NoBom.GetMaxByteCount(text.Length));
+		Int32 utf8BytesLength = MagicNumbers.Utf8NoBom.GetBytes(text, utf8BytesBuffer);
+		ReadOnlySpan<Byte> utf8Bytes = new(utf8BytesBuffer, 0, utf8BytesLength);
 		Int32[] indices = Split(utf8Bytes);
 
 		// the last sentence might not end at the end of the text 
@@ -62,7 +69,18 @@ public sealed class SatSplitter : ISentenceSplitter {
 		if (resultSentences > indices.Length)
 			sentences[^1] = MagicNumbers.Utf8NoBom.GetString(utf8Bytes.Slice(indices[^1]));
 
+		ArrayPool<Byte>.Shared.Return(utf8BytesBuffer);
 		return sentences;
+	}
+	
+	/// <inheritdoc />
+	public Int32[] SplitIndices(ReadOnlySpan<Char> text) {
+		Byte[] utf8BytesBuffer = ArrayPool<Byte>.Shared.Rent(MagicNumbers.Utf8NoBom.GetMaxByteCount(text.Length));
+		Int32 utf8BytesLength = MagicNumbers.Utf8NoBom.GetBytes(text, utf8BytesBuffer);
+		ReadOnlySpan<Byte> utf8Bytes = new(utf8BytesBuffer, 0, utf8BytesLength);
+		Int32[] indices = Split(utf8Bytes);
+
+		return indices;
 	}
 
 	/// <inheritdoc />
@@ -76,7 +94,7 @@ public sealed class SatSplitter : ISentenceSplitter {
 		encodedIds[^1] = _tokenizer.EndOfSentenceToken;
 		ReadOnlySpan<Int64> inputIdSpan = new(encodedIds);
 
-		// Even thoug the model can use up to 514 tokens, 512 seems to be faster
+		// Even though the model can use up to 514 tokens, 512 seems to be faster
 		const Int32 maxSequenceLength = 512;
 		Int64 batchSize = _sat.Configuration.Batching.BatchSize;
 		Int32 size = maxSequenceLength * (Int32)batchSize;
