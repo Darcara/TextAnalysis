@@ -9,7 +9,8 @@ using Neco.Common;
 using Neco.Common.Extensions;
 using Panlingo.LanguageIdentification.Lingua;
 
-// TODO custom native dll/so! Currently memory copy is needed to append \0 to the utf8-bytes so it becomes a zerio-terminated-cstring. This is unnecessary, as Rust can ust the utf8-ptr with length. 
+// TODO custom native dll/so! Currently memory copy is needed to append \0 to the utf8-bytes so it becomes a zerio-terminated-cstring. This is unnecessary, as Rust can ust the utf8-ptr with length.
+// TODO custom native dll/so! To be able to call unload_language_models: https://github.com/pemistahl/lingua-rs/blob/main/src/detector.rs#L254
 internal sealed class CustomLinguaDetector : IDisposable {
 	private readonly LinguaDetector _detector;
 	private readonly LinguaDetectorBuilder _linguaBuilder;
@@ -121,7 +122,7 @@ internal sealed class CustomLinguaDetector : IDisposable {
 	public LanguagePrediction[] PredictLanguages(ReadOnlySpan<Byte> utf8, Int32 count = 10) {
 		Byte[] utf8Zt = ArrayPool<Byte>.Shared.Rent(utf8.Length + 1);
 		utf8.CopyTo(utf8Zt);
-		utf8Zt[utf8.Length + 1] = 0;
+		utf8Zt[utf8.Length] = 0;
 		LanguagePrediction[] retval = PredictLanguagesCore(new ReadOnlySpan<Byte>(utf8Zt, 0, utf8.Length + 1), count);
 		ArrayPool<Byte>.Shared.Return(utf8Zt);
 		return retval;
