@@ -62,7 +62,11 @@ internal class LanguageTestStats {
 	#region Overrides of Object
 
 	/// <inheritdoc />
-	public override String ToString() => $"✅{Positive,4}/{Predictions}={(Positive / (Double)Predictions),7:P2} ❌{(Negative / (Double)Predictions),7:P2} -- ❓ {(Unknown / (Double)Predictions),7:P2} ==> Reliability = {((Positive + Unknown) / (Double)Predictions),7:P2}  - ✅[{PositiveRange.Min:F3} - {PositiveRange.Max:F3}] AVG={PositiveRange.Avg:F3}  - ❌[{NegativeRange.Min:F3} - {NegativeRange.Max:F3}] AVG={NegativeRange.Avg:F3}";
+	public override String ToString() {
+		String negativeRangeText = $"  - ❌[{Math.Clamp(NegativeRange.Min, -5, 5):F3} - {Math.Clamp(NegativeRange.Max, -5, 5):F3}] AVG={NegativeRange.Avg:F3}";
+		String positiveRangeText = $"  - ✅[{Math.Clamp(PositiveRange.Min, -5, 5):F3} - {Math.Clamp(PositiveRange.Max, -5, 5):F3}] AVG={PositiveRange.Avg:F3}";
+		return $"✅{Positive,4}/{Predictions}={(Positive / (Double)Predictions),7:P2} ❌{(Negative / (Double)Predictions),7:P2} -- ❓ {(Unknown / (Double)Predictions),7:P2} ==> Reliability = {((Positive + Unknown) / (Double)Predictions),7:P2}{positiveRangeText}{negativeRangeText}";
+	}
 
 	#endregion
 }

@@ -15,7 +15,7 @@ internal class LanguageDetectorTests : ATest, IDisposable {
 		yield return new TestFixtureData {Detector=new LinguaLanguageDetector(), Name = "Lingua-High"};
 		yield return new TestFixtureData {Detector=new LinguaLanguageDetector(true), Name = "Lingua-Low"};
 		yield return new TestFixtureData {Detector=new FastTextLanguageDetector(null), Name = "FastText-Low"};
-		yield return new TestFixtureData {Detector=new FastTextLanguageDetector(TestData.LanguageDetectionModels.FastText176), Name = "FastText-176"};
+		yield return new TestFixtureData {Detector=new FastTextLanguageDetector(TestData.LanguageDetectionModels.FastText176.Value), Name = "FastText-176"};
 		}
 	}
 

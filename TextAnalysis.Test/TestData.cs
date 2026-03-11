@@ -4,17 +4,22 @@ using IsoEnums.Iso639;
 
 public static class TestData {
 	public static class SentencePieceModels {
-		public static String XlmRobertaBase => "data/xlm-roberta-base-sentencepiece.bpe.model";
+		public static Lazy<String> XlmRobertaBase = Helper.WebFile("data/xlm-roberta-base-sentencepiece.bpe.model", "https://huggingface.co/FacebookAI/xlm-roberta-base/resolve/main/sentencepiece.bpe.model?download=true");
 		public static String EnDeMarian => "data/en-de/source.spm";
 		public static String EnDeMarianVocab => "data/en-de/vocab.json";
 	}
-	
+
 	public static class SentenceSplitModels {
-		public const String Sat1Lsm = "data/sat1lsm.onnx";
-		public const String Sat3Lsm = "data/sat3lsm.onnx";
-		public const String Sat12Lsm = "data/sat12lsm.onnx";
+		public static readonly Lazy<String> Sat1Lsm = Helper.WebFile("data/sat1lsm.onnx", "https://huggingface.co/segment-any-text/sat-1l-sm/resolve/main/model.onnx?download=true");
+		public static readonly Lazy<String> Sat3Lsm = Helper.WebFile("data/sat3lsm.onnx", "https://huggingface.co/segment-any-text/sat-3l-sm/resolve/main/model.onnx?download=true");
+		public static readonly Lazy<String> Sat12Lsm = Helper.WebFile("data/sat12lsm.onnx", "https://huggingface.co/segment-any-text/sat-12l-sm/resolve/main/model.onnx?download=true");
 	}
-	
+
+	public static class LanguageDetectionModels {
+		public static readonly Lazy<String> FastText176 = Helper.WebFile("data/lid.176.bin", "https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin");
+		public static readonly Lazy<String> FastText218 = Helper.WebFile("data/lid.218e.bin", "https://dl.fbaipublicfiles.com/nllb/lid/lid218e.bin");
+	}
+
 	public static class TranslationModels {
 		public static readonly ModelDefinition EnDe = new() {
 			SourceLanguage = Language.English,
@@ -25,6 +30,7 @@ public static class TestData {
 			SelfTestOutput = "Die Kinder wurden still und nachdenklich.",
 			ModelDirectoryOverride = "./data/en-de/",
 		};
+
 		public static readonly ModelDefinition DeEn = new() {
 			SourceLanguage = Language.German,
 			TargetLanguage = Language.English,
@@ -36,11 +42,6 @@ public static class TestData {
 		};
 	}
 
-	public static class LanguageDetectionModels {
-		public const String FastText176 = "data/lid.176.bin";
-		public const String FastText218 = "data/lid.218e.bin";
-	}
-	
 	public static class ExampleText {
 		public const String OneCharacterWord = "I";
 		public const String OneTokenWord = "answer";
@@ -52,6 +53,5 @@ public static class TestData {
 		public static String TomSawyerText => File.ReadAllText(TomSawyerFile).Substring(7499, 386044);
 		public static String TomSawyerChapter1 => File.ReadAllText(TomSawyerFile).Substring(7499, 12882);
 		public static String TomSawyerChapter2 => File.ReadAllText(TomSawyerFile).Substring(20381, 10483);
-
 	}
 }

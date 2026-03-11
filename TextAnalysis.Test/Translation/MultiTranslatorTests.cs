@@ -133,7 +133,7 @@ public class MultiTranslatorTests : ATest {
 		var exception = Assert.Throws<ArgumentOutOfRangeException>(() => multi.Translate(TestData.ExampleText.TomSawyerChapter2, Language.English, Language.German));
 		Console.WriteLine(exception);
 
-		ISentenceSplitter splitter = new SatSplitter(TestData.SentencePieceModels.XlmRobertaBase, TestData.SentenceSplitModels.Sat3Lsm, SessionConfiguration.DefaultCpu, LogFactory.CreateLogger<SatSplitter>());
+		ISentenceSplitter splitter = new SatSplitter(TestData.SentencePieceModels.XlmRobertaBase.Value, TestData.SentenceSplitModels.Sat3Lsm.Value, SessionConfiguration.DefaultCpu, LogFactory.CreateLogger<SatSplitter>());
 		Logger.LogInformation("Starting sentence split");
 		String[] sentences = splitter.Split(TestData.ExampleText.TomSawyerChapter2);
 		Logger.LogInformation("Splitting done: {NumSentences} sentences", sentences.Length);
@@ -157,7 +157,7 @@ public class MultiTranslatorTests : ATest {
 		using MultiTranslator multi = new(conf, LogFactory.CreateLogger<MultiTranslator>());
 
 		Byte[] textBytes = MagicNumbers.Utf8NoBom.GetBytes(TestData.ExampleText.TomSawyerChapter2);
-		ISentenceSplitter splitter = new SatSplitter(TestData.SentencePieceModels.XlmRobertaBase, TestData.SentenceSplitModels.Sat3Lsm, SessionConfiguration.DefaultCpu, LogFactory.CreateLogger<SatSplitter>());
+		ISentenceSplitter splitter = new SatSplitter(TestData.SentencePieceModels.XlmRobertaBase.Value, TestData.SentenceSplitModels.Sat3Lsm.Value, SessionConfiguration.DefaultCpu, LogFactory.CreateLogger<SatSplitter>());
 		Logger.LogInformation("Starting sentence split");
 		Int32[] sentences = splitter.Split(textBytes);
 		Logger.LogInformation("Splitting done: {NumSentences} sentences", sentences.Length);
@@ -181,7 +181,7 @@ public class MultiTranslatorTests : ATest {
 		using ITranslator translator = modelLoader.Load(endeModel, config);
 
 		Byte[] textBytes = MagicNumbers.Utf8NoBom.GetBytes(TestData.ExampleText.TomSawyerChapter2);
-		ISentenceSplitter splitter = new SatSplitter(TestData.SentencePieceModels.XlmRobertaBase, TestData.SentenceSplitModels.Sat3Lsm, SessionConfiguration.DefaultCpu, LogFactory.CreateLogger<SatSplitter>());
+		ISentenceSplitter splitter = new SatSplitter(TestData.SentencePieceModels.XlmRobertaBase.Value, TestData.SentenceSplitModels.Sat3Lsm.Value, SessionConfiguration.DefaultCpu, LogFactory.CreateLogger<SatSplitter>());
 		Logger.LogInformation("Starting sentence split");
 		Int32[] sentences = splitter.Split(textBytes);
 		Logger.LogInformation("Splitting done: {NumSentences} sentences", sentences.Length);
@@ -214,7 +214,7 @@ public class MultiTranslatorTests : ATest {
 		using ITranslator translator = modelLoader.Load(endeModel, config);
 
 		Byte[] textBytes = MagicNumbers.Utf8NoBom.GetBytes(TestData.ExampleText.TomSawyerChapter2);
-		ISentenceSplitter splitter = new SatSplitter(TestData.SentencePieceModels.XlmRobertaBase, TestData.SentenceSplitModels.Sat3Lsm, SessionConfiguration.DefaultCpu, LogFactory.CreateLogger<SatSplitter>());
+		ISentenceSplitter splitter = new SatSplitter(TestData.SentencePieceModels.XlmRobertaBase.Value, TestData.SentenceSplitModels.Sat3Lsm.Value, SessionConfiguration.DefaultCpu, LogFactory.CreateLogger<SatSplitter>());
 		Logger.LogInformation("Starting sentence split");
 		Int32[] sentences = splitter.Split(textBytes);
 		Logger.LogInformation("Splitting done: {NumSentences} sentences", sentences.Length);

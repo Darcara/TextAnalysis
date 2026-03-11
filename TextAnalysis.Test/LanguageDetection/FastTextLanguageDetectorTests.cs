@@ -6,9 +6,15 @@ using TextAnalysis.LanguageDetection;
 
 [TestFixture]
 public class FastTextLanguageDetectorTests : ATest {
-	[TestCase(null)]
-	[TestCase(TestData.LanguageDetectionModels.FastText176)]
-	[TestCase(TestData.LanguageDetectionModels.FastText218)]
+	internal static IEnumerable<TestCaseData> CanMapLabelsToLanguageTestCases {
+		get {
+			yield return new TestCaseData(null);
+			yield return new TestCaseData(TestData.LanguageDetectionModels.FastText176.Value);
+			yield return new TestCaseData(TestData.LanguageDetectionModels.FastText218.Value);
+		}
+	}
+
+	[TestCaseSource(nameof(CanMapLabelsToLanguageTestCases))]
 	public void CanMapLabelsToLanguage(String? model) {
 		using FastTextLanguageDetector detector = new(model);
 		FrozenSet<Language> invalidLanguages = [Language.Uninitialized, Language.Undetermined, Language.No_linguistic_content];

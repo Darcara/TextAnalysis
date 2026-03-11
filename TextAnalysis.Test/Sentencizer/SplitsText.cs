@@ -12,7 +12,7 @@ public class SplitsText : ATest {
 	[TestCase("This is a sentence. This is another sentence.")]
 	[TestCase("This is a test This is another test.")]
 	[TestCase("Hello this is a test But this is different now Now the next one starts looool")]
-	[TestCase("In linguistics and grammar, a sentence is a linguistic expression, such as the English example \\\"The quick brown fox jumps over the lazy dog.\\\" In traditional grammar, it is typically defined as a string of words that expresses a complete thought, or as a unit consisting of a subject and predicate. In non-functional linguistics it is typically defined as a maximal unit of syntactic structure such as a constituent. In functional linguistics, it is defined as a unit of written texts delimited by graphological features such as upper-case letters and markers such as periods, question marks, and exclamation marks. This notion contrasts with a curve, which is delimited by phonologic features such as pitch and loudness and markers such as pauses; and with a clause, which is a sequence of words that represents some process going on throughout time.[1] A sentence can include words grouped meaningfully to express a statement, question, exclamation, request, command, or suggestion.[2]", TestName = "WikiText")]
+	[TestCase("In linguistics and grammar, a sentence is a linguistic expression, such as the English example \"The quick brown fox jumps over the lazy dog.\" In traditional grammar, it is typically defined as a string of words that expresses a complete thought, or as a unit consisting of a subject and predicate. In non-functional linguistics it is typically defined as a maximal unit of syntactic structure such as a constituent. In functional linguistics, it is defined as a unit of written texts delimited by graphological features such as upper-case letters and markers such as periods, question marks, and exclamation marks. This notion contrasts with a curve, which is delimited by phonologic features such as pitch and loudness and markers such as pauses; and with a clause, which is a sequence of words that represents some process going on throughout time.[1] A sentence can include words grouped meaningfully to express a statement, question, exclamation, request, command, or suggestion.[2]", TestName = nameof(SplitsText) + ".WikiText")]
 	[TestCase(TestData.ExampleText.OneCharacterWord)]
 	[TestCase(TestData.ExampleText.OneTokenWord)]
 	[TestCase(TestData.ExampleText.TwoTokenWord)]
@@ -24,7 +24,7 @@ public class SplitsText : ATest {
 		// SaT Base Models: Base SaT (Segment any Text) models, to be used for sentence and paragraph segmentation. Easily adaptable via LoRA.
 		// SaT Supervised Mixture (SM) Models: SaT (Segment any Text) models, further trained on a Supervised Mixture of diverse styles and corruptions. Universal Sentence Segmentation models!
 
-		using XlmRobertaTokenizer tokenizer = new(TestData.SentencePieceModels.XlmRobertaBase);
+		using XlmRobertaTokenizer tokenizer = new(TestData.SentencePieceModels.XlmRobertaBase.Value);
 		// no idea why +1, but it is needed.
 		// python script prepends ClsToken and appends SepToken --> not required, but increases accuracy.
 		Int32[] tokenized = tokenizer.EncodeToIds(text);
@@ -41,7 +41,7 @@ public class SplitsText : ATest {
 		Float16[] encodedAttention = new Float16[encodedIds.Length];
 		Array.Fill(encodedAttention, Float16.One);
 
-		using InferenceSession session = new(TestData.SentenceSplitModels.Sat3Lsm);
+		using InferenceSession session = new(TestData.SentenceSplitModels.Sat3Lsm.Value);
 		using OrtValue? inputOrtValue = OrtValue.CreateTensorValueFromMemory(encodedIds, [1, encodedIds.Length]);
 		using OrtValue? encodedAttentionOrtValue = OrtValue.CreateTensorValueFromMemory(encodedAttention, [1, encodedIds.Length]);
 
@@ -76,15 +76,15 @@ public class SplitsText : ATest {
 	[TestCase("This is a sentence. This is another sentence.")] // Interestingly this will be split correctly by the 1-layer and 12-layer model, but not the 3-layer model.
 	[TestCase("This is a test This is another test.")]
 	[TestCase("Hello this is a test But this is different now Now the next one starts looool")]
-	[TestCase("In linguistics and grammar, a sentence is a linguistic expression, such as the English example \\\"The quick brown fox jumps over the lazy dog.\\\" In traditional grammar, it is typically defined as a string of words that expresses a complete thought, or as a unit consisting of a subject and predicate. In non-functional linguistics it is typically defined as a maximal unit of syntactic structure such as a constituent. In functional linguistics, it is defined as a unit of written texts delimited by graphological features such as upper-case letters and markers such as periods, question marks, and exclamation marks. This notion contrasts with a curve, which is delimited by phonologic features such as pitch and loudness and markers such as pauses; and with a clause, which is a sequence of words that represents some process going on throughout time.[1] A sentence can include words grouped meaningfully to express a statement, question, exclamation, request, command, or suggestion.[2]", TestName = "WikiText")]
+	[TestCase("In linguistics and grammar, a sentence is a linguistic expression, such as the English example \\\"The quick brown fox jumps over the lazy dog.\\\" In traditional grammar, it is typically defined as a string of words that expresses a complete thought, or as a unit consisting of a subject and predicate. In non-functional linguistics it is typically defined as a maximal unit of syntactic structure such as a constituent. In functional linguistics, it is defined as a unit of written texts delimited by graphological features such as upper-case letters and markers such as periods, question marks, and exclamation marks. This notion contrasts with a curve, which is delimited by phonologic features such as pitch and loudness and markers such as pauses; and with a clause, which is a sequence of words that represents some process going on throughout time.[1] A sentence can include words grouped meaningfully to express a statement, question, exclamation, request, command, or suggestion.[2]", TestName = nameof(SatSplitterExample) + ".WikiText")]
 	[TestCase(TestData.ExampleText.OneCharacterWord)]
 	[TestCase(TestData.ExampleText.OneTokenWord)]
 	[TestCase(TestData.ExampleText.TwoTokenWord)]
 	[TestCase(TestData.ExampleText.ThreeTokenWord)]
-	[TestCase(TestData.ExampleText.ShortSentence, TestName = nameof(TestData.ExampleText.ShortSentence))]
-	[TestCase(TestData.ExampleText.Paragraph, TestName = nameof(TestData.ExampleText.Paragraph))]
+	[TestCase(TestData.ExampleText.ShortSentence, TestName = nameof(SatSplitterExample) + "." + nameof(TestData.ExampleText.ShortSentence))]
+	[TestCase(TestData.ExampleText.Paragraph, TestName = nameof(SatSplitterExample) + "." + nameof(TestData.ExampleText.Paragraph))]
 	public void SatSplitterExample(String text) {
-		using SatSplitter splitter = new(TestData.SentencePieceModels.XlmRobertaBase, TestData.SentenceSplitModels.Sat3Lsm, SessionConfiguration.DefaultCpu, LogFactory.CreateLogger<SatSplitter>());
+		using SatSplitter splitter = new(TestData.SentencePieceModels.XlmRobertaBase.Value, TestData.SentenceSplitModels.Sat3Lsm.Value, SessionConfiguration.DefaultCpu, LogFactory.CreateLogger<SatSplitter>());
 		String[] sentences = splitter.Split(text);
 		Console.WriteLine(text);
 		Console.WriteLine();
@@ -94,10 +94,16 @@ public class SplitsText : ATest {
 		}
 	}
 
+	internal static IEnumerable<TestCaseData> SplitsEnglishTextWhenSplitTestCases {
+		get {
+			yield return new TestCaseData(TestData.SentenceSplitModels.Sat1Lsm.Value, 4931);
+			yield return new TestCaseData(TestData.SentenceSplitModels.Sat3Lsm.Value, 4950);
+			yield return new TestCaseData(TestData.SentenceSplitModels.Sat12Lsm.Value, 4992);
+		}
+	}
+
 	[Category("Benchmark")]
-	[TestCase(TestData.SentenceSplitModels.Sat1Lsm, 4931)]
-	[TestCase(TestData.SentenceSplitModels.Sat3Lsm, 4950)]
-	[TestCase(TestData.SentenceSplitModels.Sat12Lsm, 4992)]
+	[TestCaseSource(nameof(SplitsEnglishTextWhenSplitTestCases))]
 	public void SplitsEnglishTextWhenSplit(String model, Int32 expectedSentences) {
 		String text = TestData.ExampleText.TomSawyerText;
 		SessionConfiguration config = SessionConfiguration.DefaultCpu with {
@@ -108,7 +114,7 @@ public class SplitsText : ATest {
 			IntraOpNumThreads = 4,
 			ExecutionProvider = ExecutionProvider.DirectML,
 		};
-		using SatSplitter splitter = new(TestData.SentencePieceModels.XlmRobertaBase, model, config, LogFactory.CreateLogger<SatSplitter>());
+		using SatSplitter splitter = new(TestData.SentencePieceModels.XlmRobertaBase.Value, model, config, LogFactory.CreateLogger<SatSplitter>());
 		Stopwatch sw = Stopwatch.StartNew();
 		String[] sentences = splitter.Split(text);
 		sw.Stop();
@@ -145,7 +151,7 @@ public class SplitsText : ATest {
 	[TestCase(8, 1, 1, true)]
 	[TestCase(16, 1, 1, true)]
 	public void Sat1LTimeEstimation(Int32 batchSize, Int32 interOpThreads, Int32 intraOpThreads, Boolean dml) {
-		EstimateModel(batchSize, interOpThreads, intraOpThreads, dml, TestData.SentenceSplitModels.Sat1Lsm);
+		EstimateModel(batchSize, interOpThreads, intraOpThreads, dml, TestData.SentenceSplitModels.Sat1Lsm.Value);
 	}
 
 	[Category("Benchmark")]
@@ -170,9 +176,9 @@ public class SplitsText : ATest {
 	[TestCase(8, 1, 1, true)]
 	[TestCase(16, 1, 1, true)]
 	public void Sat3LTimeEstimation(Int32 batchSize, Int32 interOpThreads, Int32 intraOpThreads, Boolean dml) {
-		EstimateModel(batchSize, interOpThreads, intraOpThreads, dml, TestData.SentenceSplitModels.Sat3Lsm);
+		EstimateModel(batchSize, interOpThreads, intraOpThreads, dml, TestData.SentenceSplitModels.Sat3Lsm.Value);
 	}
-	
+
 	[Category("Benchmark")]
 	[TestCase(1, 1, 1, true)]
 	[TestCase(1, 1, 4, true)]
@@ -185,7 +191,7 @@ public class SplitsText : ATest {
 	[TestCase(8, 1, 1, true)]
 	[TestCase(16, 1, 1, true)]
 	public void Sat12LGpuEstimation(Int32 batchSize, Int32 interOpThreads, Int32 intraOpThreads, Boolean dml) {
-		EstimateModel(batchSize, interOpThreads, intraOpThreads, dml, TestData.SentenceSplitModels.Sat12Lsm);
+		EstimateModel(batchSize, interOpThreads, intraOpThreads, dml, TestData.SentenceSplitModels.Sat12Lsm.Value);
 	}
 
 	private void EstimateModel(Int32 batchSize, Int32 interOpThreads, Int32 intraOpThreads, Boolean dml, String model) {
@@ -198,7 +204,7 @@ public class SplitsText : ATest {
 			IntraOpNumThreads = intraOpThreads,
 			ExecutionProvider = dml ? ExecutionProvider.DirectML : ExecutionProvider.CPU,
 		};
-		using SatSplitter splitter = new(TestData.SentencePieceModels.XlmRobertaBase, model, config, LogFactory.CreateLogger<SatSplitter>());
+		using SatSplitter splitter = new(TestData.SentencePieceModels.XlmRobertaBase.Value, model, config, LogFactory.CreateLogger<SatSplitter>());
 		Stopwatch sw = Stopwatch.StartNew();
 		String[] sentences = splitter.Split(text);
 		sw.Stop();

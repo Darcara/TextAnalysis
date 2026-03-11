@@ -15,15 +15,37 @@ public class AccuracyTests : ATest {
 	public void BeforeEveryTest() {
 		_statistics.Clear();
 	}
+	
+	[Test]
+	public void LinguaHighEvaluation() {
+		EvaluateDetector("Lingua-High", new LinguaLanguageDetector());
+	}
+	
+	public void EvaluateDetector(String name, ILanguageDetector detector) {
+		_statistics[name] = new LanguageTestStats();
+		Console.WriteLine($"{"Correct Language", 20} {"Detected Language", 20} Text");
+		foreach (String category in new[] { "single-words", "word-pairs", "sentences" }) {
+			foreach ((Language language, String[] entries) in Get(category)) {
+				foreach (String entry in entries) {
+					LanguagePrediction languagePrediction = detector.Detect(entry);
+					if (languagePrediction.Language != language) {
+						Console.WriteLine($"{language, 20} {languagePrediction.Language, 20}: {entry}");
+					}
+				}
+			}
+		}
+
+		detector.Dispose();
+	}
 
 	[Test]
 	public void AccuracyTest() {
 		// TestDetector("Lingua-Low", new LinguaLanguageDetector(true));
 		TestDetector("Lingua-High", new LinguaLanguageDetector());
 		// TestDetector("FastText-Low", new FastTextLanguageDetector(null));
-		TestDetector("FastText-176", new FastTextLanguageDetector(TestData.LanguageDetectionModels.FastText176));
-		TestDetector("LHigh + FT176", new CombinedDetector(new LinguaLanguageDetector(), new FastTextLanguageDetector(TestData.LanguageDetectionModels.FastText176)));
-		TestDetector("FT176 + LHigh", new CombinedDetector(new FastTextLanguageDetector(TestData.LanguageDetectionModels.FastText176), new LinguaLanguageDetector()));
+		TestDetector("FastText-176", new FastTextLanguageDetector(TestData.LanguageDetectionModels.FastText176.Value));
+		TestDetector("LHigh + FT176", new CombinedDetector(new LinguaLanguageDetector(), new FastTextLanguageDetector(TestData.LanguageDetectionModels.FastText176.Value)));
+		TestDetector("FT176 + LHigh", new CombinedDetector(new FastTextLanguageDetector(TestData.LanguageDetectionModels.FastText176.Value), new LinguaLanguageDetector()));
 	}
 
 	private IEnumerable<(Language language, String[] entries)> Get(String directory) {
@@ -64,7 +86,7 @@ public class AccuracyTests : ATest {
 				}
 
 				sw.Stop();
-				// Console.WriteLine($"{language, 20}: {perLanguageStat}");
+				Console.WriteLine($"{language, 20}: {perLanguageStat}");
 				perElementStat.Add(category, perLanguageStat);
 			}
 

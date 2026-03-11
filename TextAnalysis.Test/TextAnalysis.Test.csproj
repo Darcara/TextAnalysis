@@ -13,6 +13,7 @@
         <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
         <RetainVMGarbageCollection>false</RetainVMGarbageCollection>
         <ServerGarbageCollection>true</ServerGarbageCollection>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
     <ItemGroup>

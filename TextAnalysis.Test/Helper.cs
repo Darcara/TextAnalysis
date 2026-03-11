@@ -2,10 +2,13 @@
 
 using System.Net.Http;
 using System.Runtime.InteropServices;
+using System.Threading;
 using System.Threading.Tasks;
+using Neco.Common.Extensions;
 
 public static class Helper {
 	public static async Task DownloadTestData() {
+		return;
 		(String uri, String target)[] requiredFiles = [
 			("https://huggingface.co/onnx-community/opus-mt-en-de/resolve/main/source.spm?download=true", "data/en-de/source.spm"),
 			("https://huggingface.co/onnx-community/opus-mt-en-de/resolve/main/vocab.json?download=true", "data/en-de/vocab.json"),
@@ -19,13 +22,13 @@ public static class Helper {
 			("https://huggingface.co/onnx-community/opus-mt-de-en/resolve/main/onnx/decoder_with_past_model.onnx?download=true", "data/de-en/decoder_with_past_model.onnx"),
 			("https://huggingface.co/onnx-community/opus-mt-de-en/resolve/main/onnx/encoder_model.onnx?download=true", "data/de-en/encoder_model.onnx"),
 			
-			("https://huggingface.co/segment-any-text/sat-1l-sm/resolve/main/model.onnx?download=true", "data/sat1lsm.onnx"),
-			("https://huggingface.co/segment-any-text/sat-3l-sm/resolve/main/model.onnx?download=true", "data/sat3lsm.onnx"),
-			("https://huggingface.co/segment-any-text/sat-12l-sm/resolve/main/model.onnx?download=true", "data/sat12lsm.onnx"),
-			("https://huggingface.co/FacebookAI/xlm-roberta-base/resolve/main/sentencepiece.bpe.model?download=true", "data/xlm-roberta-base-sentencepiece.bpe.model"),
+			// ("https://huggingface.co/segment-any-text/sat-1l-sm/resolve/main/model.onnx?download=true", "data/sat1lsm.onnx"),
+			// ("https://huggingface.co/segment-any-text/sat-3l-sm/resolve/main/model.onnx?download=true", "data/sat3lsm.onnx"),
+			// ("https://huggingface.co/segment-any-text/sat-12l-sm/resolve/main/model.onnx?download=true", "data/sat12lsm.onnx"),
+			// ("https://huggingface.co/FacebookAI/xlm-roberta-base/resolve/main/sentencepiece.bpe.model?download=true", "data/xlm-roberta-base-sentencepiece.bpe.model"),
 			
-			("https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin", "data/lid.176.bin"),
-			("https://dl.fbaipublicfiles.com/nllb/lid/lid218e.bin", "data/lid.218e.bin"),
+			// ("https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin", "data/lid.176.bin"),
+			// ("https://dl.fbaipublicfiles.com/nllb/lid/lid218e.bin", "data/lid.218e.bin"),
 			// Alt download for the same model
 			// ("https://huggingface.co/facebook/fasttext-language-identification/resolve/main/model.bin?download=true", "data/lid.lid218e.bin"),
 		];
@@ -37,19 +40,27 @@ public static class Helper {
 		}
 	}
 
-	internal static Task DownloadFile(String uri, String destination, Predicate<FileInfo> ? destinationPredicate = null) => DownloadFile(new Uri(uri), destination, destinationPredicate);
-
-	internal static Task DownloadFile(Uri uri, String destination, Predicate<FileInfo> ? destinationPredicate = null) {
-		using HttpClient client = new();
-		return DownloadFile(client, uri, destination, destinationPredicate);
+	internal static Lazy<String> WebFile(String file, String source) {
+		FileInfo fi = new(file);
+		if (fi.Exists) 
+			return new(file);
+		
+		return new(() => DownloadFile(source, file).GetResultBlocking(), LazyThreadSafetyMode.ExecutionAndPublication);
 	}
 
-	internal static Task DownloadFile(HttpClient client, String uri, String destination, Predicate<FileInfo> ? destinationPredicate = null) => DownloadFile(client, new Uri(uri), destination, destinationPredicate);
+	internal static Task<String> DownloadFile(String uri, String destination, Predicate<FileInfo> ? destinationPredicate = null) => DownloadFile(new Uri(uri), destination, destinationPredicate);
 
-	internal static async Task DownloadFile(HttpClient client, Uri uri, String destination, Predicate<FileInfo>? destinationPredicate = null) {
+	internal static async Task<String> DownloadFile(Uri uri, String destination, Predicate<FileInfo> ? destinationPredicate = null) {
+		using HttpClient client = new();
+		return await DownloadFile(client, uri, destination, destinationPredicate);
+	}
+
+	internal static Task<String> DownloadFile(HttpClient client, String uri, String destination, Predicate<FileInfo> ? destinationPredicate = null) => DownloadFile(client, new Uri(uri), destination, destinationPredicate);
+
+	internal static async Task<String> DownloadFile(HttpClient client, Uri uri, String destination, Predicate<FileInfo>? destinationPredicate = null) {
 		FileInfo fi = new(destination);
 		destinationPredicate ??= fileInfo => !fileInfo.Exists;
-		if (!destinationPredicate(fi)) return;
+		if (!destinationPredicate(fi)) return destination;
 
 		Console.WriteLine($"Downloading {destination} from {uri}");
 		String targetFileAbs = Path.GetFullPath(destination);
@@ -61,9 +72,11 @@ public static class Helper {
 		}
 
 		File.Move(tempFile, targetFileAbs, true);
+		return destination;
 	}
 
 	internal static void EnsureNativeFilesPresent() {
+		return;
 		switch (RuntimeInformation.RuntimeIdentifier) {
 			case "win-x64":
 				if (!File.Exists("./SentencePieceWrapper.dll")) File.Copy("../../../../../MarianTokenizer/runtimes/win-x64/native/SentencePieceWrapper.dll", "./SentencePieceWrapper.dll");
