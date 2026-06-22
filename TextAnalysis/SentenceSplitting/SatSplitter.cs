@@ -52,10 +52,16 @@ public sealed class SatSplitter : ISentenceSplitter {
 
 	/// <inheritdoc />
 	public String[] Split(ReadOnlySpan<Char> text) {
+		if (text.IsEmpty)
+			return Array.Empty<String>();
+
 		Byte[] utf8BytesBuffer = ArrayPool<Byte>.Shared.Rent(MagicNumbers.Utf8NoBom.GetMaxByteCount(text.Length));
 		Int32 utf8BytesLength = MagicNumbers.Utf8NoBom.GetBytes(text, utf8BytesBuffer);
 		ReadOnlySpan<Byte> utf8Bytes = new(utf8BytesBuffer, 0, utf8BytesLength);
 		Int32[] indices = Split(utf8Bytes);
+
+		if (indices.Length == 0)
+			return [text.ToString()];
 
 		// the last sentence might not end at the end of the text 
 		Int32 resultSentences = indices[^1] == utf8Bytes.Length ? indices.Length : indices.Length + 1;
@@ -72,9 +78,12 @@ public sealed class SatSplitter : ISentenceSplitter {
 		ArrayPool<Byte>.Shared.Return(utf8BytesBuffer);
 		return sentences;
 	}
-	
+
 	/// <inheritdoc />
 	public Int32[] SplitIndices(ReadOnlySpan<Char> text) {
+		if (text.IsEmpty)
+			return Array.Empty<Int32>();
+
 		Byte[] utf8BytesBuffer = ArrayPool<Byte>.Shared.Rent(MagicNumbers.Utf8NoBom.GetMaxByteCount(text.Length));
 		Int32 utf8BytesLength = MagicNumbers.Utf8NoBom.GetBytes(text, utf8BytesBuffer);
 		ReadOnlySpan<Byte> utf8Bytes = new(utf8BytesBuffer, 0, utf8BytesLength);
@@ -85,7 +94,13 @@ public sealed class SatSplitter : ISentenceSplitter {
 
 	/// <inheritdoc />
 	public Int32[] Split(ReadOnlySpan<Byte> utf8Bytes) {
+		if (utf8Bytes.IsEmpty)
+			return Array.Empty<Int32>();
+
 		(Int32[] ids, TokenSpan[] tokens) = _tokenizer.EncodeToSpans(utf8Bytes);
+
+		if (ids.Length == 0)
+			return Array.Empty<Int32>();
 
 		List<Int32> results = new();
 		Int64[] encodedIds = new Int64[ids.Length + 2];
@@ -106,14 +121,14 @@ public sealed class SatSplitter : ISentenceSplitter {
 		const Single threshold = 0.25f;
 		// lookahead = 48 tokens, so should we split at 512-48 ?
 
-		Int64[] ortDataInputIds = GC.AllocateArray<Int64>(size, true);
-		Float16[] ortDataAttentionMask = GC.AllocateArray<Float16>(size, true);
+		Int64[] ortDataInputIds = GC.AllocateArray<Int64>(size, pinned: true);
+		Float16[] ortDataAttentionMask = GC.AllocateArray<Float16>(size, pinned: true);
 		Span<Single> logitsDataFloat = new(new Single[size]);
 		Span<Single> resultSigmoids = new(new Single[size]);
 		using OrtValue inputOrtValue = OrtValue.CreateTensorValueFromMemory(ortDataInputIds, [batchSize, maxSequenceLength]);
 		using OrtValue encodedAttentionOrtValue = OrtValue.CreateTensorValueFromMemory(ortDataAttentionMask, [batchSize, maxSequenceLength]);
 
-		Dictionary<String, OrtValue> inputs = new() {
+		Dictionary<String, OrtValue> inputs = new(StringComparer.Ordinal) {
 			{ "input_ids", inputOrtValue },
 			{ "attention_mask", encodedAttentionOrtValue },
 		};
@@ -127,7 +142,6 @@ public sealed class SatSplitter : ISentenceSplitter {
 			ReadOnlySpan<Int64> currentSlice = inputIdSpan.Slice(currentSliceOffset, currentSliceLength);
 			currentSlice.CopyTo(inputIds);
 
-			// Boolean isLastSlice = currentSlice.Length < maxSequenceLength;
 			Boolean isLastSlice = currentSlice[^1] == _tokenizer.EndOfSentenceToken;
 			// only required for last slice
 			if (isLastSlice) {

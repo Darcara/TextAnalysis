@@ -72,7 +72,9 @@ public class SplitsText : ATest {
 			Console.WriteLine($"{encodedString.PadLeft(maxStringLength)} - {encodedId,7} - {eosProbability,8:N3} - {sigmoids[index],8:N3} {(sigmoids[index] > 0.25 ? "<---" : "")}");
 		}
 	}
-
+	
+	[TestCase("", TestName = "Empty")]
+	[TestCase(" ", TestName = "Whitespace")]
 	[TestCase("This is a sentence. This is another sentence.")] // Interestingly this will be split correctly by the 1-layer and 12-layer model, but not the 3-layer model.
 	[TestCase("This is a test This is another test.")]
 	[TestCase("Hello this is a test But this is different now Now the next one starts looool")]
