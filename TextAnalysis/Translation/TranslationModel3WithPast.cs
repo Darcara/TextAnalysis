@@ -13,7 +13,6 @@ internal class TranslationModel3WithPast : AConfigurationBasedTranslator {
 
 	public TranslationModel3WithPast(ModelDefinition modelDefinition, OnnxSession encoderSession, OnnxSession decoderSession, OnnxSession decoderWithPastSession, MarianTokenizer tokenizer) : base(modelDefinition, tokenizer, encoderSession, decoderWithPastSession) {
 		_decoderSession = decoderSession;
-		;
 	}
 
 	/// <inheritdoc />

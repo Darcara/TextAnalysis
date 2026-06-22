@@ -95,8 +95,9 @@ internal class OnnxModelLoader {
 			InterOpNumThreads = sessionConfiguration.InterOpNumThreads,
 			ExecutionMode = sessionConfiguration.InterOpNumThreads > 1 ? ExecutionMode.ORT_PARALLEL : ExecutionMode.ORT_SEQUENTIAL,
 			GraphOptimizationLevel = sessionConfiguration.OptimizationLevel,
-			OptimizedModelFilePath = optimizedOutput,
 		};
+		if (!String.IsNullOrEmpty(optimizedOutput))
+			opt.OptimizedModelFilePath = optimizedOutput;
 		opt.RegisterOrtExtensions();
 		opt.SetEpSelectionPolicy(ExecutionProviderDevicePolicy.MAX_PERFORMANCE);
 

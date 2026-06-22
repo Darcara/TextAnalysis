@@ -16,7 +16,7 @@ public class EncodeWithSentencePiece {
 	[GlobalSetup]
 	public void Setup() {
 		Helper.DownloadTestData().GetResultBlocking();
-		_tokenizer = new(TestData.SentencePieceModels.XlmRobertaBase);
+		_tokenizer = new(TestData.SentencePieceModels.XlmRobertaBase.Value);
 		_largeText = TestData.ExampleText.TomSawyerText;
 		_shortUtf8 = MagicNumbers.Utf8NoBom.GetBytes(TestData.ExampleText.ShortSentence);
 		_paragraphUtf8 = MagicNumbers.Utf8NoBom.GetBytes(TestData.ExampleText.Paragraph);

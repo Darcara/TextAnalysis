@@ -9,7 +9,6 @@ using Neco.Common;
 using Neco.Common.Extensions;
 using Panlingo.LanguageIdentification.Lingua;
 
-// TODO custom native dll/so! Currently memory copy is needed to append \0 to the utf8-bytes so it becomes a zerio-terminated-cstring. This is unnecessary, as Rust can ust the utf8-ptr with length.
 // TODO custom native dll/so! To be able to call unload_language_models: https://github.com/pemistahl/lingua-rs/blob/main/src/detector.rs#L254
 internal sealed class CustomLinguaDetector : IDisposable {
 	private readonly LinguaDetector _detector;
@@ -95,7 +94,6 @@ internal sealed class CustomLinguaDetector : IDisposable {
 		{ LinguaLanguage.Zulu, Language.Zulu },
 	}.ToFrozenDictionary();
 
-
 	public CustomLinguaDetector(Boolean useLowAccuracy = false) {
 		_linguaBuilder = new LinguaDetectorBuilder(Enum.GetValues<LinguaLanguage>()).WithPreloadedLanguageModels();
 		if (useLowAccuracy)
@@ -120,18 +118,15 @@ internal sealed class CustomLinguaDetector : IDisposable {
 	}
 
 	public LanguagePrediction[] PredictLanguages(ReadOnlySpan<Byte> utf8, Int32 count = 10) {
-		Byte[] utf8Zt = ArrayPool<Byte>.Shared.Rent(utf8.Length + 1);
-		utf8.CopyTo(utf8Zt);
-		utf8Zt[utf8.Length] = 0;
-		LanguagePrediction[] retval = PredictLanguagesCore(new ReadOnlySpan<Byte>(utf8Zt, 0, utf8.Length + 1), count);
-		ArrayPool<Byte>.Shared.Return(utf8Zt);
+		LanguagePrediction[] retval = PredictLanguagesCore(utf8, count);
 		return retval;
 	}
 
-	internal LanguagePrediction[] PredictLanguagesCore(ReadOnlySpan<Byte> utf8ZeroTerminated, Int32 count) {
-		LinguaStatus status = LinguaDetectorWrapper.LinguaDetectSingle2(
+	internal LanguagePrediction[] PredictLanguagesCore(ReadOnlySpan<Byte> utf8, Int32 count) {
+		LinguaStatus status = LinguaDetectorWrapper.LinguaDetectSingle(
 			detector: _detectorPtr,
-			utf8: utf8ZeroTerminated,
+			text: utf8,
+			textLength: (UIntPtr)utf8.Length,
 			result: out LinguaPredictionListResult nativeResult
 		);
 
@@ -139,26 +134,33 @@ internal sealed class CustomLinguaDetector : IDisposable {
 	}
 
 	internal LanguagePrediction[] PredictLanguages(String text, Int32 count) {
-		LinguaStatus status = LinguaDetectorWrapper.LinguaDetectSingle(
-			detector: _detectorPtr,
-			text: text,
-			result: out LinguaPredictionListResult nativeResult
-		);
+		IntPtr textPtr = LinguaDetectorWrapper.ConvertStringToNativeUtf8ZeroTerminated(text, out Int32 byteLength);
+		try {
+			LinguaStatus status = LinguaDetectorWrapper.LinguaDetectSingle(
+				detector: _detectorPtr,
+				text: textPtr,
+				textLength: (UIntPtr)byteLength,
+				result: out LinguaPredictionListResult nativeResult
+			);
 
-		return EvaluateLanguagePredictionResult(status, nativeResult, count);
+			return EvaluateLanguagePredictionResult(status, nativeResult, count);
+		}
+		finally {
+			Marshal.FreeHGlobal(textPtr);
+		}
 	}
-	
+
 	private LanguagePrediction[] EvaluateLanguagePredictionResult(LinguaStatus status, LinguaPredictionListResult nativeResult, Int32 count) {
 		try {
 			if (status == LinguaStatus.DetectFailure)
 				return [];
 
-			if (status == LinguaStatus.BadTextPtr || status == LinguaStatus.BadOutputPtr)
+			if (status != LinguaStatus.OK)
 				throw new LinguaDetectorException($"Failed to detect language: {status}");
 
 			Int32 toTake = Math.Min(count, nativeResult.PredictionsCount);
 			LanguagePrediction[] retval = new LanguagePrediction[toTake];
-			
+
 			for (Int32 i = 0; i < toTake; i++) {
 				LinguaPredictionResult prediction = Marshal.PtrToStructure<LinguaPredictionResult>(nativeResult.Predictions + i * _structSize);
 				retval[i] = new LanguagePrediction(_languageMap.GetValueOrDefault(prediction.Language, Language.Undetermined), prediction.Confidence > 0.25, prediction.Confidence);

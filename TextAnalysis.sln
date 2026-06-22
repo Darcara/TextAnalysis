@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextAnalysis.Test", "TextAn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextAnalysis.Benchmark", "TextAnalysis.Benchmark\TextAnalysis.Benchmark.csproj", "{E12A38E0-731E-47CC-A9B6-A322C70ADD06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neco.Common", "..\neco\Neco.Common\Neco.Common.csproj", "{680BEB80-2FE8-4DB3-853B-3746893D360D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTranslator", "WebTranslator\WebTranslator.csproj", "{A9004316-9240-46E3-82E6-89498A080E11}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{61067DD5-76A2-4E3C-819C-BDAE9724A0BC}"
 	ProjectSection(SolutionItems) = preProject
@@ -32,10 +32,6 @@ Global
 		{E12A38E0-731E-47CC-A9B6-A322C70ADD06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E12A38E0-731E-47CC-A9B6-A322C70ADD06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E12A38E0-731E-47CC-A9B6-A322C70ADD06}.Release|Any CPU.Build.0 = Release|Any CPU
-		{680BEB80-2FE8-4DB3-853B-3746893D360D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{680BEB80-2FE8-4DB3-853B-3746893D360D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{680BEB80-2FE8-4DB3-853B-3746893D360D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{680BEB80-2FE8-4DB3-853B-3746893D360D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A9004316-9240-46E3-82E6-89498A080E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A9004316-9240-46E3-82E6-89498A080E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9004316-9240-46E3-82E6-89498A080E11}.Release|Any CPU.ActiveCfg = Release|Any CPU

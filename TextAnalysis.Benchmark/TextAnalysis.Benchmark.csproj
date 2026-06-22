@@ -11,11 +11,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Neco.BenchmarkLibrary" Version="0.2.2" />
-        <PackageReference Include="Panlingo.LanguageIdentification.Lingua" Version="0.7.2" />
-        <PackageReference Include="SentencePieceTokenizer" Version="0.1.4" />
+        <PackageReference Include="Neco.BenchmarkLibrary" Version="0.2.3" />
+        <PackageReference Include="Panlingo.LanguageIdentification.Lingua" Version="0.8.0" />
+        <PackageReference Include="SentencePieceTokenizer" Version="0.1.6" />
         <PackageReference Include="SimpleSIMD" Version="4.6.0" />
-        <PackageReference Include="System.Numerics.Tensors" Version="10.0.3" />
+        <PackageReference Include="System.Numerics.Tensors" Version="10.0.9" />
     </ItemGroup>
 
     <ItemGroup>

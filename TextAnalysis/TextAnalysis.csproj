@@ -12,11 +12,11 @@
         <EnableSingleFileAnalyzer>true</EnableSingleFileAnalyzer>
         <EnableAotAnalyzer>true</EnableAotAnalyzer>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <RuntimeIdentifiers>win-x64;linux-x64</RuntimeIdentifiers>
     </PropertyGroup>
 
     <PropertyGroup>
-        <PackageVersion>0.1.4</PackageVersion>
+        <PackageVersion>0.1.6</PackageVersion>
         <Title>Darcara.TextAnalysis</Title>
         <PackageId>Darcara.TextAnalysis</PackageId>
         <Authors>Darcara</Authors>
@@ -29,19 +29,28 @@
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
         <EmbedAllSources>true</EmbedAllSources>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PublishDocumentationFile>true</PublishDocumentationFile>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <DebugType>portable</DebugType>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="IsoEnums" Version="2026.2.1"/>
-        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.3" />
-        <PackageReference Include="Microsoft.ML.OnnxRuntime.Managed" Version="1.24.1"/>
-        <PackageReference Include="Neco.Common" Version="0.2.2" />
-        <PackageReference Include="Panlingo.LanguageIdentification.FastText" Version="0.7.2" PrivateAssets="contentfiles;analyzers;build;compile"/>
-        <PackageReference Include="Panlingo.LanguageIdentification.Lingua" Version="0.7.2" PrivateAssets="contentfiles;analyzers;build;compile"/>
+        <PackageReference Include="Microsoft.ML.OnnxRuntime.Managed" Version="1.27.0" />
+        <PackageReference Include="Neco.Common" Version="0.2.4" />
+        <PackageReference Include="Panlingo.LanguageIdentification.FastText" Version="0.8.0" PrivateAssets="contentfiles;analyzers;build;compile" />
+        <PackageReference Include="Panlingo.LanguageIdentification.Lingua" Version="0.8.0" PrivateAssets="contentfiles;analyzers;build;compile" />
         <PackageReference Include="protobuf-net" Version="3.2.56" PrivateAssets="all"/>
-        <PackageReference Include="SentencePieceTokenizer" Version="0.1.4"/>
-        <PackageReference Include="System.Numerics.Tensors" Version="10.0.3" />
+        <PackageReference Include="SentencePieceTokenizer" Version="0.1.6" />
+        <PackageReference Include="System.Numerics.Tensors" Version="10.0.9" />
+        <PackageReference Include="Meziantou.Analyzer" Version="3.0.104" PrivateAssets="All" />
+        <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="5.3.0" PrivateAssets="All" />
+        <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="10.0.301" PrivateAssets="All" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.9" />
+        <PackageReference Include="Roslynator.Analyzers" Version="4.15.0" PrivateAssets="All"/>
+        <PackageReference Include="Roslynator.CodeFixes" Version="4.15.0" PrivateAssets="All"/>
+        <PackageReference Include="SonarAnalyzer.CSharp" Version="10.27.0.140913" PrivateAssets="All" />
     </ItemGroup>
 
     <ItemGroup>
